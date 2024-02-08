@@ -1,4 +1,3 @@
-# Kshitij Dahal
 
 Hello! I'm Kshitij, a PhD student at Arizona State University (ASU), originally from the beautiful country of Nepal. My academic journey and research are focused on probabilistic modeling, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the realm of explainable machine learning, seeking to make AI in earth sciences more interpretable and accessible.
 
