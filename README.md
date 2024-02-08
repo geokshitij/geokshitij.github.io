@@ -20,4 +20,5 @@ If you're interested in my work or would like to see my professional background,
 
 ## Connect with Me
 
-Email: [kdahal3@asu.edu](mailto:kdahal3@asu.edu), [geokshitij@gmail.com](mailto:geokshitij@gmail.com) | Connect: [Facebook](https://www.facebook.com/geokshitij), [Twitter](https://twitter.com/geokshitij), [LinkedIn](https://www.linkedin.com/in/geokshitij/)
+Email: [kdahal3@asu.edu](mailto:kdahal3@asu.edu), [geokshitij@gmail.com](mailto:geokshitij@gmail.com) 
+Connect: [Facebook](https://www.facebook.com/geokshitij), [Twitter](https://twitter.com/geokshitij), [LinkedIn](https://www.linkedin.com/in/geokshitij/)
