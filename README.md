@@ -5,6 +5,8 @@ If you're interested in my work or would like to see my professional background,
 
 ## News
 
+- **May/2024** - Selected as a Community Science Fellow by the American Geophysical Union Thriving Earth Exchange to work on solving community science problems and launching impactful projects with communities in the United States, Mexico, and South America. [Learn more](https://thrivingearthexchange.org/blog/meet-the-may-2024-cohort-of-community-science-fellows/)
+
 - **Feb/2024** - Awarded Travel Grant for Remote Sensing of the Water Cycle Chapman, HI, USA.
 
 - **Jan/2024** - I've joined the Editorial Advisory Board of the [*Regional Environmental Change*](https://link.springer.com/journal/10113) journal. I'm looking forward to contributing to the advancement of research in environmental change and sustainability.
