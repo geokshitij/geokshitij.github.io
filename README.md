@@ -5,7 +5,13 @@ If you're interested in my work or would like to see my professional background,
 
 ## News
 
+- **Feb/2024** - Awarded Travel Grant for Remote Sensing of the Water Cycle Chapman, HI, USA.
+
 - **Jan/2024** - I've joined the Editorial Advisory Board of the [*Regional Environmental Change*](https://link.springer.com/journal/10113) journal. I'm looking forward to contributing to the advancement of research in environmental change and sustainability.
+
+- **Dec/2023** - Water Quality Tiny Grant (HaikuYourResearch), American Geophysical Union, AGU Fall Meeting.
+
+- **Dec/2023** - Paper published: Dahal, K.*, Sharma, S., Shakya, A., Talchabhadel, R., Adhikari, S., Pokharel, A., Sheng, Z., Pradhan, A. M. S., & Kumar, S. (2023). Identification of groundwater potential zones in data-scarce mountainous region using explainable artificial intelligence. Journal of Hydrology. [https://doi.org/10.1016/j.jhydrol.2023.130417](https://doi.org/10.1016/j.jhydrol.2023.130417)
 
 - **June/2023** - Winner of the 2023 graphical abstract competition organized by the AGU Catchment Hydrology Technical Committee.
 
