@@ -23,7 +23,7 @@ If you're interested in my work or would like to see my professional background,
 
 - **Dec/2022** - Started a PhD journey in Civil, Environmental, and Sustainable Engineering at Arizona State University. Grateful for the opportunity to further my research in this field. [ASU Profile](https://search.asu.edu/profile/4585448)
 
-- **July/2021** - Awarded a CDRI research grant of $10,000 for landslide susceptibility mapping in Nepal.
+- **July/2021** - Awarded a CDRI research grant of $10,000 for landslide susceptibility mapping in Nepal. [Learn more](https://cdri.world/fellowship/cohort/2021-22/project/framework-for-landslide-prone-critical-infrastructure-zoning)
 
 ## Connect with Me
 
