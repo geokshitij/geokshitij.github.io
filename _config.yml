@@ -17,6 +17,11 @@ social_links:
 show_downloads: false
 show_footer: true
 
+header:
+  overlay_image: kd-modified.jpg
+  caption: "Exploring the Frontiers of Environmental Research"
+  overlay_filter: 0.6
+
 
 layout_options:
   - sidebar: right
