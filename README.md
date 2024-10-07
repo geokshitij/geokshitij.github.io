@@ -8,7 +8,7 @@ If you're interested in my work or would like to see my professional background,
 - **Oct/2024** - Presented "Operational Streamflow Forecasting Tool for Arizona Streams" at CMWR 2024. [Slide presentation available here](https://docs.google.com/presentation/d/1LjwKrJD8s7qcY5HcRNODqggBh8aOAT3zeEddm0nhh08/edit?usp=sharing).
 
 
-- **Sep/2024** - New paper published: **Pradhan, P., Subedi, D. R., Dahal, K.*,** Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). Urban agriculture matters for sustainable development. _Cell Reports Sustainability_. [https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5](https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5)
+- **Sep/2024** - New paper published: Pradhan, P., Subedi, D. R., **Dahal, K.,** Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). Urban agriculture matters for sustainable development. _Cell Reports Sustainability_. [https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5](https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5)
 
 - **May/2024** - Selected as a Community Science Fellow by the American Geophysical Union Thriving Earth Exchange to work on solving community science problems and launching impactful projects with communities in the United States, Mexico, and South America. [Learn more](https://thrivingearthexchange.org/blog/meet-the-may-2024-cohort-of-community-science-fellows/)
 
