@@ -1,10 +1,9 @@
 title: Kshitij Dahal
 logo: kd-modified.jpg
 description: |
-  PhD student at Arizona State University, passionate about climate change research and environmental sustainability.
-  Member of the Editorial Advisory Board at Regional Environmental Change.
+  PhD student at Arizona State University.
   
-theme: jekyll-theme-dark-minimal
+theme: jekyll-theme-cayman
 
 social_links:
   - name: GitHub
@@ -20,13 +19,14 @@ show_footer: true
 header:
   overlay_image: kd-modified.jpg
   caption: "Exploring the Frontiers of Environmental Research"
-  overlay_filter: 0.8
+  overlay_filter: 0.6
+
 
 layout_options:
-  - sidebar: left
+  - sidebar: right
   - show_sidebar: true
 
-color_scheme: "dark"
+color_scheme: "warm"
 
 contact:
   email: kdahal3@asu.edu
@@ -34,6 +34,7 @@ contact:
 
 footer:
   text: |
-    Designed & Developed by Kshitij Dahal. Powered by Jekyll & Dark Minimal Theme.
+    Designed & Developed by Kshitij Dahal. Powered by Jekyll & Cayman Theme.
   show_social_links: true
   show_credits: true
+
