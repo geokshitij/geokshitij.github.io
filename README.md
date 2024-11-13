@@ -33,11 +33,11 @@ If you're interested in my work or would like to see my professional background,
 
 ## I wish someone had told me  
 
-Working with great people is the greatest experience in life.  
-If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
-Hate the crime, but love the criminal.  
-Ignorance is not bliss.  
-If you can dream it, you can do it.
+- Working with great people is the greatest experience in life.  
+- If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
+- Hate the crime, but love the criminal.  
+- Ignorance is not bliss.  
+- If you can dream it, you can do it.
 
 
 ## Connect with Me
