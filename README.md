@@ -9,7 +9,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 - **Oct/2024** - Presented "Operational Streamflow Forecasting Tool for Arizona Streams" at CMWR 2024. [Slide presentation available here](https://docs.google.com/presentation/d/1LjwKrJD8s7qcY5HcRNODqggBh8aOAT3zeEddm0nhh08/edit?usp=sharing).
 
-- **Sep/2024** - New paper published: Pradhan, P., Subedi, D. R., **Dahal, K.,** Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). Urban agriculture matters for sustainable development. _Cell Reports Sustainability_. [https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5](https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5)
+- **Sep/2024** - **New paper!!**: Pradhan, P., Subedi, D. R., **Dahal, K.,** Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). Urban agriculture matters for sustainable development. _Cell Reports Sustainability_. [https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5](https://www.cell.com/cell-reports-sustainability/fulltext/S2949-7906(24)00349-5)
 
 - **Aug/2024** - Check out my bungee jump! [Watch here](https://youtu.be/_k8ajc2czOg?si=5__kRAOSrbCU3AfI&t=51).
 
