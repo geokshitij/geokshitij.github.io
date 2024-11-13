@@ -40,7 +40,7 @@ If you're interested in my work or would like to see my professional background,
 - If you can dream it, you can do it.
 
 
-## Connect with Me
+## Contact me here
 
 Email: [kdahal3@asu.edu](mailto:kdahal3@asu.edu), [geokshitij@gmail.com](mailto:geokshitij@gmail.com) 
 
