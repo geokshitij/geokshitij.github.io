@@ -1,9 +1,9 @@
-
+## about me
 I'm a PhD student at Arizona State University (ASU), originally from Nepal. My academic journey and research are focused on **data-driven hydrology**, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the **explainable** machine learning, seeking to make **AI in earth sciences** more interpretable and accessible.
 
 Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
-## Some highlights
+## some highlights
 
 - **Oct/2024** - Outstanding Poster Award for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University & Arizona Hydrological Society, AZ, USA. [Link](https://azhydrosoc.org/asu-flow-2024-wrap-up/)
 
@@ -42,7 +42,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 - If you can dream it, you can do it.
 
 
-## Contact me here
+## contact me here
 
 Email: [kdahal3@asu.edu](mailto:kdahal3@asu.edu), [geokshitij@gmail.com](mailto:geokshitij@gmail.com) 
 
