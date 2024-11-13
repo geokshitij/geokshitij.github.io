@@ -5,8 +5,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 ## Some highlights
 
-- **Oct/2024** - Outstanding Poster Award for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University, AZ, USA  
-2024
+- **Oct/2024** - Outstanding Poster Award for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University & Arizona Hydrological Society, AZ, USA. [Link](https://azhydrosoc.org/asu-flow-2024-wrap-up/).
 
 - **Oct/2024** - Presented "Operational Streamflow Forecasting Tool for Arizona Streams" at CMWR 2024. [Slide presentation available here](https://docs.google.com/presentation/d/1LjwKrJD8s7qcY5HcRNODqggBh8aOAT3zeEddm0nhh08/edit?usp=sharing).
 
