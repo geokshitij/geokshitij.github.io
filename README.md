@@ -1,7 +1,7 @@
 
-I'm a PhD student at Arizona State University (ASU), originally from Nepal. My academic journey and research are focused on data-driven hydrology, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the explainable machine learning, seeking to make AI in earth sciences more interpretable and accessible.
+I'm a PhD student at Arizona State University (ASU), originally from Nepal. My academic journey and research are focused on **data-driven hydrology**, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the **explainable** machine learning, seeking to make **AI in earth sciences** more interpretable and accessible.
 
-If you're interested in my work or would like to see my professional background, feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
+Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
 ## Some highlights
 
