@@ -1,9 +1,9 @@
 
-I'm a PhD student at Arizona State University (ASU), originally from Nepal. My academic journey and research are focused on probabilistic modeling, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the explainable machine learning, seeking to make AI in earth sciences more interpretable and accessible.
+I'm a PhD student at Arizona State University (ASU), originally from Nepal. My academic journey and research are focused on data-driven hydrology, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the explainable machine learning, seeking to make AI in earth sciences more interpretable and accessible.
 
 If you're interested in my work or would like to see my professional background, feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
-## News
+## Some highlights
 
 - **Oct/2024** - Presented "Operational Streamflow Forecasting Tool for Arizona Streams" at CMWR 2024. [Slide presentation available here](https://docs.google.com/presentation/d/1LjwKrJD8s7qcY5HcRNODqggBh8aOAT3zeEddm0nhh08/edit?usp=sharing).
 
@@ -30,6 +30,15 @@ If you're interested in my work or would like to see my professional background,
 - **Dec/2022** - Started a PhD journey in Civil, Environmental, and Sustainable Engineering at Arizona State University. Grateful for the opportunity to further my research in this field. [ASU Profile](https://search.asu.edu/profile/4585448)
 
 - **July/2021** - Awarded a CDRI research grant of $10,000 for landslide susceptibility mapping in Nepal. [Learn more](https://cdri.world/fellowship/cohort/2021-22/project/framework-for-landslide-prone-critical-infrastructure-zoning)
+
+## I wish someone had told me  
+
+Working with great people is the greatest experience in life.  
+If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
+Hate the crime, but love the criminal.  
+Ignorance is not bliss.  
+If you can dream it, you can do it.
+
 
 ## Connect with Me
 
