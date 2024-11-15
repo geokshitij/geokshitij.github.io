@@ -35,6 +35,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 ## I wish someone had told me  
 
+- Plans should be measured in decades, execution should be measured in weeks.
 - Working with great people is the greatest experience in life.  
 - If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
 - Hate the crime, but love the criminal.  
