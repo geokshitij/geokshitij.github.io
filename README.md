@@ -40,7 +40,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 - If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
 - Hate the crime, but love the criminal.  
 - Ignorance is not bliss.  
-- If you can dream it, you can do it.
+- If you can imagine it, you can already do it.
 - The concepts of good and bad are not inherent in reality; they are human constructs shaped by perspectives, experiences, and cultural contexts.
 
 ## contact me here
