@@ -1,5 +1,5 @@
 ## about me
-I'm currently a [**WaterDMD**](https://waterdmd.info/) PhD student at [Arizona State University](https://search.asu.edu/profile/4585448) (ASU). I am originally from very beautiful **🇳🇵Nepal🇳🇵**, the land of Himalayas. My research are focused on **data-driven hydrology**, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the self-supervised learning, **explainable** machine learning and seeking to make **AI in earth sciences** more interpretable and accessible.
+I'm currently a [WaterDMD](https://waterdmd.info/) PhD student at [Arizona State University](https://search.asu.edu/profile/4585448) (ASU). I am originally from very beautiful **🇳🇵Nepal🇳🇵**, the land of Himalayas. My research are focused on **data-driven hydrology**, decision support systems in geosciences, and the innovative use of earth observation and machine learning techniques. Recently, I'm more into the self-supervised learning, **explainable** machine learning and seeking to make **AI in earth sciences** more interpretable and accessible.
 
 Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
