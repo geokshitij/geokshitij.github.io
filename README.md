@@ -21,7 +21,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 - **Dec/2023** - Water Quality Tiny Grant (HaikuYourResearch), American Geophysical Union, AGU Fall Meeting.
 
-- **Dec/2023** - Paper published: **Dahal, K.*,** Sharma, S., Shakya, A., Talchabhadel, R., Adhikari, S., Pokharel, A., Sheng, Z., Pradhan, A. M. S., & Kumar, S. (2023). Identification of groundwater potential zones in data-scarce mountainous region using explainable artificial intelligence. _Journal of Hydrology_. [Link](https://doi.org/10.1016/j.jhydrol.2023.130417)
+- **Dec/2023** - **New paper!!**: **Dahal, K.*,** Sharma, S., Shakya, A., Talchabhadel, R., Adhikari, S., Pokharel, A., Sheng, Z., Pradhan, A. M. S., & Kumar, S. (2023). Identification of groundwater potential zones in data-scarce mountainous region using explainable artificial intelligence. _Journal of Hydrology_. [Link](https://doi.org/10.1016/j.jhydrol.2023.130417)
 
 - **June/2023** - Winner of the 2023 graphical abstract competition organized by the AGU Catchment Hydrology Technical Committee.
 
