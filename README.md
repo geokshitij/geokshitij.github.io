@@ -34,14 +34,13 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 - **July/2021** - Awarded a CDRI research grant of $10,000 for landslide susceptibility mapping in Nepal. [Link](https://cdri.world/fellowship/cohort/2021-22/project/framework-for-landslide-prone-critical-infrastructure-zoning)
 
 ## i wish someone had told me  
-
+- Ignorance is not bliss.  
 - Plans should be measured in decades, execution should be measured in weeks.
 - Working with great people is the greatest experience of life.  
 - If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.
 - You learn more by teaching something than by studying it as a student.
-- Hate the crime, but love the criminal.  
-- Ignorance is not bliss.  
 - If you can imagine it, you can already do it.
+- Hate the crime, but love the criminal.
 - The concepts of good and bad are not inherent in reality; they are human constructs shaped by perspectives, experiences, and cultural contexts.
 
 ## is data-driven science a good new approach in hydrology?
