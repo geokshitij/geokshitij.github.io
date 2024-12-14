@@ -37,7 +37,8 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 - Plans should be measured in decades, execution should be measured in weeks.
 - Working with great people is the greatest experience of life.  
-- If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.  
+- If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.
+- You learn more by teaching something than by studying it as a student.
 - Hate the crime, but love the criminal.  
 - Ignorance is not bliss.  
 - If you can imagine it, you can already do it.
