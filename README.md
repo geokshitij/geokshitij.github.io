@@ -42,6 +42,7 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 - If you can imagine it, you can already do it.
 - Hate the crime, but love the criminal.
 - The concepts of good and bad are not inherent in reality; they are human constructs shaped by perspectives, experiences, and cultural contexts.
+- Most people are kind and willing to help if you simply ask.
 
 ## is data-driven science a good new approach in hydrology?
 
