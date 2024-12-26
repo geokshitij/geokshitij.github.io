@@ -80,6 +80,14 @@ A good approach is to list out everything you need to do. Just write it all down
 
 Jim Rohn suggests planning your day before it begins, your week before it starts, and so on. Setting goals for the month before it begins, or just sitting down in the morning to decide what needs doing. You can do this on a Google Doc or any note-taking app. Keep a running list, mark things off as you finish them, and that’s it. It’s not about forcing yourself into a rigid schedule; it’s just about knowing what matters and making sure you do that first. That’s probably good enough to stay on track.
 
+## favourite books  
+- The Power of Now by **Eckhart Tolle**
+- How to Win Friends and Influence People by **Dale Carnegie**
+- Atomic Habits by **James Clear**
+- Seasons of Life by **Jim Rohn**
+- The Five Major Pieces to the Life Puzzle by **Jim Rohn**
+- The Richest Man in Babylon by **George Samuel Clason**
+    
 ## contact me here
 
 Email: [kdahal3@asu.edu](mailto:kdahal3@asu.edu), [geokshitij@gmail.com](mailto:geokshitij@gmail.com) 
