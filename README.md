@@ -5,6 +5,8 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 ## some highlights
 
+- **Jan/2025** - Snow School: Where Science Meets Adventure!!! [Read Here](https://www.linkedin.com/pulse/snow-school-where-science-meets-adventure-kshitij-dahal-zwjrc/?trackingId=hUwnmJ4QSUSR%2BIuVvLJZFA%3D%3D)
+
 - **Oct/2024** - Awarded outstanding poster for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University & Arizona Hydrological Society, AZ, USA. [Link](https://azhydrosoc.org/asu-flow-2024-wrap-up/)
 
 - **Oct/2024** - Presented "Operational Streamflow Forecasting Tool for Arizona Streams" at CMWR 2024. [Slide](https://docs.google.com/presentation/d/1LjwKrJD8s7qcY5HcRNODqggBh8aOAT3zeEddm0nhh08/edit?usp=sharing).
