@@ -5,6 +5,8 @@ Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv
 
 ## some highlights
 
+- **Feb/2025** - **New paper!!**: Pradhan, P., Joshi, S., **Dahal, K.,** Hu, Y., Subedi, D.R., Putra, M.P.I.F., Vaidya, S., Pant, L.P., Dhakal, S., Hubacek, K. and Rupakheti, M., 2025. Policy relevance of IPCC reports for the sustainable development goals and beyond. Resources, Environment and Sustainability, p.100192. [Link](https://www.sciencedirect.com/science/article/pii/S2666916125000040)
+
 - **Jan/2025** - Snow School: Where Science Meets Adventure!!! [Read Here](https://www.linkedin.com/pulse/snow-school-where-science-meets-adventure-kshitij-dahal-zwjrc/?trackingId=hUwnmJ4QSUSR%2BIuVvLJZFA%3D%3D)
 
 - **Oct/2024** - Awarded outstanding poster for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University & Arizona Hydrological Society, AZ, USA. [Link](https://azhydrosoc.org/asu-flow-2024-wrap-up/)
