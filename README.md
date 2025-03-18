@@ -4,7 +4,18 @@ I'm a [WaterDMD](https://waterdmd.info/) PhD student at [Arizona State Universit
 Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
 ## some highlights
-
+- **Mar/2025** - **New paper!!**: Dahal, K.*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires. *Information Geography*. [Link](https://doi.org/10.1016/j.infgeo.2025.100003)  
+**Media coverage**:
+  - [The Himalayan Times](https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come): "Wildfire season has begun, but the worst is yet to come."
+  - [The Kathmandu Post](https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk): "Wildfires put 500m tonnes of carbon—and tourism—at risk."
+  - [Himal Khabar](https://www.himalkhabar.com/news/144165): "Loss of Biodiversity Due to Wildfire (डढेलोबाट जैविक विविधता गुम्ने खतरा)."
+  - [Jalbayu (Climate)](https://www.jalbayu.com/news/2025-03-15-2271): "Study Report: Forests at Risk of Wildfire Due to Climate Crisis (अध्ययन रिपोर्ट : वन क्षेत्र जलवायु संकट कै कारण डढेलोको जोखिममा)."
+  - [Artha Pranali (Economic System)](https://arthapranali.com/2025/03/11828): "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)."
+  - [Everestpedia](https://www.everestpedia.com/detail/3646): "Forest Wildfires Pose a Threat to Carbon and Biodiversity (वन डढेलोले कार्बन र जैविक विविधतामा खतरा)."
+  - [Green Economy](https://greeconomy.com/fire-impact-on-biodiversity): "‘Forest Wildfires Threaten Biodiversity’ (‘वन डढेलोले जैविक विविधतामा खतरा’)."
+  - [KendraBindu (Central Point)](https://kendrabindu.com/social-affairs/404665): "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)."
+  - [Jal Sarokar (Water Concern)](https://jalasarokar.com/news/forest-fires-in-nepal-threaten-500-million-tons-of-carbon-and-biodiversity-2260): "Forest Fires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५० करोड टन कार्बन र जैविक विविधतामा खतरा)."
+  - [Kavre Khabar (Kavre News)](https://www.kavrekhabar.com/main-news/2025/03/16/3717): "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५ सय मिलियन टन कार्बन र जैविक विविधतामा खतरा)."
 - **Feb/2025** - **New paper!!**: Pradhan, P., Joshi, S., **Dahal, K.,** Hu, Y., Subedi, D.R., Putra, M.P.I.F., Vaidya, S., Pant, L.P., Dhakal, S., Hubacek, K. and Rupakheti, M., 2025. Policy relevance of IPCC reports for the sustainable development goals and beyond. Resources, Environment and Sustainability, p.100192. [Link](https://www.sciencedirect.com/science/article/pii/S2666916125000040)
 
 - **Jan/2025** - Snow School: Where Science Meets Adventure!!! [Read Here](https://www.linkedin.com/pulse/snow-school-where-science-meets-adventure-kshitij-dahal-zwjrc/?trackingId=hUwnmJ4QSUSR%2BIuVvLJZFA%3D%3D)
