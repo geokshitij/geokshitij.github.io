@@ -4,7 +4,7 @@ Hello [नमस्ते 🙏], I'm a [WaterDMD](https://waterdmd.info/) PhD st
 Feel free to reach out or check my [CV](https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing) and [Publications](https://scholar.google.com/citations?user=jOtnPBIAAAAJ&hl=en&oi=ao) for more information.
 
 ## some highlights
-- **Mar/2025 - New paper!!: Dahal, K.*,** Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires. *Information Geography*. [Link](https://doi.org/10.1016/j.infgeo.2025.100003)  
+- **Mar/2025 - New paper!!: Dahal, K.,** Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires. *Information Geography*. [Link](https://doi.org/10.1016/j.infgeo.2025.100003)  
   - [The Himalayan Times](https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come): "Wildfire season has begun, but the worst is yet to come."
   - [The Kathmandu Post](https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk): "Wildfires put 500m tonnes of carbon—and tourism—at risk."
   - [Himal Khabar](https://www.himalkhabar.com/news/144165): "Loss of Biodiversity Due to Wildfire (डढेलोबाट जैविक विविधता गुम्ने खतरा)."
