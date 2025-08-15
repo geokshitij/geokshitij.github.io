@@ -1,6 +1,7 @@
 # /geokshitij.github.io/generate_content.py
 import os
 import re
+from datetime import datetime
 
 # =============================================================================
 # DATA SECTION
@@ -289,8 +290,10 @@ if __name__ == "__main__":
         clear_folder(folder)
 
     print("\n--- Generating Core Pages & Navigation ---")
-    nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+    # nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+        nav_content = """main:\n  - title: "News"\n    url: /news/\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
+    # generate_page("_data/navigation.yml", nav_content)
 
     about_content = f"""---
 permalink: /
@@ -325,6 +328,59 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
 
 """    
     generate_page("_pages/about.md", about_content)
+
+    # --- Generate News Page ---
+    print("\n--- Generating News Page ---")
+    news_items = []
+
+    # Process awards
+    for award_string in personal_info['awards']:
+        year_match = re.search(r'(\d{4})', award_string)
+        if year_match:
+            year = int(year_match.group(1))
+            # Use a placeholder date for sorting, like June 1st of that year
+            date_obj = datetime(year, 6, 1)
+            description = award_string.rsplit(',', 1)[0]
+            news_items.append({"date": date_obj, "description": f"🏆 Received **{description}**."})
+
+    # Process publications (only published ones)
+    for pub in publications_data:
+        if "Under Review" not in pub['citation']:
+            date_obj = datetime.strptime(pub['date'], '%Y-%m-%d')
+            link = f"[{pub['title']}]({pub['paperurl']})" if pub['paperurl'] else f"'{pub['title']}'"
+            news_items.append({"date": date_obj, "description": f"📄 Our paper, **{link}**, was published in *{pub['venue']}*."})
+
+    # Process talks
+    for talk in talks_data:
+        date_obj = datetime.strptime(talk['date'], '%Y-%m-%d')
+        description = f"🎤 Gave a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
+        if talk.get('description'):
+            description += f" ({talk['description']})"
+        news_items.append({"date": date_obj, "description": description})
+
+    # Sort all news items in reverse chronological order
+    news_items.sort(key=lambda x: x['date'], reverse=True)
+
+    # Build the news page content
+    news_page_content = """---\nlayout: archive\ntitle: "News"\npermalink: /news/\nauthor_profile: true\n---\n\nA timeline of recent achievements, publications, and presentations.\n\n"""
+    current_year = None
+    for item in news_items:
+        year = item['date'].year
+        if year != current_year:
+            news_page_content += f"## {year}\n"
+            current_year = year
+        
+        # Format date as "Month Day"
+        date_str = item['date'].strftime('%B %d')
+        news_page_content += f"* **{date_str}**: {item['description']}\n"
+
+    generate_page("_pages/news.md", news_page_content)
+
+
+
+
+
+
 
 
     cv_content = """---\nlayout: archive\ntitle: "CV"\npermalink: /cv/\nauthor_profile: true\n---\n{% include base_path %}\n<a href="/files/CV_Kshitij_Dahal.pdf" class="btn btn--primary" target="_blank">Download Full CV (PDF)</a>\n\n### Education\n"""
