@@ -15,7 +15,7 @@ This page features news articles, op-eds, and media mentions related to my work.
 ## Professional Media Citations
 * **[Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal](https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html)**. *China Daily*, 2025.
 * **[Open burning main cause of air pollution](https://risingnepaldaily.com/news/58977)**. *The Rising Nepal*, 2025.
-* **[Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News](https://www.youtube.com/watch?v=UFb_3MyJpew)**. *WION TV*, 2025.
+* **[Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal - World News](https://www.youtube.com/watch?v=UFb_3MyJpew)**. *WION TV*, 2025.
 * **[Ignored infernos](https://kathmandupost.com/editorial/2025/03/18/ignored-infernos)**. *The Kathmandu Post (EDITORIAL)*, 2025.
 * **[Wildfires put 500m tonnes of carbon— and tourism—at risk](https://asianews.network/nepals-wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk)**. *Asia News Network*, 2025.
 * **[Wildfire season has begun, but the worst is yet to come](https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come)**. *The Himalayan Times*, 2025.
