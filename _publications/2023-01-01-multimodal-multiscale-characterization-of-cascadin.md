@@ -7,5 +7,3 @@ date: '2023-01-01'
 paperurl: 'https://doi.org/10.1080/19475705.2022.2162443'
 citation: 'Talchabhadel, R., Maskey, S., Gouli, M. R., <strong>Dahal, K.</strong>*, et al. (2023). &quot;Multimodal multiscale characterization of cascading hazard on mountain terrain.&quot; <i>Geomatics, Natural Hazards and Risk</i>.'
 ---
-
-Recommended citation: Talchabhadel, R., Maskey, S., Gouli, M. R., <strong>Dahal, K.</strong>*, et al. (2023). &quot;Multimodal multiscale characterization of cascading hazard on mountain terrain.&quot; <i>Geomatics, Natural Hazards and Risk</i>.

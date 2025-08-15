@@ -7,5 +7,3 @@ date: '2023-01-01'
 paperurl: 'https://doi.org/10.1016/j.scitotenv.2023.162242'
 citation: 'Gnyawali, K., <strong>Dahal, K.</strong>, Talchabhadel, R., & Nirandjan, S. (2023). &quot;Framework for rainfall-triggered landslide-prone critical infrastructure zonation.&quot; <i>Science of the Total Environment</i>.'
 ---
-
-Recommended citation: Gnyawali, K., <strong>Dahal, K.</strong>, Talchabhadel, R., & Nirandjan, S. (2023). &quot;Framework for rainfall-triggered landslide-prone critical infrastructure zonation.&quot; <i>Science of the Total Environment</i>.
