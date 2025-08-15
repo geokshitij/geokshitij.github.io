@@ -20,7 +20,7 @@ repository               : "geokshitij/geokshitij.github.io" # IMPORTANT: This i
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "profile.png" # You will need to upload a photo named profile.png to the /images/ folder.
+  avatar           : "profile.jpg" # You will need to upload a photo named profile.jpg to the /images/ folder.
   name             : "Kshitij Dahal"
   bio              : "PhD Candidate at ASU. I work on data-driven hydrology, decision support systems, earth observation, and machine learning for sustainable development."
   location         : "Tempe, AZ, USA"
