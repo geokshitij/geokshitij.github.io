@@ -5,7 +5,6 @@ import re
 # =============================================================================
 # DATA SECTION
 # This is the single source of truth for your website's content,
-# populated from your CV.
 # =============================================================================
 
 personal_info = {
@@ -317,9 +316,24 @@ if __name__ == "__main__":
     publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n{% if site.author.googlescholar %}\n  <div class="wordwrap">You can also find my articles on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</div>\n{% endif %}\n{% include base_path %}\n{% for post in site.publications reversed %}\n  {% include archive-single.html %}\n{% endfor %}"""
     generate_page("_pages/publications.html", publications_page_content)
     
-    blog_page_content = """---\nlayout: archive\ntitle: "Blog"\npermalink: /blog/\nauthor_profile: true\n---\n{% include base_path %}\n{% capture written_year %}'None'{% endcapture %}\n{% for post in site.posts reversed %}\n  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}\n  {% if year != written_year %}\n    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>\n    {% capture written_year %}{{ year }}{% endcapture %}\n  {% endif %}\n  {% include archive-single.html %}\n{% endfor %}"""
+    blog_page_content = """---
+layout: archive
+title: "Blog"
+permalink: /blog/
+author_profile: true
+---
+{% include base_path %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in site.posts reversed %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% if year != written_year %}
+<h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+{% capture written_year %}{{ year }}{% endcapture %}
+{% endif %}
+{% include archive-single.html %}
+{% endfor %}"""
     generate_page("_pages/blog.md", blog_page_content)
-
+    
     print("\n--- Generating Collection Files ---")
     generate_collection_files(publications_data, "_publications", "publications", "publication")
     generate_collection_files(talks_data, "_talks", "talks", "talks", type_key="type", default_type="Talk")
