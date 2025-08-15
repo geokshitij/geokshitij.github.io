@@ -7,6 +7,8 @@ main:
     url: /teaching/    
   - title: "Media"
     url: /media/
+  - title: "Blog"
+    url: /blog/
   - title: "Resources"
     url: /resources/
   - title: "CV"

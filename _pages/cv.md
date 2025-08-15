@@ -6,7 +6,6 @@ author_profile: true
 ---
 {% include base_path %}
 <a href="/files/CV_Kshitij_Dahal.pdf" class="btn btn--primary" target="_blank">Download Full CV (PDF)</a>
-
 ### Education
 * PhD, Civil, Environmental and Sustainable Engineering, *Arizona State University, Arizona, USA*, May 2026 (Expected)
 * MS (en route to PhD), Civil, Environmental and Sustainable Engineering, *Arizona State University, Arizona, USA*, Aug 2025
@@ -28,10 +27,8 @@ author_profile: true
 
 ### Publications
 <ul>{% for post in site.publications reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>
-  
 ### Talks & Presentations
 <ul>{% for post in site.talks reversed %}{% include archive-single-talk-cv.html %}{% endfor %}</ul>
-  
 ### Teaching
 <ul>{% for post in site.teaching reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>
 
