@@ -309,19 +309,34 @@ if __name__ == "__main__":
     cv_content += """\n\n### Academic Services\n#### Editorial Advisory Board\n* *Regional Environmental Change, Springer Nature*, 2024 – Present\n\n#### Reviewer\n* *Earth’s Future*, 2024 – Present\n* *International Journal of Disaster Risk Reduction, Elsevier*, 2023 – Present\n* *Humanities and Social Sciences Communications, Nature*, 2023 – Present\n* *Regional Environmental Change, Springer Nature*, 2021 – Present\n* *Anthropocene Science, Springer Nature*, 2021 – Present\n* *PLOS Sustainability and Transformation*, 2021 – Present\n* *The Geographic Base, Nepal Journals Online*, 2020 – Present\n\n#### Memberships\n* Member, American Society of Civil Engineers, USA, 2022 – Present\n* Member, American Geophysical Union, USA, 2020 – Present\n* Registered A class Civil Engineer, Nepal Engineering Council, Nepal, 2020 – Present"""
     generate_page("_pages/cv.md", cv_content)
 
-    media_content = """---\nlayout: archive\ntitle: "Media"\npermalink: /media/\nauthor_profile: true\n---\nThis page features news articles, op-eds, and media mentions related to my work.\n"""
+
+
+    media_content = """---
+layout: archive
+title: "Media"
+permalink: /media/
+author_profile: true
+---
+This page features news articles, op-eds, and media mentions related to my work.
+"""
     grouped_media = {}
-    [grouped_media.setdefault(item.get("type", "General"), []).append(item) for item in media_data]
+    for item in media_data:
+        grouped_media.setdefault(item.get("type", "General"), []).append(item)
+    
     if "Op-Ed" in grouped_media:
         media_content += "\n## News Columns (Op-Ed)\n"
         for item in grouped_media["Op-Ed"]:
             media_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
+            
     if "Media Citation" in grouped_media:
         media_content += "\n## Professional Media Citations\n"
         for item in grouped_media["Media Citation"]:
             media_content += f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}.\n"
+            
     generate_page("_pages/media.md", media_content)
 
+    
+    
     resources_content = """---\nlayout: archive\ntitle: "Resources"\npermalink: /resources/\nauthor_profile: true\n---\n"""
     resources_content += "\n## Courses Developed\n"
     for item in courses_data:
