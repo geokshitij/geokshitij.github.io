@@ -1,7 +1,6 @@
 # /geokshitij.github.io/generate_content.py
 import os
 import re
-from datetime import datetime
 
 # =============================================================================
 # DATA SECTION
@@ -285,23 +284,22 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             f.write(content)
         print(f"  ✓ Created {filepath}")
 
+
 if __name__ == "__main__":
     for folder in ["_publications", "_talks", "_teaching", "_posts"]:
         clear_folder(folder)
 
     print("\n--- Generating Core Pages & Navigation ---")
-    # nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
-        nav_content = """main:\n  - title: "News"\n    url: /news/\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+    
+    # THIS IS THE LINE TO FIX. Make sure it's indented just like the 'print' above it.
+    nav_content = """main:\n  - title: "News"\n    url: /news/\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
-    # generate_page("_data/navigation.yml", nav_content)
 
     about_content = f"""---
 permalink: /
 title: "About Me"
 author_profile: true
 ---
-Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
-
 My work is deeply rooted in my experiences growing up in Nepal. During my undergraduate studies in Civil Engineering, I came face-to-face with the real-world impact of natural hazards. I saw how floods, droughts, and landslides could disrupt lives and entire communities. These events are not just statistics. They are powerful reminders that our ability to anticipate and adapt to our changing planet is still very limited.
 
 This realization became my driving force. I knew I didn't want to just build tools that watch our planet struggle. I wanted to engineer solutions that could actively help us build a more sustainable and resilient future. My research is my attempt to do just that. I focus on bridging the gap between complex scientific knowledge and the actionable, accessible tools that people need. To do this, I've built my work on three core pillars.
@@ -325,8 +323,7 @@ If Earth Observation data is the fuel, then Artificial Intelligence is the engin
 My work involves engineering a suite of intelligent software and models. These tools are designed for scalability and transferability. A major part of my PhD is dedicated to this. I am building next-generation streamflow forecasting systems, particularly for arid regions like Arizona. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. My approach is different. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
 
 My ultimate goal is simple. I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
-
-"""    
+"""
     generate_page("_pages/about.md", about_content)
 
     # --- Generate News Page ---
@@ -375,24 +372,7 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
         news_page_content += f"* **{date_str}**: {item['description']}\n"
 
     generate_page("_pages/news.md", news_page_content)
-
-    cv_content = """---\nlayout: archive\ntitle: "CV"\npermalink: /cv/\nauthor_profile: true\n---\n{% include base_path %}\n<a href="/files/CV_Kshitij_Dahal.pdf" class="btn btn--primary" target="_blank">Download Full CV (PDF)</a>\n\n### Education\n"""
-    for item in personal_info['education']:
-        cv_content += f"* {item['degree']}, *{item['university']}*, {item['period']}\n"
-    cv_content += "\n### Academic Employment\n"
-    for item in personal_info['employment']:
-        cv_content += f"* **{item['role']}**\n  * {item['institution']}\n  * {item['period']}\n"
-    cv_content += "\n### Honors and Awards\n"
-    for item in personal_info['awards']:
-        cv_content += f"* {item}\n"
-    cv_content += """\n### Publications\n<ul>{% for post in site.publications reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>\n\n### Talks & Presentations\n<ul>{% for post in site.talks reversed %}{% include archive-single-talk-cv.html %}{% endfor %}</ul>\n\n### Teaching\n<ul>{% for post in site.teaching reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>"""
-    cv_content += """\n\n### Leadership and Services\n* **Executive Committee (Elected)**, *Young Earth System Scientists (YESS) Community*, July 2025 – June 2026\n* **Community Science Fellow**, *American Geophysical Union*, May 2024 – Present\n* **Regional Representative (South East Asia)**, *Young Earth System Scientists (YESS) Community*, Jan 2021 – Jan 2022\n* **Coordinator, Capacity Building**, *U-Inspire Alliance*, May 2019 – Present"""
-    cv_content += """\n\n### Academic Services\n#### Editorial Advisory Board\n* *Regional Environmental Change, Springer Nature*, 2024 – Present\n\n#### Reviewer\n* *Earth’s Future*, 2024 – Present\n* *International Journal of Disaster Risk Reduction, Elsevier*, 2023 – Present\n* *Humanities and Social Sciences Communications, Nature*, 2023 – Present\n* *Regional Environmental Change, Springer Nature*, 2021 – Present\n* *Anthropocene Science, Springer Nature*, 2021 – Present\n* *PLOS Sustainability and Transformation*, 2021 – Present\n* *The Geographic Base, Nepal Journals Online*, 2020 – Present\n\n#### Memberships\n* Member, American Society of Civil Engineers, USA, 2022 – Present\n* Member, American Geophysical Union, USA, 2020 – Present\n* Registered A class Civil Engineer, Nepal Engineering Council, Nepal, 2020 – Present"""
-    generate_page("_pages/cv.md", cv_content)
-
-
-
-
+    
     
     # --- Generate Media Page ---
     media_content = """---
