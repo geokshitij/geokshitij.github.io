@@ -123,9 +123,11 @@ media_data = [
         "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"
     },
     {
-        "type": "Media Citation", "year": "2025",
+        "type": "Media Citation",
+        "year": "2025",
         "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News",
-        "venue": "WION TV", "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
+        "venue": "WION TV",
+        "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
     },
     {
         "type": "Media Citation", "year": "2025",
