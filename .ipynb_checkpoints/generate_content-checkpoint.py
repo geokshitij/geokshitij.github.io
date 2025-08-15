@@ -376,13 +376,6 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
 
     generate_page("_pages/news.md", news_page_content)
 
-
-
-
-
-
-
-
     cv_content = """---\nlayout: archive\ntitle: "CV"\npermalink: /cv/\nauthor_profile: true\n---\n{% include base_path %}\n<a href="/files/CV_Kshitij_Dahal.pdf" class="btn btn--primary" target="_blank">Download Full CV (PDF)</a>\n\n### Education\n"""
     for item in personal_info['education']:
         cv_content += f"* {item['degree']}, *{item['university']}*, {item['period']}\n"
