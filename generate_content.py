@@ -83,11 +83,7 @@ teaching_data = [
 
 
 
-
-
-
-
-# (This goes inside your generate_content.py file, in the DATA SECTION)
+# (This REPLACES the entire media_data list in your generate_content.py file)
 
 media_data = [
     # Op-Eds
@@ -117,49 +113,100 @@ media_data = [
     },
     # Media Citations
     {
-        "type": "Media Citation",
-        "year": "2025",
+        "type": "Media Citation", "year": "2025",
         "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal",
-        "venue": "China Daily",
-        "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"
+        "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"
     },
     {
-        "type": "Media Citation",
-        "year": "2025",
-        "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal",
-        "venue": "WION TV",
-        "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
+        "type": "Media Citation", "year": "2025",
+        "title": "Open burning main cause of air pollution",
+        "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"
     },
     {
-        "type": "Media Citation",
-        "year": "2025",
+        "type": "Media Citation", "year": "2025",
+        "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News",
+        "venue": "WION TV", "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
         "title": "Ignored infernos (EDITORIAL)",
-        "venue": "The Kathmandu Post",
-        "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"
+        "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"
     },
     {
-        "type": "Media Citation",
-        "year": "2025",
+        "type": "Media Citation", "year": "2025",
         "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk",
-        "venue": "The Kathmandu Post",
-        "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"
+        "venue": "Asia News Network", "url": "https://asianews.network/nepals-wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"
     },
     {
-        "type": "Media Citation",
-        "year": "2024",
+        "type": "Media Citation", "year": "2025",
+        "title": "Wildfire season has begun, but the worst is yet to come",
+        "venue": "The Himalayan Times", "url": "https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk",
+        "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Loss of Biodiversity Due to Wildfire (डढेलोबाट जैविक विविधता गुम्ने खतरा)",
+        "venue": "Himal Khabar", "url": "https://www.himalkhabar.com/news/144165"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Study Report: Forests at Risk of Wildfire Due to Climate Crisis (अध्ययन रिपोर्ट : वन क्षेत्र जलवायु संकट कै कारण डढेलोको जोखिममा)",
+        "venue": "Jalbayu (Climate)", "url": "https://www.jalbayu.com/news/2025-03-15-2271"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "Artha Pranali (Economic System)", "url": "https://arthapranali.com/2025/03/11828"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Forest Wildfires Pose a Threat to Carbon and Biodiversity (वन डढेलोले कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "Everestpedia", "url": "https://www.everestpedia.com/detail/3646"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "‘Forest Wildfires Threaten Biodiversity’ (‘वन डढेलोले जैविक विविधतामा खतरा’)",
+        "venue": "Green Economy", "url": "https://greeconomy.com/fire-impact-on-biodiversity"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "KendraBindu (Central Point)", "url": "https://kendrabindu.com/social-affairs/404665"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Forest Fires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५० करोड टन कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "Jal Sarokar (Water Concern)", "url": "https://jalasarokar.com/news/forest-fires-in-nepal-threaten-500-million-tons-of-carbon-and-biodiversity-2260"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५ सय मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "Kavre Khabar (Kavre News)", "url": "https://www.kavrekhabar.com/main-news/2025/03/16/3717"
+    },
+    {
+        "type": "Media Citation", "year": "2025",
+        "title": "Wildfires in Nepal pose threat to 500 million tons of carbon and biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
+        "venue": "Arthik Digital News", "url": "https://www.eaarthik.com/2025/03/117227/"
+    },
+    {
+        "type": "Media Citation", "year": "2024",
         "title": "Back to the land in the cities",
-        "venue": "Nepali Times",
-        "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"
+        "venue": "Nepali Times", "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"
     },
     {
-        "type": "Media Citation",
-        "year": "2021",
+        "type": "Media Citation", "year": "2021",
         "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective",
-        "venue": "PreventionWeb, UNDRR",
-        "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"
+        "venue": "PreventionWeb, UNDRR", "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"
     },
-    # --- Add any other media citations here ---
 ]
+
+
+
+
 
 
 
