@@ -1,7 +1,7 @@
 ---
 title: "Policy Relevance of IPCC Reports for the SDGs and Beyond"
 collection: publications
-permalink: /publication/policy-relevance-of-ipcc-reports-for-the-sdgs-and-
+permalink: /publication/2025-01-01-policy-relevance-of-ipcc-reports-for-the-sdgs-and-
 venue: 'Resources, Environment and Sustainability'
 date: '2025-01-01'
 paperurl: 'https://doi.org/10.1016/j.resenv.2025.100192'

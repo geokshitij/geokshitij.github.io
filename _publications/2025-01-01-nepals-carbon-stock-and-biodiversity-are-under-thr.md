@@ -1,7 +1,7 @@
 ---
 title: "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires"
 collection: publications
-permalink: /publication/nepals-carbon-stock-and-biodiversity-are-under-thr
+permalink: /publication/2025-01-01-nepals-carbon-stock-and-biodiversity-are-under-thr
 venue: 'Information Geography'
 date: '2025-01-01'
 paperurl: 'https://doi.org/10.1016/j.infgeo.2025.100003'

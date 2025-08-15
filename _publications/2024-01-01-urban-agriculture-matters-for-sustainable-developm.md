@@ -1,7 +1,7 @@
 ---
 title: "Urban agriculture matters for sustainable development"
 collection: publications
-permalink: /publication/urban-agriculture-matters-for-sustainable-developm
+permalink: /publication/2024-01-01-urban-agriculture-matters-for-sustainable-developm
 venue: 'Cell Reports Sustainability'
 date: '2024-01-01'
 paperurl: 'https://doi.org/10.1016/j.crsus.2024.100217'

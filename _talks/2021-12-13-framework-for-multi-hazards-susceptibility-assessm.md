@@ -1,7 +1,7 @@
 ---
 title: "Framework for multi-hazards susceptibility assessment in Google Earth Engine"
 collection: talks
-permalink: /talks/framework-for-multi-hazards-susceptibility-assessm
+permalink: /talks/2021-12-13-framework-for-multi-hazards-susceptibility-assessm
 type: "Conference Poster"
 venue: 'AGU Fall Meeting 2021'
 date: '2021-12-13'

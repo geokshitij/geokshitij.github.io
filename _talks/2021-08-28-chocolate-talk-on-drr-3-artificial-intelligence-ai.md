@@ -1,7 +1,7 @@
 ---
 title: "Chocolate Talk on DRR #3 Artificial intelligence (AI) for disaster risk reduction"
 collection: talks
-permalink: /talks/chocolate-talk-on-drr-3-artificial-intelligence-ai
+permalink: /talks/2021-08-28-chocolate-talk-on-drr-3-artificial-intelligence-ai
 type: "Moderator"
 venue: 'U-INSPIRE Alliance'
 date: '2021-08-28'

@@ -1,7 +1,7 @@
 ---
 title: "National landslides database and susceptibility assessment of Nepal"
 collection: talks
-permalink: /talks/national-landslides-database-and-susceptibility-as
+permalink: /talks/2021-12-13-national-landslides-database-and-susceptibility-as
 type: "Conference Poster"
 venue: 'AGU Fall Meeting 2021'
 date: '2021-12-13'

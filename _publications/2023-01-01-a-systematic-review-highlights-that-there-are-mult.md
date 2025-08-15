@@ -1,7 +1,7 @@
 ---
 title: "A systematic review highlights that there are multiple benefits of urban agriculture besides food"
 collection: publications
-permalink: /publication/a-systematic-review-highlights-that-there-are-mult
+permalink: /publication/2023-01-01-a-systematic-review-highlights-that-there-are-mult
 venue: 'Global Food Security'
 date: '2023-01-01'
 paperurl: 'https://doi.org/10.1016/j.gfs.2023.100700'

@@ -1,7 +1,7 @@
 ---
 title: "Explainable Machine Learning in Groundwater Potential Mapping"
 collection: talks
-permalink: /talks/explainable-machine-learning-in-groundwater-potent
+permalink: /talks/2024-03-13-explainable-machine-learning-in-groundwater-potent
 type: "Invited Webinar"
 venue: 'UNESCO GWYN'
 date: '2024-03-13'
