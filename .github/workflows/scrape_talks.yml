@@ -1,3 +1,5 @@
+# .github/workflows/scrape_talks.yml
+
 name: Scrape Talk Locations
 
 on:
@@ -35,7 +37,9 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add talkmap/ org-locations.js talkmap_out.ipynb
+        # Corrected line: Removed the incorrect path for org-locations.js
+        # The file is already included by adding the 'talkmap/' directory.
+        git add talkmap/ talkmap_out.ipynb
         # The following command will only commit if there are staged changes
         git commit -m "Automated update of talk locations map" || echo "No changes to commit"
         # The following command will only push if there is a new commit
