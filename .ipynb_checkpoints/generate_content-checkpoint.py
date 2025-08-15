@@ -311,6 +311,9 @@ if __name__ == "__main__":
 
 
 
+
+    
+    # --- Generate Media Page ---
     media_content = """---
 layout: archive
 title: "Media"
@@ -319,20 +322,28 @@ author_profile: true
 ---
 This page features news articles, op-eds, and media mentions related to my work.
 """
+    # Group the data by type
     grouped_media = {}
     for item in media_data:
         grouped_media.setdefault(item.get("type", "General"), []).append(item)
     
+    # Build the content line by line to avoid indentation issues
+    content_lines = []
+    
     if "Op-Ed" in grouped_media:
-        media_content += "\n## News Columns (Op-Ed)\n"
+        content_lines.append("\n## News Columns (Op-Ed)")
         for item in grouped_media["Op-Ed"]:
-            media_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
+            line = f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*."
+            content_lines.append(line)
             
     if "Media Citation" in grouped_media:
-        media_content += "\n## Professional Media Citations\n"
+        content_lines.append("\n## Professional Media Citations")
         for item in grouped_media["Media Citation"]:
-            media_content += f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}.\n"
-            
+            line = f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}."
+            content_lines.append(line)
+    
+    # Join the lines and generate the page
+    media_content += "\n" + "\n".join(content_lines)
     generate_page("_pages/media.md", media_content)
 
     
