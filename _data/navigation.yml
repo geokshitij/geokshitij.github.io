@@ -1,20 +1,13 @@
-# _data/navigation.yml
-
 main:
   - title: "Publications"
     url: /publications/
-
   - title: "Talks"
     url: /talks/    
-
   - title: "Teaching"
     url: /teaching/    
-    
   - title: "Media"
     url: /media/
-        
   - title: "Resources"
     url: /resources/
-    
   - title: "CV"
     url: /cv/

@@ -6,7 +6,7 @@ type: "Conference Poster"
 venue: 'ASU Flow 2024'
 date: '2024-10-21'
 location: 'Arizona State University, USA'
-description: 'This poster, which received the Outstanding Poster Award, presents a novel framework for enhancing hydrological forecasting using deep learning techniques.'
+description: 'This poster received the Outstanding Poster Award.'
 ---
 
-This poster, which received the Outstanding Poster Award, presents a novel framework for enhancing hydrological forecasting using deep learning techniques.
+This poster received the Outstanding Poster Award.
