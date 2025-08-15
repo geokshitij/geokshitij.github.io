@@ -23,18 +23,18 @@ author:
   avatar           : "profile.jpg" # You will need to upload a photo named profile.jpg to the /images/ folder.
   name             : "Kshitij Dahal"
   bio              : "PhD Candidate at Arizona State University"
-  location         : "Tempe, AZ, USA"
+  # location         : "Tempe, AZ, USA"
   # employer         : "Arizona State University"
-  uri              : "https://search.asu.edu/profile/4585448"
+  # uri              : "https://search.asu.edu/profile/4585448"
   # email            : "kdahal3@asu.edu" 
 
   # Academic websites - I've left these blank. Please find your profile URLs and paste them here.
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works"
   orcid            : "https://orcid.org/0000-0002-5563-7629"
-  researchgate     : "https://www.researchgate.net/profile/Kshitij-Dahal"
+  # researchgate     : "https://www.researchgate.net/profile/Kshitij-Dahal"
 
   # Repositories and software development
-  github           : "geokshitij"
+  # github           : "geokshitij"
 
   # Social media - Add your username if you want the icon to appear.
   linkedin         : geokshitij
