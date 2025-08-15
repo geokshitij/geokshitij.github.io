@@ -5,14 +5,18 @@ from datetime import datetime
 
 # =============================================================================
 # DATA SECTION
-# This is the single source of truth for your website's content,
+# This is the single source of truth for the website's content,
 # =============================================================================
 
 
+# This list allows you to manually add news that isn't an award or talk.
 other_news_data = [
-    {"date": "2022-12-01", "description": "Started my PhD journey at Arizona State University."},
+    {"date": "2024-10-21", "description": "🏆 Received the **Outstanding Poster Award** for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
+    {"date": "2024-05-15", "description": "✨ Selected as a **Community Science Fellow** by the American Geophysical Union's Thriving Earth Exchange."},
+    {"date": "2023-06-12", "description": "🏆 Won **1st place** in the SpaceHack for Sustainability Hackathon at Arizona State University."},
+    {"date": "2022-12-01", "description": "✨ Started my PhD journey at Arizona State University."},
+    {"date": "2021-09-17", "description": "🏆 Won **1st place** in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences."},
 ]
-
 
 personal_info = {
     "summary": "I work on data-driven hydrology, decision support systems in geosciences, and the innovative use of earth observation and machine learning for achieving sustainable development.",
@@ -302,8 +306,11 @@ if __name__ == "__main__":
     nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
 
-    # --- DELETE the old 'about_content' and 'news_page_content' blocks ---
-    # --- and REPLACE them with this new combined block ---
+
+
+
+
+# Find the block that generates the main page and REPLACE it with this one.
 
     # --- Generate Main Page (About + News) ---
     print("\n--- Generating Main Page ---")
@@ -342,27 +349,23 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
     # --- Now, build the News timeline ---
     news_items = []
 
-    # Process awards
-    for award_string in personal_info['awards']:
-        year_match = re.search(r'(\d{4})', award_string)
-        if year_match:
-            year = int(year_match.group(1))
-            date_obj = datetime(year, 6, 1) # Placeholder date for sorting
-            description = award_string.rsplit(',', 1)[0]
-            news_items.append({"date": date_obj, "description": f"🏆 Received **{description}**."})
-
-    # Process talks
+    # Process talks with smarter grammar
     for talk in talks_data:
         date_obj = datetime.strptime(talk['date'], '%Y-%m-%d')
-        description = f"🎤 Gave a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
-        if talk.get('description'):
-            description += f" ({talk['description']})"
+        
+        # Smarter description based on talk type
+        if talk['type'].lower() == 'moderator':
+            description = f"🎤 Moderated the session, **'{talk['title']}'**, at {talk['venue']}."
+        else:
+            description = f"🎤 Presented a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
+        
         news_items.append({"date": date_obj, "description": description})
         
-    # Process other custom news
+    # Process other custom news from the new list
     for item in other_news_data:
         date_obj = datetime.strptime(item['date'], '%Y-%m-%d')
-        news_items.append({"date": date_obj, "description": f"✨ {item['description']}"})
+        # The description is already formatted, so we just add it
+        news_items.append({"date": date_obj, "description": item['description']})
 
     # Sort all news items in reverse chronological order
     news_items.sort(key=lambda x: x['date'], reverse=True)
@@ -373,7 +376,7 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
     for item in news_items:
         year = item['date'].year
         if year != current_year:
-            main_page_content += f"\n### {year}\n" # Use H3 for sub-section
+            main_page_content += f"\n### {year}\n"
             current_year = year
         
         date_str = item['date'].strftime('%B %d')
@@ -381,7 +384,12 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
 
     # Generate the final combined page
     generate_page("_pages/about.md", main_page_content)
+
+
     
+    
+
+
     
     # --- Generate Media Page ---
     media_content = """---
