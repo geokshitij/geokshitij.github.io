@@ -11,12 +11,14 @@ from datetime import datetime
 
 # This list allows you to manually add news that isn't an award or talk.
 other_news_data = [
+    {"date": "2025-07-29", "description": "🎓 Officially became a **PhD Candidate** after successfully passing my comprehensive exam."},
     {"date": "2024-10-21", "description": "🏆 Received the **Outstanding Poster Award** for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
     {"date": "2024-05-15", "description": "✨ Selected as a **Community Science Fellow** by the American Geophysical Union's Thriving Earth Exchange."},
     {"date": "2023-06-12", "description": "🏆 Won **1st place** in the SpaceHack for Sustainability Hackathon at Arizona State University."},
     {"date": "2022-12-01", "description": "✨ Started my PhD journey at Arizona State University."},
     {"date": "2021-09-17", "description": "🏆 Won **1st place** in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences."},
 ]
+
 
 personal_info = {
     "summary": "I work on data-driven hydrology, decision support systems in geosciences, and the innovative use of earth observation and machine learning for achieving sustainable development.",

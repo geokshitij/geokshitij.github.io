@@ -32,6 +32,9 @@ My ultimate goal is simple. I want to contribute to a future where scientific in
 
 ## News & Updates
 
+### 2025
+* **July 29**: 🎓 Officially became a **PhD Candidate** after successfully passing my comprehensive exam.
+
 ### 2024
 * **October 21**: 🎤 Presented a conference poster, **'A Framework to Improve Hydrological Forecasting with Deep Learning'**, at ASU Flow 2024.
 * **October 21**: 🏆 Received the **Outstanding Poster Award** for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium.
