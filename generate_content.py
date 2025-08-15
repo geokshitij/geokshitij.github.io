@@ -1,10 +1,11 @@
-# generate_content.py (Final Corrected Version)
+# /geokshitij.github.io/generate_content.py
 import os
 import re
 
 # =============================================================================
 # DATA SECTION
-# This is the single source of truth for your website's content.
+# This is the single source of truth for your website's content,
+# populated from your CV.
 # =============================================================================
 
 personal_info = {
@@ -22,54 +23,118 @@ personal_info = {
     ],
     "awards": [
         "Travel grant, CIROH Developers Conference, The University of Vermont, USA, 2025",
-        "Community Science Fellow, Thriving Earth Exchange, American Geophysical Union, 2024 – 2026",
+        "Community Science Fellow, Thriving Earth Exchange, American Geophysical Union (https://thrivingearthexchange.org/project/lumberton-nc/), 2024 – 2026",
+        "Outstanding Reviewer Award, Earth’s Future, American Geophysical Union, 2025",
+        "Full Scholarship to the Snow Measurement Field School, CUAHSI, Mammoth Lakes, California (5 days residential school), 2025",
+        "HydroLearn Fellowship, Cooperative Institute for Research to Operations in Hydrology, 2024",
+        "Outstanding Poster Award for “A Framework to Improve Hydrological Forecasting with Deep Learning”, ASU Flow 2024, Arizona State University, AZ, USA, 2024",
+        "Travel grant, CIROH Developers Conference, The University of Alabama, USA, 2024",
+        "Travel Grant, Remote Sensing of the Water Cycle Chapman, HI, USA, 2024",
+        "Water Quality Tiny Grant (HaikuYourResearch), American Geophysical Union, AGU Fall Meeting 2023, 2023",
+        "Recipient of the Graphical Abstract Competition Prize, American Geophysical Union, 2023",
+        "Full Funding Award for Summer Graduate Writing Camp (June 12-16, 2023) at Arizona State University, 2023",
+        "Hackathon Competition Winner (1st place), SpaceHack for Sustainability, Arizona State University, 2023",
+        "Travel Grant, DRI Technical Conference 2022, India, 2022",
+        "Coalition for Disaster Resilient Infrastructure (CDRI) fellow, 2021",
+        "Hackathon Competition Winner (1st place), 3rd NOAA Workshop on Leveraging AI in Environmental Sciences, USA, 2021",
+        "Travel Grant, 36th International Geological Congress, India (The event was canceled due to COVID-19), 2020",
     ]
 }
 
 publications_data = [
-    {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., et al. (2025). &quot;Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
-    # Add all other publications here...
+    {"title": "Developing a framework for assessment of the school’s exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2025-12-31", "paperurl": "", "citation": "Bishui, C., … & <strong>Dahal. K.</strong> (Under Review). &quot;Developing a framework for assessment of the school’s exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
+    {"title": "Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions", "venue": "Applied Soft Computing", "date": "2025-12-30", "paperurl": "", "citation": "<strong>Dahal, K.</strong>, Gupta, A., Bokati, L. & Kumar, S.* (Under Review). &quot;Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions.&quot; <i>Applied Soft Computing</i>."},
+    {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). &quot;Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
+    {"title": "Policy Relevance of IPCC Reports for the SDGs and Beyond", "venue": "Resources, Environment and Sustainability", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.resenv.2025.100192", "citation": "Pradhan, P., Joshi, S., <strong>Dahal, K.</strong>, Hu, Y., Subedi, D. R., Putra, M. P. I. F., Vaidya, S., Pant, L. P., Dhakal, S., Hubacek, K., Rupakheti, M., Roberts, D., & van den Hurk, B. (2025). &quot;Policy Relevance of IPCC Reports for the SDGs and Beyond.&quot; <i>Resources, Environment and Sustainability (Invited Editorial)</i>."},
+    {"title": "Urban agriculture matters for sustainable development", "venue": "Cell Reports Sustainability", "date": "2024-01-01", "paperurl": "https://doi.org/10.1016/j.crsus.2024.100217", "citation": "Pradhan, P., Subedi, D. R., <strong>Dahal, K.</strong>, Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). &quot;Urban agriculture matters for sustainable development.&quot; <i>Cell Reports Sustainability</i>."},
+    {"title": "Identification of groundwater potential zones in data-scarce mountainous region using explainable machine learning", "venue": "Journal of Hydrology", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.jhydrol.2023.130417", "citation": "<strong>Dahal, K.</strong>*, Sharma, S., Shakya, A., Talchabhadel, R., Adhikari, S., Pokharel, A., Sheng, Z., Pradhan, A. M. S., & Kumar, S. (2023). &quot;Identification of groundwater potential zones in data-scarce mountainous region using explainable machine learning.&quot; <i>Journal of Hydrology</i>."},
+    {"title": "Mapping landslide susceptibility and critical infrastructure for spatial decision-making", "venue": "Sustainable and Resilient Infrastructure", "date": "2023-01-01", "paperurl": "https://www.tandfonline.com/doi/full/10.1080/23789689.2023.2181552", "citation": "<strong>Dahal, K.</strong>*, & Gnyawali, K.R., (2023) &quot;Mapping landslide susceptibility and critical infrastructure for spatial decision-making.&quot; <i>Sustainable and Resilient Infrastructure</i>."},
+    {"title": "Multimodal multiscale characterization of cascading hazard on mountain terrain", "venue": "Geomatics, Natural Hazards and Risk", "date": "2023-01-01", "paperurl": "https://doi.org/10.1080/19475705.2022.2162443", "citation": "Talchabhadel, R., Maskey, S., Gouli, M. R., <strong>Dahal, K.</strong>*, Thapa, A., Sharma, S., Dixit, A. M., & Kumar, S. (2023). &quot;Multimodal multiscale characterization of cascading hazard on mountain terrain.&quot; <i>Geomatics, Natural Hazards and Risk</i>, 14(1), 2162443."},
+    {"title": "Framework for rainfall-triggered landslide-prone critical infrastructure zonation", "venue": "Science of the Total Environment", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.scitotenv.2023.162242", "citation": "Gnyawali, K., <strong>Dahal, K.</strong>, Talchabhadel, R., & Nirandjan, S. (2023). &quot;Framework for rainfall-triggered landslide-prone critical infrastructure zonation.&quot; <i>Science of the Total Environment</i>, 872, 162242."},
+    {"title": "Land use and land cover change implications on agriculture and natural resource management of Koah Nheaek, Mondulkiri province, Cambodia", "venue": "Remote Sensing Applications: Society and Environment", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.rsase.2022.100895", "citation": "Teck, V., Poortinga, A., Riano, C., <strong>Dahal, K.</strong>, Legaspi, R. M. B., Ann, V., & Chea, R. (2023). &quot;Land use and land cover change implications on agriculture and natural resource management of Koah Nheaek, Mondulkiri province, Cambodia.&quot; <i>Remote Sensing Applications: Society and Environment</i>, 29, 100895."},
+    {"title": "Assessment of shelter location-allocation for multi-hazard emergency evacuation", "venue": "International Journal of Disaster Risk Reduction", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.ijdrr.2022.103435", "citation": "Bera, S., Gnyawali, K., <strong>Dahal, K.</strong>, Melo, R., Li-Juan, M., Guru, B., & Ramana, G. V. (2023). &quot;Assessment of shelter location-allocation for multi-hazard emergency evacuation.&quot; <i>International Journal of Disaster Risk Reduction</i>, 84, 103435."},
+    {"title": "A systematic review highlights that there are multiple benefits of urban agriculture besides food", "venue": "Global Food Security", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.gfs.2023.100700", "citation": "Pradhan, P., Callaghan, M., Hu, Y., <strong>Dahal, K.</strong>, Hunecke, C., Reusswig, F., Lotze-Campen, H., & Kropp, J. P. (2023). &quot;A systematic review highlights that there are multiple benefits of urban agriculture besides food.&quot; <i>Global Food Security</i>, 38, 100700."},
+    {"title": "Vegetation loss and recovery analysis from the 2015 Gorkha earthquake (7.8 Mw) triggered landslides", "venue": "Land Use Policy", "date": "2022-01-01", "paperurl": "https://www.sciencedirect.com/science/article/pii/S0264837722002125", "citation": "Pandey, H. P., Gnyawali, K., <strong>Dahal, K.</strong>, & Pokhrel, N. P. (2022). &quot;Vegetation loss and recovery analysis from the 2015 Gorkha earthquake (7.8 Mw) triggered landslides.&quot; <i>Land Use Policy</i>."},
+    {"title": "Natural Hazards Perspectives on Integrated, Coordinated, Open, Networked (ICON) Science", "venue": "Earth and Space Science", "date": "2022-01-01", "paperurl": "https://doi.org/10.1029/2021EA002114", "citation": "Sharma, S., <strong>Dahal, K.</strong>, Nava, L., Gouli, M. R., Talchabhadel, R., Panthi, J., Roy, T., & Ghimire, G. R. (2022). &quot;Natural Hazards Perspectives on Integrated, Coordinated, Open, Networked (ICON) Science.&quot; <i>Earth and Space Science</i>, 9(1), e2021EA002114."},
+    {"title": "Insights on the Impacts of Hydroclimatic Extremes and Anthropogenic Activities on Sediment Yield of a River Basin", "venue": "Earth", "date": "2021-01-01", "paperurl": "https://doi.org/10.3390/earth2010003", "citation": "Talchabhadel, R., Panthi, J., Sharma, S., Ghimire, G. R., Baniya, R., Dahal, P., Baniya, M. B., K. C., S., Jha, B., Kaini, S., <strong>Dahal, K.</strong>, Gnyawali, K. R., Parajuli, B., & Kumar, S. (2021). &quot;Insights on the Impacts of Hydroclimatic Extremes and Anthropogenic Activities on Sediment Yield of a River Basin.&quot; <i>Earth</i>, 2(1), 32–50."},
 ]
 
 talks_data = [
     {"title": "A Framework to Improve Hydrological Forecasting with Deep Learning", "type": "Conference Poster", "venue": "ASU Flow 2024", "date": "2024-10-21", "location": "Arizona State University, USA", "description": "This poster received the Outstanding Poster Award."},
-    # Add all other talks here...
+    {"title": "Operational Streamflow Forecasting Tool for Arizona Streams", "type": "Conference Talk", "venue": "CMWR 2024", "date": "2024-10-02", "location": "University of Arizona, USA"},
+    {"title": "Mapping wetland potential in arid environments: A machine learning approach with geospatial interpretability", "type": "Conference Talk", "venue": "AGU Chapman Conference on Remote Sensing of the Water Cycle", "date": "2024-02-13", "location": "Honolulu, HI, USA"},
+    {"title": "Explainable Machine Learning in Groundwater Potential Mapping", "type": "Invited Webinar", "venue": "UNESCO GWYN", "date": "2024-03-13", "location": "Online", "url": "https://rb.gy/ue0vik"},
+    {"title": "Advances in Hyperspectral Remote Sensing for Water Resources", "type": "Conference Poster", "venue": "AGU Fall Meeting 2023", "date": "2023-12-11", "location": "San Francisco, USA"},
+    {"title": "Discussion Facilitator at Session 1 --Development of core use cases in environmental sciences", "type": "Invited Talk", "venue": "5th NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2023-09-19", "location": "Online", "url": "https://noaaai2023.sched.com/event/1Q6Qa/session-1-development-of-core-use-cases-in-environmental-sciences"},
+    {"title": "Remote Sensing, Big Data Analytics, and Cloud Computing: Application to Water Quality Modeling", "type": "Workshop", "venue": "Environmental & Water Resources Institute (EWRI) Congress 2023, ASCE", "date": "2023-05-22", "location": "Henderson, NV, USA"},
+    {"title": "Explainable Artificial Intelligence to visualize the unseen", "type": "Conference Talk", "venue": "EWRI Congress 2023", "date": "2023-05-21", "location": "Nevada, USA"},
+    {"title": "Spatial decision making with landslide susceptibility and critical infrastructure", "type": "Conference Talk", "venue": "DRI Technical Conference 2022", "date": "2022-10-12", "location": "Delhi, India"},
+    {"title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "type": "Invited Lecture", "venue": "Khwopa College of Engineering, Tribhuvan University", "date": "2022-06-21", "location": "Nepal", "url": "https://fb.watch/kO9H0OeO2T/"},
+    {"title": "Introduction to Google Earth Engine for cloud computing", "type": "Invited Discussion", "venue": "S4W Nepal", "date": "2022-04-07", "location": "Online"},
+    {"title": "Google Earth Engine and cloud computing", "type": "Invited Lecture", "venue": "Central Department of Geography, Tribhuvan University", "date": "2022-04-06", "location": "Nepal"},
+    {"title": "National landslides database and susceptibility assessment of Nepal", "type": "Conference Poster", "venue": "AGU Fall Meeting 2021", "date": "2021-12-13", "location": "Online", "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFMNH35F..11D"},
+    {"title": "Framework for multi-hazards susceptibility assessment in Google Earth Engine", "type": "Conference Poster", "venue": "AGU Fall Meeting 2021", "date": "2021-12-13", "location": "Online", "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFMGC45I0916D"},
+    {"title": "Spatial downscaling of coarse resolution satellite-based precipitation estimates (SPEs) to 1 km using Machine Learning", "type": "Conference Talk", "venue": "3rd NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2021-09-13", "location": "USA"},
+    {"title": "Machine Learning to Estimate Precipitation with Satellite-based and Gauged Observations", "type": "Conference Talk", "venue": "3rd NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2021-09-13", "location": "USA"},
+    {"title": "Chocolate Talk on DRR #3: Artificial intelligence (AI) for disaster risk reduction", "type": "Moderator", "venue": "U-INSPIRE Alliance", "date": "2021-08-28", "location": "Online", "url": "https://www.youtube.com/watch?v=mHLaFQw-C7A"},
+    {"title": "DRR talk #1: The future of disaster risk governance in 2045", "type": "Invited Talk", "venue": "Disaster Risk Reduction and Tsunami Information, UNESCO Office, Jakarta", "date": "2021-07-30", "location": "Online", "url": "https://fb.watch/kO9y3nBapv/"},
+    {"title": "Landslide Susceptibility Mapping in Nepal using Google Earth Engine", "type": "Conference Talk", "venue": "Geo for Good 2020", "date": "2020-10-20", "location": "USA"},
 ]
 
 teaching_data = [
     {"title": "Num. Methods for Engrs (CEE 384)", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served as a Teaching Assistant for the Spring 2024 semester."},
-    # Add all other teaching experiences here...
+    {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "venue": "Arizona State University", "date": "2023-08-15", "description": "Served as a Teaching Assistant for the Fall 2023 semester."},
+    {"title": "Engineering Hydrology (CE 606)", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served as a Teaching Assistant for the Spring 2021 semester."},
+    {"title": "GIS and Remote Sensing (CE 78501)", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served as a Teaching Assistant for the Fall 2020 semester."},
+    {"title": "Engineering Hydrology (CE 606)", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served as a Teaching Assistant for the Spring 2019 semester."},
+    {"title": "Engineering Surveying (CE 504)", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served as a Teaching Assistant for the Spring 2019 semester."},
 ]
 
 media_data = [
     {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},
-    # Add all other media items here...
+    {"type": "Op-Ed", "authors": "Dahal, K., Talchabhadel, R., & Thapa, B. R.", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "Onlinekhabar", "url": "https://english.onlinekhabar.com/landslide-susceptibility-nepal.html"},
+    {"type": "Op-Ed", "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.", "year": "2021", "title": "मेलम्चीको बाढीबाट के सिक्ने ?", "venue": "Onlinekhabar", "url": "https://www.onlinekhabar.com/2021/06/974746"},
+    {"type": "Media Citation", "year": "2025", "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal", "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"},
+    {"type": "Media Citation", "year": "2025", "title": "Open burning main cause of air pollution", "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News | WION", "venue": "WION TV", "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"},
+    {"type": "Media Citation", "year": "2025", "title": "Ignored infernos", "venue": "The Kathmandu Post (EDITORIAL)", "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk", "venue": "Asia News Network", "url": "https://asianews.network/nepals-wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfire season has begun, but the worst is yet to come", "venue": "The Himalayan Times", "url": "https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk", "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"},
+    {"type": "Media Citation", "year": "2024", "title": "Back to the land in the cities", "venue": "Nepali Times", "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"},
+    {"type": "Media Citation", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "PreventionWeb, UNDRR", "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"},
 ]
 
-blog_data = [
-    {"title": "On Data-Driven Science in Hydrology", "date": "2024-08-16", "tags": ["Data Science", "Hydrology", "Machine Learning"], "excerpt": "A reflection on the shift from process-based models to data-driven approaches in hydrology...", "content": """In a traditional approach, we lean on centuries of scientific thought..."""},
-    {"title": "Reflections on a 10-Day Vipassana Course", "date": "2024-08-15", "tags": ["Meditation", "Mindfulness", "Vipassana"], "excerpt": "My experience with a 10-day silent meditation retreat...", "content": """I first became curious about Vipassana after reading *The Power of Now*..."""},
-    {"title": "Favorite Books & Wisdom", "date": "2024-08-14", "tags": ["Books", "Wisdom", "Reading"], "excerpt": "A curated list of books and wisdom that I find valuable.", "content": """### Wisdom I Live By\n*   Ignorance is not bliss.\n*   Plans should be measured in decades...\n\n### Foundational Books\n*   **The Power of Now** by Eckhart Tolle..."""},
-    {"title": "On the Law of Averages", "date": "2024-08-13", "tags": ["Productivity", "Mindset", "Persistence"], "excerpt": "How persistence and increasing your attempts can lead to success...", "content": """Sometimes, we really want to stand out..."""},
-    {"title": "On Time Management", "date": "2024-08-12", "tags": ["Productivity", "Goals", "Time Management"], "excerpt": "A simple approach to time management that starts with a clear goal...", "content": """Time management really starts with having a clear goal..."""},
+courses_data = [
+    {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"}
 ]
+reports_data = [
+    {"authors": "UNDRR", "year": "2022", "title": "Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific", "venue": "United Nations Office for Disaster Risk Reduction (UNDRR)", "url": "https://www.undrr.org/quick/71248"}
+]
+
+blog_data = [] # No blog posts provided in the CV
 
 # =============================================================================
-# SCRIPT LOGIC (No need to edit below this line)
+# SCRIPT LOGIC (No need to edit below this line unless you want to customize)
 # =============================================================================
 
 def slugify(text):
-    text = text.lower(); text = re.sub(r'[^a-z0-9\s-]', '', text); text = re.sub(r'[\s-]+', '-', text)
+    text = text.lower()
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s-]+', '-', text)
     return text.strip('-')
 
 def clear_folder(folder_path):
-    if not os.path.exists(folder_path): os.makedirs(folder_path)
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
     for filename in os.listdir(folder_path):
-        if filename.endswith(".md"): os.remove(os.path.join(folder_path, filename))
+        if filename.endswith(".md"):
+            os.remove(os.path.join(folder_path, filename))
     print(f"Cleared markdown files in {folder_path}")
 
 def generate_page(filepath, content):
-    with open(filepath, 'w', encoding='utf-8') as f: f.write(content)
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
     print(f"✓ Updated {filepath}")
 
 def generate_collection_files(data, folder, collection_name, permalink_prefix, type_key=None, default_type=None):
@@ -78,7 +143,6 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         filename = f"{item['date']}-{slug}.md"
         filepath = os.path.join(folder, filename)
         
-        # --- Create YAML Front Matter ---
         content = "---\n"
         content += f"title: \"{item['title'].replace(':', '')}\"\n"
         
@@ -89,12 +153,13 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             for tag in item.get('tags', []):
                 content += f"  - {tag}\n"
             if item.get('excerpt'):
-                content += f"excerpt: \"{item['excerpt'].replace('"', '&quot;')}\"\n"
+                content += f"excerpt: \"{item['excerpt'].replace('\"', '&quot;')}\"\n"
         else:
             content += f"collection: {collection_name}\n"
-            content += f"permalink: /{permalink_prefix}/{item['date']}-{slug}\n"
+            content += f"permalink: /{permalink_prefix}/{slug}\n"
             item_type = item.get(type_key, default_type)
-            if item_type: content += f"type: \"{item_type}\"\n"
+            if item_type:
+                content += f"type: \"{item_type}\"\n"
             for key, value in item.items():
                 if key not in ['title', 'type', 'content', 'tags', 'excerpt'] and value:
                     clean_value = str(value).replace("'", "’").replace('"', '&quot;')
@@ -102,8 +167,6 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         
         content += "---\n\n"
         
-        # --- CORRECTED: Create Main Content ---
-        # This now correctly adds the main 'content' for blog posts.
         if item.get('content'):
             content += item['content']
         elif item.get('description'):
@@ -117,10 +180,9 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         print(f"  ✓ Created {filepath}")
 
 if __name__ == "__main__":
-    # Clear old markdown files to ensure a fresh build
-    for folder in ["_publications", "_talks", "_teaching", "_posts"]: clear_folder(folder)
+    for folder in ["_publications", "_talks", "_teaching", "_posts"]:
+        clear_folder(folder)
 
-    # Generate static pages and navigation
     print("\n--- Generating Core Pages & Navigation ---")
     nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
@@ -129,33 +191,47 @@ if __name__ == "__main__":
     generate_page("_pages/about.md", about_content)
     
     cv_content = """---\nlayout: archive\ntitle: "CV"\npermalink: /cv/\nauthor_profile: true\n---\n{% include base_path %}\n<a href="/files/CV_Kshitij_Dahal.pdf" class="btn btn--primary" target="_blank">Download Full CV (PDF)</a>\n\n### Education\n"""
-    for item in personal_info['education']: cv_content += f"* {item['degree']}, *{item['university']}*, {item['period']}\n"
+    for item in personal_info['education']:
+        cv_content += f"* {item['degree']}, *{item['university']}*, {item['period']}\n"
     cv_content += "\n### Academic Employment\n"
-    for item in personal_info['employment']: cv_content += f"* **{item['role']}**\n  * {item['institution']}\n  * {item['period']}\n"
+    for item in personal_info['employment']:
+        cv_content += f"* **{item['role']}**\n  * {item['institution']}\n  * {item['period']}\n"
     cv_content += "\n### Honors and Awards\n"
-    for item in personal_info['awards']: cv_content += f"* {item}\n"
+    for item in personal_info['awards']:
+        cv_content += f"* {item}\n"
     cv_content += """\n### Publications\n<ul>{% for post in site.publications reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>\n\n### Talks & Presentations\n<ul>{% for post in site.talks reversed %}{% include archive-single-talk-cv.html %}{% endfor %}</ul>\n\n### Teaching\n<ul>{% for post in site.teaching reversed %}{% include archive-single-cv.html %}{% endfor %}</ul>"""
+    cv_content += """\n\n### Leadership and Services\n* **Executive Committee (Elected)**, *Young Earth System Scientists (YESS) Community*, July 2025 – June 2026\n* **Community Science Fellow**, *American Geophysical Union*, May 2024 – Present\n* **Regional Representative (South East Asia)**, *Young Earth System Scientists (YESS) Community*, Jan 2021 – Jan 2022\n* **Coordinator, Capacity Building**, *U-Inspire Alliance*, May 2019 – Present"""
+    cv_content += """\n\n### Academic Services\n#### Editorial Advisory Board\n* *Regional Environmental Change, Springer Nature*, 2024 – Present\n\n#### Reviewer\n* *Earth’s Future*, 2024 – Present\n* *International Journal of Disaster Risk Reduction, Elsevier*, 2023 – Present\n* *Humanities and Social Sciences Communications, Nature*, 2023 – Present\n* *Regional Environmental Change, Springer Nature*, 2021 – Present\n* *Anthropocene Science, Springer Nature*, 2021 – Present\n* *PLOS Sustainability and Transformation*, 2021 – Present\n* *The Geographic Base, Nepal Journals Online*, 2020 – Present\n\n#### Memberships\n* Member, American Society of Civil Engineers, USA, 2022 – Present\n* Member, American Geophysical Union, USA, 2020 – Present\n* Registered A class Civil Engineer, Nepal Engineering Council, Nepal, 2020 – Present"""
     generate_page("_pages/cv.md", cv_content)
 
     media_content = """---\nlayout: archive\ntitle: "Media"\npermalink: /media/\nauthor_profile: true\n---\nThis page features news articles, op-eds, and media mentions related to my work.\n"""
-    grouped_media = {}; [grouped_media.setdefault(item.get("type", "General"), []).append(item) for item in media_data]
+    grouped_media = {}
+    [grouped_media.setdefault(item.get("type", "General"), []).append(item) for item in media_data]
     if "Op-Ed" in grouped_media:
         media_content += "\n## News Columns (Op-Ed)\n"
-        for item in grouped_media["Op-Ed"]: media_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
+        for item in grouped_media["Op-Ed"]:
+            media_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
     if "Media Citation" in grouped_media:
         media_content += "\n## Professional Media Citations\n"
-        for item in grouped_media["Media Citation"]: media_content += f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}.\n"
+        for item in grouped_media["Media Citation"]:
+            media_content += f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}.\n"
     generate_page("_pages/media.md", media_content)
 
-    # (Other pages like resources, publications list, etc.)
     resources_content = """---\nlayout: archive\ntitle: "Resources"\npermalink: /resources/\nauthor_profile: true\n---\n"""
+    resources_content += "\n## Courses Developed\n"
+    for item in courses_data:
+        resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
+    resources_content += "\n## Technical Reports\n"
+    for item in reports_data:
+        resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
     generate_page("_pages/resources.md", resources_content)
+    
     publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n{% if site.author.googlescholar %}\n  <div class="wordwrap">You can also find my articles on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</div>\n{% endif %}\n{% include base_path %}\n{% for post in site.publications reversed %}\n  {% include archive-single.html %}\n{% endfor %}"""
     generate_page("_pages/publications.html", publications_page_content)
+    
     blog_page_content = """---\nlayout: archive\ntitle: "Blog"\npermalink: /blog/\nauthor_profile: true\n---\n{% include base_path %}\n{% capture written_year %}'None'{% endcapture %}\n{% for post in site.posts reversed %}\n  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}\n  {% if year != written_year %}\n    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>\n    {% capture written_year %}{{ year }}{% endcapture %}\n  {% endif %}\n  {% include archive-single.html %}\n{% endfor %}"""
     generate_page("_pages/blog.md", blog_page_content)
 
-    # Generate collection files
     print("\n--- Generating Collection Files ---")
     generate_collection_files(publications_data, "_publications", "publications", "publication")
     generate_collection_files(talks_data, "_talks", "talks", "talks", type_key="type", default_type="Talk")
