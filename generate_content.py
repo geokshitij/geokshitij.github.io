@@ -41,8 +41,6 @@ personal_info = {
     ]
 }
 
-
-
 publications_data = [
     {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., et al. (2025). &quot;Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
     {"title": "Policy Relevance of IPCC Reports for the SDGs and Beyond", "venue": "Resources, Environment and Sustainability", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.resenv.2025.100192", "citation": "Pradhan, P., Joshi, S., <strong>Dahal, K.</strong>, et al. (2025). &quot;Policy Relevance of IPCC Reports for the SDGs and Beyond.&quot; <i>Resources, Environment and Sustainability</i>."},
@@ -58,8 +56,6 @@ publications_data = [
     {"title": "Insights on the Impacts of Hydroclimatic Extremes and Anthropogenic Activities on Sediment Yield of a River Basin", "venue": "Earth", "date": "2021-01-01", "paperurl": "https://doi.org/10.3390/earth2010003", "citation": "Talchabhadel, R., Panthi, J., Sharma, S., <strong>Dahal, K.</strong>, et al. (2021). &quot;Insights on the Impacts of Hydroclimatic Extremes and Anthropogenic Activities on Sediment Yield of a River Basin.&quot; <i>Earth</i>."},
 ]
 
-
-
 talks_data = [
     {"title": "A Framework to Improve Hydrological Forecasting with Deep Learning", "type": "Conference Poster", "venue": "ASU Flow 2024", "date": "2024-10-21", "location": "Arizona State University, USA", "description": "This poster received the Outstanding Poster Award."},
     {"title": "Operational Streamflow Forecasting Tool for Arizona Streams", "type": "Conference Presentation", "venue": "CMWR 2024", "date": "2024-10-02", "location": "University of Arizona, USA"},
@@ -71,8 +67,6 @@ talks_data = [
     {"title": "Explainable Machine Learning in Groundwater Potential Mapping", "type": "Invited Webinar", "venue": "UNESCO GWYN", "date": "2024-03-13", "location": "Online", "url": "https://rb.gy/ue0vik"},
 ]
 
-
-
 teaching_data = [
     {"title": "Num. Methods for Engrs (CEE 384)", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served as a Teaching Assistant for the Spring 2024 semester."},
     {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "venue": "Arizona State University", "date": "2023-08-20", "description": "Served as a Teaching Assistant for the Fall 2023 semester."},
@@ -81,136 +75,18 @@ teaching_data = [
     {"title": "Engineering Surveying (CE 504)", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served as a Teaching Assistant for the Spring 2019 semester."},
 ]
 
-
-
-# (This REPLACES the entire media_data list in your generate_content.py file)
-
 media_data = [
-    # Op-Eds
-    {
-        "type": "Op-Ed",
-        "authors": "Dahal, K. & Thapa, B. R.",
-        "year": "2025",
-        "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?",
-        "venue": "Republica",
-        "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"
-    },
-    {
-        "type": "Op-Ed",
-        "authors": "Dahal, K., Talchabhadel, R., & Thapa, B. R.",
-        "year": "2021",
-        "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective",
-        "venue": "Onlinekhabar",
-        "url": "https://english.onlinekhabar.com/landslide-susceptibility-nepal.html"
-    },
-    {
-        "type": "Op-Ed",
-        "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.",
-        "year": "2021",
-        "title": "मेलम्चीको बाढीबाट के सिक्ने ?",
-        "venue": "Onlinekhabar",
-        "url": "https://www.onlinekhabar.com/2021/06/974746"
-    },
-    # Media Citations
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal",
-        "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Open burning main cause of air pollution",
-        "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"
-    },
-    {
-        "type": "Media Citation",
-        "year": "2025",
-        "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News",
-        "venue": "WION TV",
-        "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Ignored infernos (EDITORIAL)",
-        "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk",
-        "venue": "Asia News Network", "url": "https://asianews.network/nepals-wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Wildfire season has begun, but the worst is yet to come",
-        "venue": "The Himalayan Times", "url": "https://thehimalayantimes.com/nepal/wildfire-season-has-begun-but-the-worst-is-yet-to-come"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk",
-        "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Loss of Biodiversity Due to Wildfire (डढेलोबाट जैविक विविधता गुम्ने खतरा)",
-        "venue": "Himal Khabar", "url": "https://www.himalkhabar.com/news/144165"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Study Report: Forests at Risk of Wildfire Due to Climate Crisis (अध्ययन रिपोर्ट : वन क्षेत्र जलवायु संकट कै कारण डढेलोको जोखिममा)",
-        "venue": "Jalbayu (Climate)", "url": "https://www.jalbayu.com/news/2025-03-15-2271"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "Artha Pranali (Economic System)", "url": "https://arthapranali.com/2025/03/11828"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Forest Wildfires Pose a Threat to Carbon and Biodiversity (वन डढेलोले कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "Everestpedia", "url": "https://www.everestpedia.com/detail/3646"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "‘Forest Wildfires Threaten Biodiversity’ (‘वन डढेलोले जैविक विविधतामा खतरा’)",
-        "venue": "Green Economy", "url": "https://greeconomy.com/fire-impact-on-biodiversity"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "KendraBindu (Central Point)", "url": "https://kendrabindu.com/social-affairs/404665"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Forest Fires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५० करोड टन कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "Jal Sarokar (Water Concern)", "url": "https://jalasarokar.com/news/forest-fires-in-nepal-threaten-500-million-tons-of-carbon-and-biodiversity-2260"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Forest Wildfires in Nepal Threaten 500 Million Tons of Carbon and Biodiversity (नेपालमा वन डढेलोले ५ सय मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "Kavre Khabar (Kavre News)", "url": "https://www.kavrekhabar.com/main-news/2025/03/16/3717"
-    },
-    {
-        "type": "Media Citation", "year": "2025",
-        "title": "Wildfires in Nepal pose threat to 500 million tons of carbon and biodiversity (नेपालमा वन डढेलोले ५०० मिलियन टन कार्बन र जैविक विविधतामा खतरा)",
-        "venue": "Arthik Digital News", "url": "https://www.eaarthik.com/2025/03/117227/"
-    },
-    {
-        "type": "Media Citation", "year": "2024",
-        "title": "Back to the land in the cities",
-        "venue": "Nepali Times", "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"
-    },
-    {
-        "type": "Media Citation", "year": "2021",
-        "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective",
-        "venue": "PreventionWeb, UNDRR", "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"
-    },
+    {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},
+    {"type": "Op-Ed", "authors": "Dahal, K., Talchabhadel, R., & Thapa, B. R.", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "Onlinekhabar", "url": "https://english.onlinekhabar.com/landslide-susceptibility-nepal.html"},
+    {"type": "Op-Ed", "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.", "year": "2021", "title": "मेलम्चीको बाढीबाट के सिक्ने ?", "venue": "Onlinekhabar", "url": "https://www.onlinekhabar.com/2021/06/974746"},
+    {"type": "Media Citation", "year": "2025", "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal", "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"},
+    {"type": "Media Citation", "year": "2025", "title": "Open burning main cause of air pollution", "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News", "venue": "WION TV", "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"},
+    {"type": "Media Citation", "year": "2025", "title": "Ignored infernos (EDITORIAL)", "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"},
+    {"type": "Media Citation", "year": "2025", "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk", "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"},
+    {"type": "Media Citation", "year": "2024", "title": "Back to the land in the cities", "venue": "Nepali Times", "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"},
+    {"type": "Media Citation", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "PreventionWeb, UNDRR", "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"},
 ]
-
-
-
-
-
-
 
 # =============================================================================
 # SCRIPT LOGIC (No need to edit below this line)
@@ -246,7 +122,6 @@ def generate_markdown_files(data, folder, collection_name, permalink_prefix, typ
                 clean_value = str(value).replace("'", "’").replace('"', '&quot;')
                 content += f"{key}: '{clean_value}'\n"
         content += "---\n"
-        # The line that added the duplicate citation is now gone from here.
         if item.get('description'): content += f"\n{item['description']}\n"
         if item.get('url'): content += f"\n[More information here]({item['url']})\n"
         with open(filepath, 'w', encoding='utf-8') as f: f.write(content)
@@ -272,10 +147,6 @@ def generate_navigation():
     url: /cv/
 """
     generate_page("_data/navigation.yml", nav_content)
-
-
-
-# (This REPLACES the entire "if __name__ == '__main__':" block at the end of your script)
 
 if __name__ == "__main__":
     print("--- Clearing old content ---")
@@ -321,7 +192,6 @@ author_profile: true
     for item in personal_info['awards']: cv_content += f"* {item}\n"
     generate_page("_pages/cv.md", cv_content)
     
-    # --- NEW: Dynamic Media Page Generation ---
     media_content = """---
 layout: archive
 title: "Media"
@@ -330,27 +200,20 @@ author_profile: true
 ---
 This page features news articles, op-eds, and other media mentions related to my work.
 """
-    # Group media items by type
     grouped_media = {}
     for item in media_data:
         media_type = item.get("type", "General")
-        if media_type not in grouped_media:
-            grouped_media[media_type] = []
+        if media_type not in grouped_media: grouped_media[media_type] = []
         grouped_media[media_type].append(item)
-    
-    # Generate markdown for each group
     if "Op-Ed" in grouped_media:
         media_content += "\n## News Columns (Op-Ed)\n"
         for item in grouped_media["Op-Ed"]:
             media_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
-            
     if "Media Citation" in grouped_media:
         media_content += "\n## Professional Media Citations\n"
         for item in grouped_media["Media Citation"]:
             media_content += f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}.\n"
-    
     generate_page("_pages/media.md", media_content)
-    # --- END NEW SECTION ---
     
     resources_content = """---
 layout: archive
@@ -359,6 +222,12 @@ permalink: /resources/
 author_profile: true
 ---
 This page provides links to useful resources, tools, and courses I have developed or recommend.
+
+## Courses Developed
+*   Cho, H., Ashraf, F., **Dahal, K.** (2024). Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design. *CIROH*. [Access Course](https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about)
+
+## Technical Reports
+*   UNDRR (2022), Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific, United Nations Office for Disaster Risk Reduction (UNDRR). [Read Report](https://www.undrr.org/quick/71248)
 """
     generate_page("_pages/resources.md", resources_content)
     
@@ -384,4 +253,4 @@ author_profile: true
     generate_markdown_files(teaching_data, "_teaching", "teaching", "teaching")
     
     print("\nGeneration complete! All files created locally.")
-    print("Next step: Run 'git push' to upload them to GitHub.")
+    print("Next step: Pull latest changes, then push your updates.")
