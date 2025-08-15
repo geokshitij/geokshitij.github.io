@@ -81,7 +81,13 @@ media_data = [
     {"type": "Op-Ed", "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.", "year": "2021", "title": "मेलम्चीको बाढीबाट के सिक्ने ?", "venue": "Onlinekhabar", "url": "https://www.onlinekhabar.com/2021/06/974746"},
     {"type": "Media Citation", "year": "2025", "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal", "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"},
     {"type": "Media Citation", "year": "2025", "title": "Open burning main cause of air pollution", "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"},
-    {"type": "Media Citation", "year": "2025", "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal | World News", "venue": "WION TV", "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"},
+    {
+        "type": "Media Citation",
+        "year": "2025",
+        "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal (World News)",
+        "venue": "WION TV",
+        "url": "https://youtu.be/UFb_3MyJpew?si=4wbBrZYWRb3tuQkm"
+    },
     {"type": "Media Citation", "year": "2025", "title": "Ignored infernos (EDITORIAL)", "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/editorial/2025/03/18/ignored-infernos"},
     {"type": "Media Citation", "year": "2025", "title": "Wildfires put 500m tonnes of carbon— and tourism—at risk", "venue": "The Kathmandu Post", "url": "https://kathmandupost.com/money/2025/03/17/wildfires-put-500m-tonnes-of-carbon-and-tourism-at-risk"},
     {"type": "Media Citation", "year": "2024", "title": "Back to the land in the cities", "venue": "Nepali Times", "url": "https://nepalitimes.com/here-now/back-to-the-land-in-the-cities"},
