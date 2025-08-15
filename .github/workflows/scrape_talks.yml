@@ -7,31 +7,36 @@ on:
       - '_talks/**'
       - 'talkmap.ipynb'
 
+# This is the new section that grants write permissions
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3 # Use a newer version of checkout
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4 # Use a newer version of setup-python
       with:
-        python-version: '3.9'  # Specify the Python version you need
+        python-version: '3.9'
 
     - name: Install dependencies
       run: |
-        pip install jupyter pandas requests beautifulsoup4 geopy  # Add other dependencies as needed
-        pip install getorg --upgrade
+        pip install jupyter pandas requests beautifulsoup4 geopy getorg --upgrade
 
-    - name: Run Jupyter Notebook
+    - name: Run Jupyter Notebook to generate map
       run: |
         jupyter nbconvert --to notebook --execute talkmap.ipynb --output talkmap_out.ipynb
 
-    - name: Commit changes
+    - name: Commit and push if there are changes
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add .
-        git commit -m "Automated update of talk locations" || echo "No changes to commit"
-        git push
+        git add talkmap/ org-locations.js talkmap_out.ipynb
+        # The following command will only commit if there are staged changes
+        git commit -m "Automated update of talk locations map" || echo "No changes to commit"
+        # The following command will only push if there is a new commit
+        git push || echo "No changes to push"
