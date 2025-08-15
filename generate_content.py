@@ -80,14 +80,16 @@ talks_data = [
     {"title": "Landslide Susceptibility Mapping in Nepal using Google Earth Engine", "type": "Conference Talk", "venue": "Geo for Good 2020", "date": "2020-10-20", "location": "USA"},
 ]
 
+
 teaching_data = [
-    {"title": "Num. Methods for Engrs (CEE 384)", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served as a Teaching Assistant for the Spring 2024 semester."},
-    {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "venue": "Arizona State University", "date": "2023-08-15", "description": "Served as a Teaching Assistant for the Fall 2023 semester."},
-    {"title": "Engineering Hydrology (CE 606)", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served as a Teaching Assistant for the Spring 2021 semester."},
-    {"title": "GIS and Remote Sensing (CE 78501)", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served as a Teaching Assistant for the Fall 2020 semester."},
-    {"title": "Engineering Hydrology (CE 606)", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served as a Teaching Assistant for the Spring 2019 semester."},
-    {"title": "Engineering Surveying (CE 504)", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served as a Teaching Assistant for the Spring 2019 semester."},
+    {"title": "Num. Methods for Engrs (CEE 384)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served during the Spring 2024 semester."},
+    {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2023-08-15", "description": "Served during the Fall 2023 semester."},
+    {"title": "Engineering Hydrology (CE 606)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served during the Spring 2021 semester."},
+    {"title": "GIS and Remote Sensing (CE 78501)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served during the Fall 2020 semester."},
+    {"title": "Engineering Surveying (CE 504)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served during the Spring 2019 semester."},
+    # Note: I removed one duplicate entry for Engineering Hydrology from your CV for this list.
 ]
+
 
 media_data = [
     {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},

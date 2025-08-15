@@ -4,7 +4,7 @@ collection: teaching
 permalink: /teaching/2020-08-15-gis-and-remote-sensing-ce-78501
 venue: 'Tribhuvan University, Nepal'
 date: '2020-08-15'
-description: 'Served as a Teaching Assistant for the Fall 2020 semester.'
+description: 'Served during the Fall 2020 semester.'
 ---
 
-Served as a Teaching Assistant for the Fall 2020 semester.
+Served during the Fall 2020 semester.
