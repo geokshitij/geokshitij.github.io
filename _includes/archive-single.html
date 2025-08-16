@@ -34,10 +34,20 @@
       {% endif %}
     </h2>
     
-    {% if post.read_time %}
+<!--     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-
+ -->
+          {% if post.collection == 'publications' %}
+        {% if post.publication_status == "Under Review" %}
+          <p class="page__meta"><em>Status: Under Review at {{ post.venue }}</em></p>
+        {% else %}
+          <p class="page__meta">Published in {{ post.venue }}, {{ post.date | date: "%Y" }}</p>
+        {% endif %}
+      {% elsif post.venue %}
+        <p class="page__meta">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>
+      {% endif %}
+    
         {% if post.collection == 'teaching' %}
           <p>{{ post.type }} at <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
         {% elsif post.collection == 'publications' %}
