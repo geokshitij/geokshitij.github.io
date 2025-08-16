@@ -42,6 +42,6 @@ By letting go of the outcome, you are liberated. You are no longer on an emotion
 
 This is the path of the heart. Where the first path uses the mind and the second uses the hands, this path uses emotion and love. It is about dissolving the ego by surrendering to something larger than yourself.
 
-This “something larger” can be a deity, a teacher, nature, a community, or even a profound ideal like Truth or Love. The object of devotion is less important than the act of surrendering itself.
+For many, this is God. For others, it might be a teacher, the beauty of nature, a community, or a profound ideal like Truth or Love. The object of devotion is less important than the act of surrendering itself.
 
 This path brings peace by replacing the ego's constant struggle for control with a feeling of profound trust and connection. Instead of trying to figure everything out or control every outcome, you learn to let go. You offer up your actions, your worries, and your hopes, and in that act of giving, you find a sense of belonging and an unshakable peace that comes from the heart.
