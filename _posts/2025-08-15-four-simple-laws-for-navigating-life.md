@@ -1,7 +1,7 @@
 ---
 title: "Four Simple Laws for Navigating Life"
-date: 2024-08-17
-permalink: /posts/2024/four-simple-laws-for-navigating-life/
+date: 2025-08-15
+permalink: /posts/2025/four-simple-laws-for-navigating-life/
 tags:
   - Mindset
   - Wisdom
