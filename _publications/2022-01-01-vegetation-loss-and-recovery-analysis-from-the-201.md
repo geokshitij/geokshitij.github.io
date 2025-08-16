@@ -2,6 +2,7 @@
 title: "Vegetation loss and recovery analysis from the 2015 Gorkha earthquake (7.8 Mw) triggered landslides"
 collection: publications
 permalink: /publication/2022-01-01-vegetation-loss-and-recovery-analysis-from-the-201
+publication_status: 'Published'
 venue: 'Land Use Policy'
 date: '2022-01-01'
 paperurl: 'https://www.sciencedirect.com/science/article/pii/S0264837722002125'

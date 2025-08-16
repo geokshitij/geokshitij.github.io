@@ -243,17 +243,17 @@ def generate_page(filepath, content):
         f.write(content)
     print(f"✓ Updated {filepath}")
 
+
+
 def generate_collection_files(data, folder, collection_name, permalink_prefix, type_key=None, default_type=None):
     for item in data:
-        # Use a regex to extract the date from the 'date' field
         date_match = re.search(r'(\d{4}-\d{2}-\d{2})', item['date'])
         if not date_match:
-            # Fallback for dates that might not be in YYYY-MM-DD format
             date_match = re.search(r'(\d{4})', item['date'])
             if not date_match:
                 print(f"  ✗ Warning: Could not parse date for '{item['title']}'. Skipping file generation.")
                 continue
-            item_date = f"{date_match.group(1)}-01-01" # Default to Jan 1st if only year is found
+            item_date = f"{date_match.group(1)}-01-01"
         else:
             item_date = date_match.group(1)
 
@@ -278,6 +278,16 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             item_type = item.get(type_key, default_type)
             if item_type:
                 content += f"type: \"{item_type}\"\n"
+            
+            # --- NEW LOGIC ADDED HERE ---
+            # Add a status flag for publications to distinguish them in the template
+            if collection_name == "publications":
+                if "Under Review" in item.get('citation', ''):
+                    content += "publication_status: 'Under Review'\n"
+                else:
+                    content += "publication_status: 'Published'\n"
+            # --- END OF NEW LOGIC ---
+
             for key, value in item.items():
                 if key not in ['title', 'type', 'content', 'tags', 'excerpt'] and value:
                     clean_value = str(value).replace("'", "’").replace('"', '&quot;')
