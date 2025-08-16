@@ -1,7 +1,7 @@
 ---
-title: "Three Roads, One Destination Finding Your Path to Peace"
+title: "Three Roads to Peace"
 date: 2025-04-18
-permalink: /posts/2025/three-roads-one-destination-finding-your-path-to-p/
+permalink: /posts/2025/three-roads-to-peace/
 tags:
   - Philosophy
   - Wisdom
