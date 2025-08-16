@@ -323,6 +323,8 @@ permalink: /
 title: "About Me"
 author_profile: true
 ---
+Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
+
 My work is deeply rooted in my experiences growing up in Nepal. During my undergraduate studies in Civil Engineering, I came face-to-face with the real-world impact of natural hazards. I saw how floods, droughts, and landslides could disrupt lives and entire communities. These events are not just statistics. They are powerful reminders that our ability to anticipate and adapt to our changing planet is still very limited.
 
 This realization became my driving force. I knew I didn't want to just build tools that watch our planet struggle. I wanted to engineer solutions that could actively help us build a more sustainable and resilient future. My research is my attempt to do just that. I focus on bridging the gap between complex scientific knowledge and the actionable, accessible tools that people need. To do this, I've built my work on three core pillars.
