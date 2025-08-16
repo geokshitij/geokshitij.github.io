@@ -1,7 +1,7 @@
 ---
-title: "The Four-Question Compass A Practical Guide to Finding Your Purpose"
+title: "How to Find Your Purpose"
 date: 2023-04-02
-permalink: /posts/2023/the-four-question-compass-a-practical-guide-to-fin/
+permalink: /posts/2023/how-to-find-your-purpose/
 tags:
   - Purpose
   - Wisdom
