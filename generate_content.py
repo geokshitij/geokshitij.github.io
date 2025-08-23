@@ -146,7 +146,7 @@ blog_data = [
 
 
     {
-        "title": "The First Person You Must Forgive",
+        "title": "On Forgiveness",
         "date": "2022-04-02",
         "tags": ["Wisdom", "Forgiveness", "Mindset", "Personal Growth"],
         "excerpt": "We are taught to forgive others, but we often forget the one person who needs our compassion the most: ourselves. True forgiveness is an act of power, and it always starts from within.",

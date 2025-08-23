@@ -1,7 +1,7 @@
 ---
-title: "The First Person You Must Forgive"
+title: "On Forgiveness"
 date: 2022-04-02
-permalink: /posts/2022/the-first-person-you-must-forgive/
+permalink: /posts/2022/on-forgiveness/
 tags:
   - Wisdom
   - Forgiveness
