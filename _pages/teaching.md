@@ -1,0 +1,22 @@
+---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+I plan to teach a variety of courses at the intersection of water resources, data science, and environmental engineering. My goal is to equip the next generation of engineers and scientists with the skills to tackle complex environmental challenges.
+
+### Future Courses
+- **AI in Water Resources:** Exploring the application of machine learning and artificial intelligence for hydrological modeling, forecasting, and water management.
+- **Remote Sensing for Earth Observation:** Focusing on the use of satellite data and geospatial analysis for monitoring environmental systems.
+- **Engineering Hydrology:** Covering the fundamentals of the hydrologic cycle, water balance, and hydrological processes.
+- **Fluid Mechanics:** Introducing the principles of fluid statics and dynamics with applications in civil and environmental engineering.
+
+---
+
+### Past Experience (Teaching Assistant)
+{% include base_path %}
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}

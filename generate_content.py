@@ -507,16 +507,13 @@ I plan to teach a variety of courses at the intersection of water resources, dat
 ---
 
 ### Past Experience (Teaching Assistant)
+{% include base_path %}
+{% for post in site.teaching reversed %}
+  {% include archive-single.html %}
+{% endfor %}
 """
-    generate_page("_pages/teaching.html", teaching_page_content)
-
-    # Append existing teaching roles
-    with open("_pages/teaching.html", 'a', encoding='utf-8') as f:
-        f.write("{% include base_path %}\n")
-        f.write("{% for post in site.teaching reversed %}\n")
-        f.write("  {% include archive-single.html %}\n")
-        f.write("{% endfor %}")    
-
+    generate_page("_pages/teaching.md", teaching_page_content)
+    
 
 
 
