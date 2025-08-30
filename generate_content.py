@@ -439,7 +439,10 @@ If Earth Observation data is the fuel, then Artificial Intelligence is the engin
 
 My work involves engineering a suite of intelligent software and models. These tools are designed for scalability and transferability. A major part of my PhD is dedicated to this. I am building next-generation streamflow forecasting systems, particularly for arid regions like Arizona. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. My approach is different. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
 
-My ultimate goal is simple. I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
+To summarize, I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
+
+I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu.
+
 """
 
     # --- Now, build the News timeline ---
