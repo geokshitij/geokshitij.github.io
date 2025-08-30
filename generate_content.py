@@ -397,7 +397,9 @@ if __name__ == "__main__":
     print("\n--- Generating Core Pages & Navigation ---")
     
         # Find this variable and update it
-    nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+    # nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+    # generate_page("_data/navigation.yml", nav_content)
+    nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Group"\n    url: /group/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
 
 
@@ -486,10 +488,58 @@ I am currently seeking a faculty position where I can start my own research grou
 
 
     
-    
+    # --- Generate Teaching Page ---
+    teaching_page_content = """---
+layout: archive
+title: "Teaching"
+permalink: /teaching/
+author_profile: true
+---
+
+I plan to teach a variety of courses at the intersection of water resources, data science, and environmental engineering. My goal is to equip the next generation of engineers and scientists with the skills to tackle complex environmental challenges.
+
+### Future Courses
+- **AI in Water Resources:** Exploring the application of machine learning and artificial intelligence for hydrological modeling, forecasting, and water management.
+- **Remote Sensing for Earth Observation:** Focusing on the use of satellite data and geospatial analysis for monitoring environmental systems.
+- **Engineering Hydrology:** Covering the fundamentals of the hydrologic cycle, water balance, and hydrological processes.
+- **Fluid Mechanics:** Introducing the principles of fluid statics and dynamics with applications in civil and environmental engineering.
+
+---
+
+### Past Experience (Teaching Assistant)
+"""
+    generate_page("_pages/teaching.html", teaching_page_content)
+
+    # Append existing teaching roles
+    with open("_pages/teaching.html", 'a', encoding='utf-8') as f:
+        f.write("{% include base_path %}\n")
+        f.write("{% for post in site.teaching reversed %}\n")
+        f.write("  {% include archive-single.html %}\n")
+        f.write("{% endfor %}")    
 
 
-    
+
+
+    # --- Generate Group Page ---
+    group_page_content = """---
+layout: archive
+title: "Research Group"
+permalink: /group/
+author_profile: true
+---
+We are in the process of building a research group.
+
+Our group will focus on addressing critical challenges at the intersection of water, climate, and society. We will leverage cutting-edge tools in **hydrological forecasting, natural hazards assessment, sustainable development, and artificial intelligence** to create actionable solutions for a resilient future.
+
+Stay tuned for updates.
+"""
+    generate_page("_pages/group.md", group_page_content)
+
+
+
+
+
+
     # --- Generate Media Page ---
     media_content = """---
 layout: archive
