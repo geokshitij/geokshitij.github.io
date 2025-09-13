@@ -11,12 +11,12 @@ from datetime import datetime
 
 # This list allows you to manually add news that isn't an award or talk.
 other_news_data = [
-    {"date": "2025-07-29", "description": "🎓 Officially became a **PhD Candidate** after successfully passing my comprehensive exam."},
-    {"date": "2024-10-21", "description": "🏆 Received the **Outstanding Poster Award** for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
-    {"date": "2024-05-15", "description": "✨ Selected as a **Community Science Fellow** by the American Geophysical Union's Thriving Earth Exchange."},
-    {"date": "2023-06-12", "description": "🏆 Won **1st place** in the SpaceHack for Sustainability Hackathon at Arizona State University."},
-    {"date": "2022-12-01", "description": "✨ Started my PhD journey at Arizona State University."},
-    {"date": "2021-09-17", "description": "🏆 Won **1st place** in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences."},
+    {"date": "2025-07-29", "description": "Officially became a PhD Candidate after successfully passing my comprehensive exam."},
+    {"date": "2024-10-21", "description": "Received the Outstanding Poster Award for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
+    {"date": "2024-05-15", "description": "Selected as a Community Science Fellow by the American Geophysical Union's Thriving Earth Exchange."},
+    {"date": "2023-06-12", "description": "Won 1st place in the SpaceHack for Sustainability Hackathon at Arizona State University."},
+    {"date": "2022-12-01", "description": "Started my PhD journey at Arizona State University."},
+    {"date": "2021-09-17", "description": "Won 1st place in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences."},
 ]
 
 
@@ -460,9 +460,9 @@ I am currently seeking a faculty position where I can start my own research grou
         
         # Smarter description based on talk type
         if talk['type'].lower() == 'moderator':
-            description = f"🎤 Moderated the session, **'{talk['title']}'**, at {talk['venue']}."
+            description = f"Moderated the session, **'{talk['title']}'**, at {talk['venue']}."
         else:
-            description = f"🎤 Presented a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
+            description = f"Presented a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
         
         news_items.append({"date": date_obj, "description": description})
         
