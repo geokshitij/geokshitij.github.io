@@ -135,7 +135,8 @@ media_data = [
 
 courses_data = [
     {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
-    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "GitHub Repository", "url": "https://github.com/geokshitij/py4all"}
+    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "GitHub Repository", "url": "https://github.com/geokshitij/py4all"},
+    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Story: The Lifelines of the Sonoran Desert", "venue": "Data Story", "url": "https://geokshitij.github.io/azwaters/"}
 ]
 reports_data = [
     {"authors": "UNDRR", "year": "2022", "title": "Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific", "venue": "United Nations Office for Disaster Risk Reduction (UNDRR)", "url": "https://www.undrr.org/quick/71248"}
