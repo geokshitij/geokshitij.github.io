@@ -11,6 +11,7 @@ from datetime import datetime
 
 # This list allows you to manually add news that isn't an award or talk.
 other_news_data = [
+    {"date": "2025-09-12", "description": "Web map story for Arizona water systems is published at https://geokshitij.github.io/azwaters/"},
     {"date": "2025-07-29", "description": "Officially became a PhD Candidate after successfully passing my comprehensive exam."},
     {"date": "2024-10-21", "description": "Received the Outstanding Poster Award for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
     {"date": "2024-05-15", "description": "Selected as a Community Science Fellow by the American Geophysical Union's Thriving Earth Exchange."},
