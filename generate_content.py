@@ -720,10 +720,20 @@ I plan to teach a variety of courses at the intersection of water resources, dat
 
 ---
 
-### Past Experience
+### Instructor of Record
 {% include base_path %}
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+  {% if post.type == "Instructor of Record" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+### Teaching Assistant
+{% include base_path %}
+{% for post in site.teaching reversed %}
+  {% if post.type == "Teaching Assistant" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
 
 ---
