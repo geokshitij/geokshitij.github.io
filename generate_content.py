@@ -834,7 +834,8 @@ author_profile: true
     print("\n--- Generating Collection Files ---")
     generate_collection_files(publications_data, "_publications", "publications", "publication")
     generate_collection_files(talks_data, "_talks", "talks", "talks", type_key="type", default_type="Talk")
-    generate_collection_files(teaching_data, "_teaching", "teaching", "teaching")
+    # ** FIX IS HERE **
+    generate_collection_files(teaching_data, "_teaching", "teaching", "teaching", type_key="type")
     generate_collection_files(blog_data, "_posts", "posts", "posts")
     
     print("\nGeneration complete!")

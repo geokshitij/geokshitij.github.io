@@ -2,6 +2,7 @@
 title: "GIS and Remote Sensing (CE 78501)"
 collection: teaching
 permalink: /teaching/2020-08-15-gis-and-remote-sensing-ce-78501
+type: "Instructor of Record"
 venue: 'Tribhuvan University, Nepal'
 date: '2020-08-15'
 description: 'Served during the Fall 2020 semester.'
