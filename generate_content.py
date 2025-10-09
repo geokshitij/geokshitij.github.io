@@ -1,25 +1,11 @@
-# /geokshitij.github.io/generate_content.py
+# /geokshitij-geokshitij.github.io/generate_content.py
 import os
 import re
-from datetime import datetime
 
 # =============================================================================
 # DATA SECTION
-# This is the single source of truth for the website's content,
+# This is the single source of truth for your website's content.
 # =============================================================================
-
-
-# This list allows you to manually add news that isn't an award or talk.
-other_news_data = [
-    {"date": "2025-09-12", "description": "Web map story for Arizona water systems is published at (https://geokshitij.github.io/azwaters/)"},
-    {"date": "2025-07-29", "description": "Officially became a PhD Candidate after successfully passing my comprehensive exam."},
-    {"date": "2024-10-21", "description": "Received the Outstanding Poster Award for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium."},
-    {"date": "2024-05-15", "description": "Selected as a Community Science Fellow by the American Geophysical Union's Thriving Earth Exchange."},
-    {"date": "2023-06-12", "description": "Won 1st place in the SpaceHack for Sustainability Hackathon at Arizona State University."},
-    {"date": "2022-12-01", "description": "Started my PhD journey at Arizona State University."},
-    {"date": "2021-09-17", "description": "Won 1st place in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences."},
-]
-
 
 personal_info = {
     "summary": "I work on data-driven hydrology, decision support systems in geosciences, and the innovative use of earth observation and machine learning for achieving sustainable development.",
@@ -57,7 +43,7 @@ personal_info = {
 publications_data = [
     {"title": "Developing a framework for assessment of the school’s exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2025-12-31", "paperurl": "", "citation": "Bishui, C., … & <strong>Dahal. K.</strong> (Under Review). &quot;Developing a framework for assessment of the school’s exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
     {"title": "Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions", "venue": "Applied Soft Computing", "date": "2025-12-30", "paperurl": "", "citation": "<strong>Dahal, K.</strong>, Gupta, A., Bokati, L. & Kumar, S.* (Under Review). &quot;Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions.&quot; <i>Applied Soft Computing</i>."},
-    {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). &quot;Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
+    {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). &quot;Nepal’s carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
     {"title": "Policy Relevance of IPCC Reports for the SDGs and Beyond", "venue": "Resources, Environment and Sustainability", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.resenv.2025.100192", "citation": "Pradhan, P., Joshi, S., <strong>Dahal, K.</strong>, Hu, Y., Subedi, D. R., Putra, M. P. I. F., Vaidya, S., Pant, L. P., Dhakal, S., Hubacek, K., Rupakheti, M., Roberts, D., & van den Hurk, B. (2025). &quot;Policy Relevance of IPCC Reports for the SDGs and Beyond.&quot; <i>Resources, Environment and Sustainability (Invited Editorial)</i>."},
     {"title": "Urban agriculture matters for sustainable development", "venue": "Cell Reports Sustainability", "date": "2024-01-01", "paperurl": "https://doi.org/10.1016/j.crsus.2024.100217", "citation": "Pradhan, P., Subedi, D. R., <strong>Dahal, K.</strong>, Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). &quot;Urban agriculture matters for sustainable development.&quot; <i>Cell Reports Sustainability</i>."},
     {"title": "Identification of groundwater potential zones in data-scarce mountainous region using explainable machine learning", "venue": "Journal of Hydrology", "date": "2023-01-01", "paperurl": "https://doi.org/10.1016/j.jhydrol.2023.130417", "citation": "<strong>Dahal, K.</strong>*, Sharma, S., Shakya, A., Talchabhadel, R., Adhikari, S., Pokharel, A., Sheng, Z., Pradhan, A. M. S., & Kumar, S. (2023). &quot;Identification of groundwater potential zones in data-scarce mountainous region using explainable machine learning.&quot; <i>Journal of Hydrology</i>."},
@@ -75,43 +61,37 @@ publications_data = [
 talks_data = [
     {"title": "A Framework to Improve Hydrological Forecasting with Deep Learning", "type": "Conference Poster", "venue": "ASU Flow 2024", "date": "2024-10-21", "location": "Arizona State University, USA", "description": "This poster received the Outstanding Poster Award."},
     {"title": "Operational Streamflow Forecasting Tool for Arizona Streams", "type": "Conference Talk", "venue": "CMWR 2024", "date": "2024-10-02", "location": "University of Arizona, USA"},
-    {"title": "Mapping wetland potential in arid environments: A machine learning approach with geospatial interpretability", "type": "Conference Talk", "venue": "AGU Chapman Conference on Remote Sensing of the Water Cycle", "date": "2024-02-13", "location": "Honolulu, HI, USA"},
     {"title": "Explainable Machine Learning in Groundwater Potential Mapping", "type": "Invited Webinar", "venue": "UNESCO GWYN", "date": "2024-03-13", "location": "Online", "url": "https://rb.gy/ue0vik"},
+    {"title": "Mapping wetland potential in arid environments A machine learning approach with geospatial interpretability", "type": "Conference Talk", "venue": "AGU Chapman Conference on Remote Sensing of the Water Cycle", "date": "2024-02-13", "location": "Honolulu, HI, USA"},
     {"title": "Advances in Hyperspectral Remote Sensing for Water Resources", "type": "Conference Poster", "venue": "AGU Fall Meeting 2023", "date": "2023-12-11", "location": "San Francisco, USA"},
     {"title": "Discussion Facilitator at Session 1 --Development of core use cases in environmental sciences", "type": "Invited Talk", "venue": "5th NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2023-09-19", "location": "Online", "url": "https://noaaai2023.sched.com/event/1Q6Qa/session-1-development-of-core-use-cases-in-environmental-sciences"},
-    {"title": "Remote Sensing, Big Data Analytics, and Cloud Computing: Application to Water Quality Modeling", "type": "Workshop", "venue": "Environmental & Water Resources Institute (EWRI) Congress 2023, ASCE", "date": "2023-05-22", "location": "Henderson, NV, USA"},
+    {"title": "Remote Sensing, Big Data Analytics, and Cloud Computing Application to Water Quality Modeling", "type": "Workshop", "venue": "Environmental & Water Resources Institute (EWRI) Congress 2023, ASCE", "date": "2023-05-22", "location": "Henderson, NV, USA"},
     {"title": "Explainable Artificial Intelligence to visualize the unseen", "type": "Conference Talk", "venue": "EWRI Congress 2023", "date": "2023-05-21", "location": "Nevada, USA"},
     {"title": "Spatial decision making with landslide susceptibility and critical infrastructure", "type": "Conference Talk", "venue": "DRI Technical Conference 2022", "date": "2022-10-12", "location": "Delhi, India"},
-    {"title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "type": "Invited Lecture", "venue": "Khwopa College of Engineering, Tribhuvan University", "date": "2022-06-21", "location": "Nepal", "url": "https://fb.watch/kO9H0OeO2T/"},
+    {"title": "Landslide susceptibility and monsoon preparedness in Nepal An engineering perspective", "type": "Invited Lecture", "venue": "Khwopa College of Engineering, Tribhuvan University", "date": "2022-06-21", "location": "Nepal", "url": "https://fb.watch/kO9H0OeO2T/"},
     {"title": "Introduction to Google Earth Engine for cloud computing", "type": "Invited Discussion", "venue": "S4W Nepal", "date": "2022-04-07", "location": "Online"},
     {"title": "Google Earth Engine and cloud computing", "type": "Invited Lecture", "venue": "Central Department of Geography, Tribhuvan University", "date": "2022-04-06", "location": "Nepal"},
     {"title": "National landslides database and susceptibility assessment of Nepal", "type": "Conference Poster", "venue": "AGU Fall Meeting 2021", "date": "2021-12-13", "location": "Online", "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFMNH35F..11D"},
     {"title": "Framework for multi-hazards susceptibility assessment in Google Earth Engine", "type": "Conference Poster", "venue": "AGU Fall Meeting 2021", "date": "2021-12-13", "location": "Online", "url": "https://ui.adsabs.harvard.edu/abs/2021AGUFMGC45I0916D"},
     {"title": "Spatial downscaling of coarse resolution satellite-based precipitation estimates (SPEs) to 1 km using Machine Learning", "type": "Conference Talk", "venue": "3rd NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2021-09-13", "location": "USA"},
     {"title": "Machine Learning to Estimate Precipitation with Satellite-based and Gauged Observations", "type": "Conference Talk", "venue": "3rd NOAA Workshop on Leveraging AI in Environmental Sciences", "date": "2021-09-13", "location": "USA"},
-    {"title": "Chocolate Talk on DRR #3: Artificial intelligence (AI) for disaster risk reduction", "type": "Moderator", "venue": "U-INSPIRE Alliance", "date": "2021-08-28", "location": "Online", "url": "https://www.youtube.com/watch?v=mHLaFQw-C7A"},
-    {"title": "DRR talk #1: The future of disaster risk governance in 2045", "type": "Invited Talk", "venue": "Disaster Risk Reduction and Tsunami Information, UNESCO Office, Jakarta", "date": "2021-07-30", "location": "Online", "url": "https://fb.watch/kO9y3nBapv/"},
+    {"title": "Chocolate Talk on DRR #3 Artificial intelligence (AI) for disaster risk reduction", "type": "Moderator", "venue": "U-INSPIRE Alliance", "date": "2021-08-28", "location": "Online", "url": "https://www.youtube.com/watch?v=mHLaFQw-C7A"},
+    {"title": "DRR talk #1 The future of disaster risk governance in 2045", "type": "Invited Talk", "venue": "Disaster Risk Reduction and Tsunami Information, UNESCO Office, Jakarta", "date": "2021-07-30", "location": "Online", "url": "https://fb.watch/kO9y3nBapv/"},
     {"title": "Landslide Susceptibility Mapping in Nepal using Google Earth Engine", "type": "Conference Talk", "venue": "Geo for Good 2020", "date": "2020-10-20", "location": "USA"},
 ]
-
 
 teaching_data = [
     {"title": "Num. Methods for Engrs (CEE 384)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served during the Spring 2024 semester."},
     {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2023-08-15", "description": "Served during the Fall 2023 semester."},
-    {"title": "Engineering Hydrology (CE 606)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served during the Spring 2021 semester."},
-    {"title": "GIS and Remote Sensing (CE 78501)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served during the Fall 2020 semester."},
-    {"title": "Engineering Surveying (CE 504)", "type": "Teaching Assistant", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served during the Spring 2019 semester."},
-    # Note: I removed one duplicate entry for Engineering Hydrology from your CV for this list.
+    {"title": "Engineering Hydrology (CE 606)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served during the Spring 2021 semester."},
+    {"title": "GIS and Remote Sensing (CE 78501)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served during the Fall 2020 semester."},
+    {"title": "Engineering Surveying (CE 504)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served during the Spring 2019 semester."},
 ]
 
-
 media_data = [
-    # Op-Eds
     {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},
     {"type": "Op-Ed", "authors": "Dahal, K., Talchabhadel, R., & Thapa, B. R.", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "Onlinekhabar", "url": "https://english.onlinekhabar.com/landslide-susceptibility-nepal.html"},
     {"type": "Op-Ed", "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.", "year": "2021", "title": "मेलम्चीको बाढीबाट के सिक्ने ?", "venue": "Onlinekhabar", "url": "https://www.onlinekhabar.com/2021/06/974746"},
-    
-    # Media Citations
     {"type": "Media Citation", "year": "2025", "title": "Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal", "venue": "China Daily", "url": "https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html"},
     {"type": "Media Citation", "year": "2025", "title": "Open burning main cause of air pollution", "venue": "The Rising Nepal", "url": "https://risingnepaldaily.com/news/58977"},
     {"type": "Media Citation", "year": "2025", "title": "Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal - World News", "venue": "WION TV", "url": "https://www.youtube.com/watch?v=UFb_3MyJpew"},
@@ -132,94 +112,162 @@ media_data = [
     {"type": "Media Citation", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "PreventionWeb, UNDRR", "url": "https://www.preventionweb.net/news/landslide-susceptibility-and-monsoon-preparedness-nepal-engineering-perspective"},
 ]
 
-
-
 courses_data = [
     {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
     {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "GitHub Repository", "url": "https://github.com/geokshitij/py4all"},
     {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Story: The Lifelines of the Sonoran Desert", "venue": "Data Story", "url": "https://geokshitij.github.io/azwaters/"}
 ]
+
 reports_data = [
     {"authors": "UNDRR", "year": "2022", "title": "Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific", "venue": "United Nations Office for Disaster Risk Reduction (UNDRR)", "url": "https://www.undrr.org/quick/71248"}
 ]
-projects_data = [
-    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Story: The Lifelines of the Sonoran Desert", "venue": "Data Story", "url": "https://geokshitij.github.io/azwaters/"}
-]
-
 
 blog_data = [
-
-
-
-        {
-        "title": "The Triangle of Self-Obsession",
-        "date": "2023-06-14",
-        "tags": ["Mindset", "Wisdom", "Philosophy", "Ego", "Letting Go"],
-        "excerpt": "There is a self-destructive pattern that traps us in suffering. It is a triangle with three points: resentment, anger, and fear. The only way out is to see it for what it is.",
-        "content": """There is a self-destructive pattern that traps us in suffering. It is a triangle that keeps our world small and centered on ourselves. To escape it, you must first recognize its shape.\n\n### Resentment is the Past\n\nThis is the poison of reliving what has already happened. It is the obsessive focus on past hurts and injustices. It keeps you chained to a story that is over, forcing you to carry a weight that no longer needs to be held. \n\n### Anger is the Present\n\nThis is the fire of reacting to what is happening right now. It is the ego’s fierce resistance to the present moment not being what it wants. It is a defense against a feeling of powerlessness, a surge of energy that consumes you here and now.\n\n### Fear is the Future\n\nThis is the anxiety of imagining what is yet to come. It is the story of a future catastrophe, a failure, or a loss that has not happened. It keeps you trapped in a negative possibility, robbing you of peace in the only moment you truly have.\n\n### One Feeling, Three Masks\n\nLook closely at these three emotions. Resentment, anger, and fear. Though they appear to live in different times—past, present, future—they are all the same feeling. \n\nThey are the feeling of self-obsession. Each one is a story entirely about *you*. What happened to you. What is happening to you. What might happen to you. \n\nThis is the illusion that will destroy your peace.\n\nGet rid of all of it. Do not hold anything back. Let go of the story, and the suffering will follow."""
-    },
-
-
-        {
-        "title": "On Forgiveness",
-        "date": "2022-04-02",
-        "tags": ["Wisdom", "Forgiveness", "Mindset", "Personal Growth"],
-        "excerpt": "We misunderstand forgiveness. We think it's a gift we give to others. The truth is, it's a power we give to ourselves. And it starts in the one place we often forget to look.",
-        "content": """We are told to forgive. But what does that really mean? The popular view treats forgiveness as a weakness, an act of letting someone get away with a wrongdoing. This is a profound misunderstanding. Forgiveness is not weakness. It is power.\n\nBut before you can offer it to the world, you must first give it to yourself.\n\n### The First Person to Forgive is You\n\nThis is the most crucial step, and the one most people skip. We forgive others, we forget what they did, but we carry the weight of our own mistakes forever. We become our own harshest judges. But you cannot forgive the world if you live in a state of self-resentment. How can you offer compassion to others that you deny yourself?\n\nIf you want to be free, the work starts here. You must forgive yourself for not knowing then what you know now. Forgive your past self. They were doing the best they could with the understanding they had.\n\n### Don’t Take Anything Personally\n\nWhen someone hurts you, it is almost never about you. Their actions are a reflection of their own stories, their own pain, and their own limitations. We label their actions as ‘wrong,’ but ‘right’ and ‘wrong’ are often just taglines, stories we tell ourselves. In reality, people are just people, doing the best they can.\n\nSo, do not fall into their trap. Do not let their inner world become your inner prison. Forgive them. You can be sad or angry when you confirm the truth; you don't need to be that way from the beginning based on a story in your head. Simply decide not to carry their burden for them. This decision is an act of liberation.\n\n### The Power to Choose\n\nWhen you haven't forgiven yourself, you cannot truly forgive others. You will see their faults through the lens of your own self-judgment. Every mistake they make will echo a mistake of your own that you haven’t made peace with.\n\nBut when you practice self-forgiveness, everything changes. You understand that we are all flawed, all learning, all trying.\n\nFrom this place, forgiveness is no longer a chore. It becomes a simple, powerful choice. It is the choice to release the past. It is the choice to take your power back. Forgiveness is a power, and you have to do it."""
-    },
-
-    {
-        "title": "The Four Agreements",
-        "date": "2022-08-23",
-        "tags": ["Wisdom", "Mindset", "Personal Growth", "Philosophy", "Book Summary"],
-        "excerpt": "There are four simple truths that, if practiced, can free us from the self-imposed suffering of blame, judgment, and assumption. Here is a guide to these transformative agreements.",
-        "content": """So much of our suffering isn't caused by life itself, but by the stories we tell ourselves about it. We live by a set of unconscious agreements that create needless conflict, both internally and externally. The Toltec wisdom of *The Four Agreements* offers a simple, yet profound, new operating system for your mind—one based on freedom and self-love.\n\nHere are the four promises to make to yourself.\n\n### 1. Be Impeccable with Your Word\n\nYour word is the power you have to create. It is a seed. With it, you can create a beautiful dream or you can destroy everything around you. \n\nThis is especially true for the words you use on yourself. Your mind doesn’t question what you tell it; it simply believes. If you tell yourself you are not smart enough, not strong enough, not worthy, your mind will accept it as truth. To be impeccable is to use your words with love and truth, starting with the way you speak to yourself. It is the first and most fundamental step to reclaiming your power.\n\n### 2. Don't Take Anything Personally\n\nWhat others say and do is a projection of their own reality, their own dream. When someone is angry or unkind to you, they are revealing their own inner struggles. It is never about you.\n\nWhen you understand this, you gain a kind of immunity. The opinions and actions of others no longer have the power to wound you. This single agreement can save you from countless grudges, conflicts, and needless emotional pain. It allows you to interact with others from a place of compassion rather than reaction.\n\n### 3. Don't Make Assumptions\n\nWe have a tendency to invent entire stories in our minds when we don’t have all the facts. We see a friend who doesn’t say hello and assume they are angry with us. We see someone driving fast and assume they are a reckless person. We rarely consider that our friend might be lost in thought, or that the driver might be in an emergency.\n\nAssumptions create misunderstanding and drama. The solution is simple: have the courage to ask questions. Seek clarity instead of creating confusion. Give people the benefit of the doubt. Clear communication can dissolve a problem before it even begins.\n\n### 4. Always Do Your Best\n\nThis agreement is not about perfection. It’s about understanding that your “best” will change from moment to moment. Your best when you are healthy is different from your best when you are sick. Your best when you are rested is different from your best when you are tired. \n\nIt simply means that in any given situation, you give it all you have—no more, no less. As the story goes, Michelangelo carved the hidden, unseen parts of his sculptures with the same care as the parts everyone would see. When asked why, he replied, \"Because God can see it.\" He was doing his best not for others, but for himself. \n\nWhen you always do your best, you have no room for self-judgment or regret. You act with integrity, and in that, you find peace."""
-    },
-
-
-        {
-        "title": "Your Own Best Counselor is You",
-        "date": "2024-12-02",
-        "tags": ["Mindset", "Wisdom", "Duality", "Self-Awareness"],
-        "excerpt": "When others have a problem, we give advice. When we have a problem, we seek it. What if we could create an inner observer to counsel ourselves with the same clarity and compassion?",
-        "content": """Have you ever noticed a strange thing we do? When a friend comes to us with a problem, the path forward often seems perfectly clear. We see the situation from a distance, and with calm objectivity, we offer advice.\n\nBut when the very same problem happens to us, that clarity vanishes. We're lost in a fog of emotion and uncertainty. Suddenly, we are the ones seeking advice from others.\n\nWhy is there this disconnect? When it’s someone else’s issue, we are observers. When it's our own, we are participants. But what if you could be both at the same time? What if you could create a duality within yourself?\n\n### Creating Your Inner Observer\n\nThe practice is simple, but not easy. It involves creating a "second self"—a detached, wise observer who can watch you navigate life without getting swept up in the immediate emotion.\n\nI learned something like this during Vipassana meditation. You learn to observe your own thoughts and feelings as they arise and pass away, without becoming them. You realize you are not your anger, you are the one watching the anger. You are not your sadness, you are the one aware of the sadness.\n\nThis observer is your inner counselor. It's the part of you that has all the wisdom you so freely give to others.\n\n### How to Be Your Own Advisor\n\nWhen you feel overwhelmed or lost, instead of immediately seeking external advice, try this:\n\n1.  **Step Back:** Create a little space between you and the problem. Take a few breaths.\n\n2.  **Frame it as a Friend’s Problem:** Ask yourself, "If my closest friend came to me with this exact situation, what would I tell them?"\n\nInstantly, the wise, compassionate, and objective part of you will surface. The advice that emerges is often calm, clear, and exactly what you need to hear. You can be sad when you know the truth; you don't need to be sad at the beginning based on a story you tell yourself. You can be angry when you confirm the facts; you don’t need to be angry based on an assumption.\n\nWhen you counsel yourself, you give yourself the gift of your own wisdom, free from the distortions of panic and ego.\n\nThis practice also changes how you interact with others. Once you recognize that everyone has their own inner counselor, the impulse to immediately give advice fades. You realize it is often better to simply listen and trust that they, too, can find their own way. You can't live their life for them, just as they can't live yours. We must each walk our own path, but with this duality, we never have to walk it alone."""
-    },
-
-        {
-        "title": "Three Roads to Peace",
-        "date": "2025-04-18",
-        "tags": ["Philosophy", "Wisdom", "Mindfulness", "Happiness"],
-        "excerpt": "Ancient wisdom suggests that peace isn't a one-size-fits-all state. Instead, there are three distinct paths one can walk: the way of knowledge, the way of action, and the way of devotion.",
-        "content": """We all seek peace, but what is it? Is it the absence of noise, the resolution of conflict, or something deeper? \n\nAncient traditions teach that peace isn't a single destination reached by one road. Instead, there are at least three distinct paths suited for different types of people: the path of the thinker, the path of the doer, and the path of the lover. They are known as the way of knowledge (Gyan), the way of action (Karma), and the way of devotion (Bhakti).\n\nYou don’t have to choose just one, but understanding them can reveal where you naturally find your moments of stillness.\n\n### 1. The Path of Knowledge (Gyan): Peace Through Understanding\n\n> *For the one who asks, \"Why?\"*\n\nThis is the path of the seeker, the philosopher, the meditator. It is the peace that comes not from changing the world, but from understanding it exactly as it is. It operates on a simple but radical premise: suffering comes from our interpretation of reality, not reality itself.\n\nOn this path, you learn to observe your thoughts and sensations without judgment. You see that an event is just an event. The story you attach to it—the one that labels it “good” or “bad”—is a separate creation of the mind. My experience with Vipassana meditation touched on this directly: pain is a sensation, but the story of “I can’t bear this pain” is suffering.\n\nThis way leads to peace by developing an inner witness, an observer self that watches the mind’s chatter without getting swept away by it. By understanding the nature of your own mind, you find a stillness that no external event can truly shake.\n\n### 2. The Path of Action (Karma): Peace Through Detachment\n\n> *For the one who asks, \"How?\"*\n\nThis is the path for the doer, the builder, the person engaged with the world. It doesn’t ask you to renounce action, but to renounce your attachment to the *fruits* of that action. It's a difficult but powerful concept: do your work for the sake of the work itself, not for praise, reward, or a specific outcome.\n\nWhen you apply for a hundred jobs, the work is in the application, not in the agony of waiting for a reply. When you write, the work is in the writing, not in the reviews. The Path of Action teaches that your duty is to your effort alone. The results are never fully in your control.\n\nBy letting go of the outcome, you are liberated. You are no longer on an emotional rollercoaster dictated by success and failure. You find a deep, quiet peace in simply doing what is in front of you with full attention and integrity. The action itself becomes a form of meditation.\n\n### 3. The Path of Devotion (Bhakti): Peace Through Surrender\n\n> *For the one who feels deeply.*\n\nThis is the path of the heart. Where the first path uses the mind and the second uses the hands, this path uses emotion and love. It is about dissolving the ego by surrendering to something larger than yourself.\n\nFor many, this is God. For others, it might be a teacher, the beauty of nature, a community, or a profound ideal like Truth or Love. The object of devotion is less important than the act of surrendering itself.\n\nThis path brings peace by replacing the ego's constant struggle for control with a feeling of profound trust and connection. Instead of trying to figure everything out or control every outcome, you learn to let go. You offer up your actions, your worries, and your hopes, and in that act of giving, you find a sense of belonging and an unshakable peace that comes from the heart."""
-    },
-
-
-
-
-        {
-        "title": "How to Find Your Purpose",
-        "date": "2023-04-02",
-        "tags": ["Purpose", "Wisdom", "Self-Discovery", "Ikigai", "Work"],
-        "excerpt": "The search for 'passion' can be abstract. This framework offers a practical compass with four key questions: What do you love, what are you good at, what does the world need, and what can you be paid for?",
-        "content": """The advice to \"find your passion\" often feels vague and overwhelming, as if you're searching for a hidden treasure with no map. But what if you had a compass instead? A framework with four cardinal directions that, when aligned, point toward a fulfilling and sustainable purpose.\n\nThis compass is built on four simple but profound questions.\n\n### 1. What do you love?\n\n> *What activities bring you genuine joy?*\n\nThis is the starting point, the fuel for your journey. What are the things you would do even if no one was paying you or watching? What activities make you lose track of time? This is where your intrinsic motivation lies.\n\nIt could be solving complex puzzles, organizing systems, creating art, or connecting with people. Don't judge it or worry if it's practical yet. Just identify the activities that feel less like work and more like play. This is your 'passion' in its purest form.\n\n### 2. What are you good at?\n\n> *Where do your skills and talents lie?*\n\nPassion alone isn't enough; it thrives when paired with competence. This question isn't just about what you love, but what you excel at. This can be a natural talent or a skill you’ve honed through years of practice.\n\nWhere do you find that your effort produces unusually good results? Maybe you're a natural teacher, a gifted coder, or you have a knack for simplifying complex ideas. While you can love something without being a master, the feeling of competence is a crucial ingredient for long-term fulfillment. This is your 'profession' in the making.\n\n### 3. What does the world need?\n\n> *What problem do you want to solve?*\n\nThis is the question that transforms passion into purpose. An activity done only for yourself can feel isolating, but an activity that serves others creates a profound sense of meaning. \n\nThe 'world' doesn't have to be the entire globe. It can be your community, your family, a specific industry, or a small group of people who need what you have to offer. What problems do you see that you feel compelled to help solve? This could be anything from building sustainable water systems to creating software that makes someone's day a little easier. This is your 'mission'.\n\n### 4. What can you be paid for?\n\n> *How can your value sustain you?*\n\nThis is the practical question that grounds your purpose in reality. It asks: Is there a market for the intersection of what you love, what you're good at, and what the world needs?\n\nThis isn't about selling out; it's about creating a sustainable loop where you can continue doing meaningful work without burning out. The world signals what it values through exchange. Finding what people are willing to pay for—whether through a salary, a business, or freelance work—is what turns your passion and mission into a viable 'vocation'.\n\nThe goal is not to find an answer to just one of these questions, but to find the place where all four overlap. That intersection is where passion, profession, mission, and vocation meet. It's more than a job; it's a reason for being."""
-    }, 
-
-        {
-        "title": "The Seasons of Life",
-        "date": "2023-08-20",
-        "tags": ["Wisdom", "Jim Rohn", "Personal Growth", "Resilience"],
-        "excerpt": "Life moves in cycles. As Jim Rohn taught, understanding how to act in each season is the secret to a well-lived life. The rules are simple, but not easy.",
-        "content": """The great philosopher Jim Rohn taught a simple but profound metaphor: life unfolds in seasons, just like a year. There are winters of hardship, springs of opportunity, summers of effort, and autumns of harvest.\n\nThe seasons don't ask for permission; they simply arrive. You cannot change them. You can, however, change what you do. Learning to act with wisdom in each season is the key to navigating everything life throws at you.\n\nHere are four essential rules for the seasons of your life.\n\n### 1. You Reap What You Sow (The Law of Spring)\n\nSpring is the season of opportunity. The ground is ready, but it won’t plant itself. This is the fundamental law of reality: you cannot have a harvest in the fall if you do not plant a seed in the spring.\n\nDon’t be fooled by the ease of the season. Spring demands action. This is the time to start the business, learn the skill, make the call. If you spend this window waiting for perfect conditions, you guarantee an empty basket later. The work must be done.\n\n### 2. Think of Summer All Winter (The Law of Winter)\n\nWinter is the season of hardship. The ground is frozen, progress seems impossible, and the warmth of success can feel like a distant memory. The winds of loss, disappointment, and delay will blow. They always do.\n\nThis is the time to build your character. While the world outside is cold, you can get stronger inside. This is when you read the books, study, reflect, and build the internal strength needed for the next opportunity. You must hold the vision of a future harvest in your mind to keep you warm through the cold. Remember the promise of summer while you endure the winter.\n\n### 3. Think of Winter All Summer (The Law of Summer)\n\nSummer is the season of abundance and growth. The sun is shining, your efforts are paying off, and everything feels easy. This is the most dangerous season, because it's when we become complacent. It's easy to forget that another winter is always coming.\n\nThe wise person uses the sunny days to prepare. While enjoying your success, you must be disciplined enough to mend the roof, save a portion of your profits, and strengthen the foundations of your life. Don't be so intoxicated by the sunshine that you forget to prepare for the inevitable storms.\n\n### 4. Understand That Sometimes, It Hails\n\nThere is a final, humbling truth. You can do everything right—you can plant in the spring, protect your crop all summer, and be fully prepared for winter—and then, just before the harvest, a hailstorm can come and wipe it all out.\n\nThis isn't fair. It isn't right. But, as Jim Rohn said, it’s just that kind of planet. Some things are out of your control. The hailstorms are part of the deal. The measure of your character is not whether you can prevent the storm—you can't—but whether you have the resilience to get up and plant again when the next spring arrives."""
-    },
-
     {
         "title": "How Tall Should a Tree Grow?",
         "date": "2025-08-16",
         "tags": ["Potential", "Jim Rohn", "Personal Growth", "Wisdom"],
         "excerpt": "A simple lesson from nature, inspired by Jim Rohn, on why we should never place artificial limits on our own potential.",
-        "content": """Have you ever asked a simple but profound question: How tall should a tree grow? The answer is beautifully simple. A tree should grow as tall as it possibly can.\n\nThis observation from nature holds one of the most powerful lessons about human potential. A tree never grows halfway and decides that’s far enough. It never stops reaching for more sun and driving its roots deeper for more nourishment. The tree isn't greedy. It is simply fulfilling its nature to become all it can be.\n\nWhy should we treat ourselves any differently? \n\nWe often put limits on our own growth. We ask questions that build fences around our possibilities. But if we apply the wisdom of the tree, the answers become clear.\n\n- How many books should you read? As many as you can.\n- How much money should you make? As much as you can.\n- How much should you share? As much as you possibly can.\n- How hard should you try? As hard as you possibly can.\n\nThe point isn't to hoard money or knowledge. The goal is to see what you are capable of becoming. The act of reaching for your full potential transforms you. When you develop the capacity to earn more, you gain the capacity to give more. When you learn more, you have more wisdom to offer the world.\n\nLife is not about being "good enough." It is about being all you can be. And just like a tree, we must accept that challenges will come. The storms will rage and the seasons will turn. Some years, the conditions will be perfect. In other years, hail might strike just before the harvest. That is the nature of this planet.\n\nBut the tree's job remains the same. And so does yours.\n\nSo the next time you wonder how far you should go, look at a tree. Stop building your own ceilings. Start reaching."""
-    },
+        "content": """Have you ever asked a simple but profound question: How tall should a tree grow? The answer is beautifully simple. A tree should grow as tall as it possibly can.
 
+This observation from nature holds one of the most powerful lessons about human potential. A tree never grows halfway and decides that’s far enough. It never stops reaching for more sun and driving its roots deeper for more nourishment. The tree isn't greedy. It is simply fulfilling its nature to become all it can be.
+
+Why should we treat ourselves any differently? 
+
+We often put limits on our own growth. We ask questions that build fences around our possibilities. But if we apply the wisdom of the tree, the answers become clear.
+
+- How many books should you read? As many as you can.
+- How much money should you make? As much as you can.
+- How much should you share? As much as you possibly can.
+- How hard should you try? As hard as you possibly can.
+
+The point isn't to hoard money or knowledge. The goal is to see what you are capable of becoming. The act of reaching for your full potential transforms you. When you develop the capacity to earn more, you gain the capacity to give more. When you learn more, you have more wisdom to offer the world.
+
+Life is not about being "good enough." It is about being all you can be. And just like a tree, we must accept that challenges will come. The storms will rage and the seasons will turn. Some years, the conditions will be perfect. In other years, hail might strike just before the harvest. That is the nature of this planet.
+
+But the tree's job remains the same. And so does yours.
+
+So the next time you wonder how far you should go, look at a tree. Stop building your own ceilings. Start reaching."""
+    },
+    {
+        "title": "Four Simple Laws for Navigating Life",
+        "date": "2025-08-15",
+        "tags": ["Mindset", "Wisdom", "Productivity", "Philosophy"],
+        "excerpt": "Life doesn't come with an instruction manual, but a few fundamental principles can help make sense of it all. These mental models can help you navigate the world with more wisdom and less stress.",
+        "content": """Life doesn't come with an instruction manual, but there are a few fundamental principles that can help make sense of it all. Think of these not as strict rules, but as mental models—simple ways to understand why things happen the way they do.
+
+Here are four simple “laws” that can help you navigate the world with a little more wisdom and a lot less stress.
+
+#### 1. Murphy's Law: Plan for What Can Go Wrong
+
+> *"Anything that can go wrong will go wrong."*
+
+Sound pessimistic? It’s actually a superpower for practical planning. Murphy’s Law reminds us that life is unpredictable. Flights get delayed, traffic appears out of nowhere, and files get corrupted right before a deadline.
+
+Instead of hoping for the best, this law encourages you to plan for it. By anticipating potential problems and giving yourself a buffer, you aren’t being negative—you’re being prepared.
+
+#### 2. The Pareto Principle: A New Look at 80/20
+
+> *80% of results come from 20% of efforts.*
+
+Most people know this rule as a way to identify what's most important. But consider it from another angle, especially when you're deep in a project.
+
+Have you ever felt like you've put in 80% of the work, but only have 20% of the final result to show for it? It can be incredibly discouraging. This is where the principle offers relief. That first 80% of your effort is for building the foundation—the research, the structure, the messy first draft. It’s essential, but not always visible.
+
+The final 20% of your effort is where you refine, connect the dots, and polish everything. This is the phase that delivers 80% of the finished project's value. So don't worry if your progress feels slow. You will get the remaining 80% of your results when you do that final 20% of the work. It’s a reminder that progress isn’t always linear, and the biggest leaps often happen right at the end.
+
+#### 3. Hick's Law: The Paradox of Choice
+
+> *The more choices you have, the longer it takes to make a decision.*
+
+Have you ever stared at a restaurant menu the size of a novel, only to feel completely paralyzed? That’s Hick's Law. When faced with too many options, our brains can freeze, leading to indecision and anxiety.
+
+The solution is to become a gatekeeper for your own attention. Limit your options where you can. Automate small decisions so you have more mental energy for the big ones. Simplicity is a strategy.
+
+#### 4. The Benefit of the Doubt: Don't Rush to Be Upset
+
+> *When in doubt, assume the most generous reason.*
+
+When a coworker sends a blunt, one-line email, it’s easy to assume they’re being dismissive. When a friend cancels plans, it’s tempting to feel slighted. Our minds are quick to create a negative story.
+
+But why rush into feeling bad?
+
+There will be plenty of time to be sad or angry *if* you confirm the worst is true. You can be upset when you know the facts; you don't need to be upset based on a guess. This isn't about being naive. It's about being strategic with your emotional energy. By offering the benefit of the doubt, you reserve your feelings for reality, not for the fiction you create in your own head."""
+    },
+    {
+        "title": "Three Roads to Peace",
+        "date": "2025-04-18",
+        "tags": ["Philosophy", "Wisdom", "Mindfulness", "Happiness"],
+        "excerpt": "Ancient wisdom suggests that peace isn't a one-size-fits-all state. Instead, there are three distinct paths one can walk: the way of knowledge, the way of action, and the way of devotion.",
+        "content": """We all seek peace, but what is it? Is it the absence of noise, the resolution of conflict, or something deeper? 
+
+Ancient traditions teach that peace isn't a single destination reached by one road. Instead, there are at least three distinct paths suited for different types of people: the path of the thinker, the path of the doer, and the path of the lover. They are known as the way of knowledge (Gyan), the way of action (Karma), and the way of devotion (Bhakti).
+
+You don’t have to choose just one, but understanding them can reveal where you naturally find your moments of stillness.
+
+### 1. The Path of Knowledge (Gyan): Peace Through Understanding
+
+> *For the one who asks, "Why?"*
+
+This is the path of the seeker, the philosopher, the meditator. It is the peace that comes not from changing the world, but from understanding it exactly as it is. It operates on a simple but radical premise: suffering comes from our interpretation of reality, not reality itself.
+
+On this path, you learn to observe your thoughts and sensations without judgment. You see that an event is just an event. The story you attach to it—the one that labels it “good” or “bad”—is a separate creation of the mind. My experience with Vipassana meditation touched on this directly: pain is a sensation, but the story of “I can’t bear this pain” is suffering.
+
+This way leads to peace by developing an inner witness, an observer self that watches the mind’s chatter without getting swept away by it. By understanding the nature of your own mind, you find a stillness that no external event can truly shake.
+
+### 2. The Path of Action (Karma): Peace Through Detachment
+
+> *For the one who asks, "How?"*
+
+This is the path for the doer, the builder, the person engaged with the world. It doesn’t ask you to renounce action, but to renounce your attachment to the *fruits* of that action. It's a difficult but powerful concept: do your work for the sake of the work itself, not for praise, reward, or a specific outcome.
+
+When you apply for a hundred jobs, the work is in the application, not in the agony of waiting for a reply. When you write, the work is in the writing, not in the reviews. The Path of Action teaches that your duty is to your effort alone. The results are never fully in your control.
+
+By letting go of the outcome, you are liberated. You are no longer on an emotional rollercoaster dictated by success and failure. You find a deep, quiet peace in simply doing what is in front of you with full attention and integrity. The action itself becomes a form of meditation.
+
+### 3. The Path of Devotion (Bhakti): Peace Through Surrender
+
+> *For the one who feels deeply.*
+
+This is the path of the heart. Where the first path uses the mind and the second uses the hands, this path uses emotion and love. It is about dissolving the ego by surrendering to something larger than yourself.
+
+For many, this is God. For others, it might be a teacher, the beauty of nature, a community, or a profound ideal like Truth or Love. The object of devotion is less important than the act of surrendering itself.
+
+This path brings peace by replacing the ego's constant struggle for control with a feeling of profound trust and connection. Instead of trying to figure everything out or control every outcome, you learn to let go. You offer up your actions, your worries, and your hopes, and in that act of giving, you find a sense of belonging and an unshakable peace that comes from the heart."""
+    },
+    {
+        "title": "Your Own Best Counselor is You",
+        "date": "2024-12-02",
+        "tags": ["Mindset", "Wisdom", "Duality", "Self-Awareness"],
+        "excerpt": "When others have a problem, we give advice. When we have a problem, we seek it. What if we could create an inner observer to counsel ourselves with the same clarity and compassion?",
+        "content": """Have you ever noticed a strange thing we do? When a friend comes to us with a problem, the path forward often seems perfectly clear. We see the situation from a distance, and with calm objectivity, we offer advice.
+
+But when the very same problem happens to us, that clarity vanishes. We're lost in a fog of emotion and uncertainty. Suddenly, we are the ones seeking advice from others.
+
+Why is there this disconnect? When it’s someone else’s issue, we are observers. When it's our own, we are participants. But what if you could be both at the same time? What if you could create a duality within yourself?
+
+### Creating Your Inner Observer
+
+The practice is simple, but not easy. It involves creating a "second self"—a detached, wise observer who can watch you navigate life without getting swept up in the immediate emotion.
+
+I learned something like this during Vipassana meditation. You learn to observe your own thoughts and feelings as they arise and pass away, without becoming them. You realize you are not your anger, you are the one watching the anger. You are not your sadness, you are the one aware of the sadness.
+
+This observer is your inner counselor. It's the part of you that has all the wisdom you so freely give to others.
+
+### How to Be Your Own Advisor
+
+When you feel overwhelmed or lost, instead of immediately seeking external advice, try this:
+
+1.  **Step Back:** Create a little space between you and the problem. Take a few breaths.
+
+2.  **Frame it as a Friend’s Problem:** Ask yourself, "If my closest friend came to me with this exact situation, what would I tell them?"
+
+Instantly, the wise, compassionate, and objective part of you will surface. The advice that emerges is often calm, clear, and exactly what you need to hear. You can be sad when you know the truth; you don't need to be sad at the beginning based on a story you tell yourself. You can be angry when you confirm the facts; you don’t need to be angry based on an assumption.
+
+When you counsel yourself, you give yourself the gift of your own wisdom, free from the distortions of panic and ego.
+
+This practice also changes how you interact with others. Once you recognize that everyone has their own inner counselor, the impulse to immediately give advice fades. You realize it is often better to simply listen and trust that they, too, can find their own way. You can't live their life for them, just as they can't live yours. We must each walk our own path, but with this duality, we never have to walk it alone."""
+    },
     {
         "title": "On Data-Driven Science in Hydrology",
         "date": "2024-08-16",
@@ -231,16 +279,6 @@ But as exciting as this is, I also worry about what happens when we step into co
 
 At the same time, there’s never been a better moment to dig deeper into data. With decades’ worth of satellite imagery, sensor networks, and massive archives of measurements, we’re definitely equipped to get creative. We need to look beyond just predicting tomorrow’s river flow and start asking bigger questions about our water resources—how they change, what they carry, and where they’re heading. If we can figure out how to generalize these methods, to make them robust against uncertainty and new scenarios, the payoff could be huge. It might take quantum computing or entirely new algorithms to get there, but the vision is clear: blending data-driven insights with fundamental processes could open up horizons in hydrology we’re only just starting to imagine."""
     },
-
-
-    {
-        "title": "Four Simple Laws for Navigating Life",
-        "date": "2025-08-15",
-        "tags": ["Mindset", "Wisdom", "Productivity", "Philosophy"],
-        "excerpt": "Life doesn't come with an instruction manual, but a few fundamental principles can help make sense of it all. These mental models can help you navigate the world with more wisdom and less stress.",
-        "content": """Life doesn't come with an instruction manual, but there are a few fundamental principles that can help make sense of it all. Think of these not as strict rules, but as mental models—simple ways to understand why things happen the way they do.\n\nHere are four simple “laws” that can help you navigate the world with a little more wisdom and a lot less stress.\n\n#### 1. Murphy's Law: Plan for What Can Go Wrong\n\n> *\"Anything that can go wrong will go wrong.\"*\n\nSound pessimistic? It’s actually a superpower for practical planning. Murphy’s Law reminds us that life is unpredictable. Flights get delayed, traffic appears out of nowhere, and files get corrupted right before a deadline.\n\nInstead of hoping for the best, this law encourages you to plan for it. By anticipating potential problems and giving yourself a buffer, you aren’t being negative—you’re being prepared.\n\n#### 2. The Pareto Principle: A New Look at 80/20\n\n> *80% of results come from 20% of efforts.*\n\nMost people know this rule as a way to identify what's most important. But consider it from another angle, especially when you're deep in a project.\n\nHave you ever felt like you've put in 80% of the work, but only have 20% of the final result to show for it? It can be incredibly discouraging. This is where the principle offers relief. That first 80% of your effort is for building the foundation—the research, the structure, the messy first draft. It’s essential, but not always visible.\n\nThe final 20% of your effort is where you refine, connect the dots, and polish everything. This is the phase that delivers 80% of the finished project's value. So don't worry if your progress feels slow. You will get the remaining 80% of your results when you do that final 20% of the work. It’s a reminder that progress isn’t always linear, and the biggest leaps often happen right at the end.\n\n#### 3. Hick's Law: The Paradox of Choice\n\n> *The more choices you have, the longer it takes to make a decision.*\n\nHave you ever stared at a restaurant menu the size of a novel, only to feel completely paralyzed? That’s Hick's Law. When faced with too many options, our brains can freeze, leading to indecision and anxiety.\n\nThe solution is to become a gatekeeper for your own attention. Limit your options where you can. Automate small decisions so you have more mental energy for the big ones. Simplicity is a strategy.\n\n#### 4. The Benefit of the Doubt: Don't Rush to Be Upset\n\n> *When in doubt, assume the most generous reason.*\n\nWhen a coworker sends a blunt, one-line email, it’s easy to assume they’re being dismissive. When a friend cancels plans, it’s tempting to feel slighted. Our minds are quick to create a negative story.\n\nBut why rush into feeling bad?\n\nThere will be plenty of time to be sad or angry *if* you confirm the worst is true. You can be upset when you know the facts; you don't need to be upset based on a guess. This isn't about being naive. It's about being strategic with your emotional energy. By offering the benefit of the doubt, you reserve your feelings for reality, not for the fiction you create in your own head."""
-    },
-    
     {
         "title": "Reflections on a 10-Day Vipassana Course",
         "date": "2024-08-15",
@@ -305,6 +343,177 @@ A good approach is to list out everything you need to do. Just write it all down
 
 Jim Rohn suggests planning your day before it begins, your week before it starts, and so on. Setting goals for the month before it begins, or just sitting down in the morning to decide what needs doing. You can do this on a Google Doc or any note-taking app. Keep a running list, mark things off as you finish them, and that’s it. It’s not about forcing yourself into a rigid schedule; it’s just about knowing what matters and making sure you do that first. That’s probably good enough to stay on track."""
     },
+    {
+        "title": "The Seasons of Life",
+        "date": "2023-08-20",
+        "tags": ["Wisdom", "Jim Rohn", "Personal Growth", "Resilience"],
+        "excerpt": "Life moves in cycles. As Jim Rohn taught, understanding how to act in each season is the secret to a well-lived life. The rules are simple, but not easy.",
+        "content": """The great philosopher Jim Rohn taught a simple but profound metaphor: life unfolds in seasons, just like a year. There are winters of hardship, springs of opportunity, summers of effort, and autumns of harvest.
+
+The seasons don't ask for permission; they simply arrive. You cannot change them. You can, however, change what you do. Learning to act with wisdom in each season is the key to navigating everything life throws at you.
+
+Here are four essential rules for the seasons of your life.
+
+### 1. You Reap What You Sow (The Law of Spring)
+
+Spring is the season of opportunity. The ground is ready, but it won’t plant itself. This is the fundamental law of reality: you cannot have a harvest in the fall if you do not plant a seed in the spring.
+
+Don’t be fooled by the ease of the season. Spring demands action. This is the time to start the business, learn the skill, make the call. If you spend this window waiting for perfect conditions, you guarantee an empty basket later. The work must be done.
+
+### 2. Think of Summer All Winter (The Law of Winter)
+
+Winter is the season of hardship. The ground is frozen, progress seems impossible, and the warmth of success can feel like a distant memory. The winds of loss, disappointment, and delay will blow. They always do.
+
+This is the time to build your character. While the world outside is cold, you can get stronger inside. This is when you read the books, study, reflect, and build the internal strength needed for the next opportunity. You must hold the vision of a future harvest in your mind to keep you warm through the cold. Remember the promise of summer while you endure the winter.
+
+### 3. Think of Winter All Summer (The Law of Summer)
+
+Summer is the season of abundance and growth. The sun is shining, your efforts are paying off, and everything feels easy. This is the most dangerous season, because it's when we become complacent. It's easy to forget that another winter is always coming.
+
+The wise person uses the sunny days to prepare. While enjoying your success, you must be disciplined enough to mend the roof, save a portion of your profits, and strengthen the foundations of your life. Don't be so intoxicated by the sunshine that you forget to prepare for the inevitable storms.
+
+### 4. Understand That Sometimes, It Hails
+
+There is a final, humbling truth. You can do everything right—you can plant in the spring, protect your crop all summer, and be fully prepared for winter—and then, just before the harvest, a hailstorm can come and wipe it all out.
+
+This isn't fair. It isn't right. But, as Jim Rohn said, it’s just that kind of planet. Some things are out of your control. The hailstorms are part of the deal. The measure of your character is not whether you can prevent the storm—you can't—but whether you have the resilience to get up and plant again when the next spring arrives."""
+    },
+    {
+        "title": "The Triangle of Self-Obsession",
+        "date": "2023-06-14",
+        "tags": ["Mindset", "Wisdom", "Philosophy", "Ego", "Letting Go"],
+        "excerpt": "There is a self-destructive pattern that traps us in suffering. It is a triangle with three points: resentment, anger, and fear. The only way out is to see it for what it is.",
+        "content": """There is a self-destructive pattern that traps us in suffering. It is a triangle that keeps our world small and centered on ourselves. To escape it, you must first recognize its shape.
+
+### Resentment is the Past
+
+This is the poison of reliving what has already happened. It is the obsessive focus on past hurts and injustices. It keeps you chained to a story that is over, forcing you to carry a weight that no longer needs to be held. 
+
+### Anger is the Present
+
+This is the fire of reacting to what is happening right now. It is the ego’s fierce resistance to the present moment not being what it wants. It is a defense against a feeling of powerlessness, a surge of energy that consumes you here and now.
+
+### Fear is the Future
+
+This is the anxiety of imagining what is yet to come. It is the story of a future catastrophe, a failure, or a loss that has not happened. It keeps you trapped in a negative possibility, robbing you of peace in the only moment you truly have.
+
+### One Feeling, Three Masks
+
+Look closely at these three emotions. Resentment, anger, and fear. Though they appear to live in different times—past, present, future—they are all the same feeling. 
+
+They are the feeling of self-obsession. Each one is a story entirely about *you*. What happened to you. What is happening to you. What might happen to you. 
+
+This is the illusion that will destroy your peace.
+
+Get rid of all of it. Do not hold anything back. Let go of the story, and the suffering will follow."""
+    },
+    {
+        "title": "How to Find Your Purpose",
+        "date": "2023-04-02",
+        "tags": ["Purpose", "Wisdom", "Self-Discovery", "Ikigai", "Work"],
+        "excerpt": "The search for 'passion' can be abstract. This framework offers a practical compass with four key questions: What do you love, what are you good at, what does the world need, and what can you be paid for?",
+        "content": """The advice to "find your passion" often feels vague and overwhelming, as if you're searching for a hidden treasure with no map. But what if you had a compass instead? A framework with four cardinal directions that, when aligned, point toward a fulfilling and sustainable purpose.
+
+This compass is built on four simple but profound questions.
+
+### 1. What do you love?
+
+> *What activities bring you genuine joy?*
+
+This is the starting point, the fuel for your journey. What are the things you would do even if no one was paying you or watching? What activities make you lose track of time? This is where your intrinsic motivation lies.
+
+It could be solving complex puzzles, organizing systems, creating art, or connecting with people. Don't judge it or worry if it's practical yet. Just identify the activities that feel less like work and more like play. This is your 'passion' in its purest form.
+
+### 2. What are you good at?
+
+> *Where do your skills and talents lie?*
+
+Passion alone isn't enough; it thrives when paired with competence. This question isn't just about what you love, but what you excel at. This can be a natural talent or a skill you’ve honed through years of practice.
+
+Where do you find that your effort produces unusually good results? Maybe you're a natural teacher, a gifted coder, or you have a knack for simplifying complex ideas. While you can love something without being a master, the feeling of competence is a crucial ingredient for long-term fulfillment. This is your 'profession' in the making.
+
+### 3. What does the world need?
+
+> *What problem do you want to solve?*
+
+This is the question that transforms passion into purpose. An activity done only for yourself can feel isolating, but an activity that serves others creates a profound sense of meaning. 
+
+The 'world' doesn't have to be the entire globe. It can be your community, your family, a specific industry, or a small group of people who need what you have to offer. What problems do you see that you feel compelled to help solve? This could be anything from building sustainable water systems to creating software that makes someone's day a little easier. This is your 'mission'.
+
+### 4. What can you be paid for?
+
+> *How can your value sustain you?*
+
+This is the practical question that grounds your purpose in reality. It asks: Is there a market for the intersection of what you love, what you're good at, and what the world needs?
+
+This isn't about selling out; it's about creating a sustainable loop where you can continue doing meaningful work without burning out. The world signals what it values through exchange. Finding what people are willing to pay for—whether through a salary, a business, or freelance work—is what turns your passion and mission into a viable 'vocation'.
+
+The goal is not to find an answer to just one of these questions, but to find the place where all four overlap. That intersection is where passion, profession, mission, and vocation meet. It's more than a job; it's a reason for being."""
+    },
+    {
+        "title": "The Four Agreements",
+        "date": "2022-08-23",
+        "tags": ["Wisdom", "Mindset", "Personal Growth", "Philosophy", "Book Summary"],
+        "excerpt": "There are four simple truths that, if practiced, can free us from the self-imposed suffering of blame, judgment, and assumption. Here is a guide to these transformative agreements.",
+        "content": """So much of our suffering isn't caused by life itself, but by the stories we tell ourselves about it. We live by a set of unconscious agreements that create needless conflict, both internally and externally. The Toltec wisdom of *The Four Agreements* offers a simple, yet profound, new operating system for your mind—one based on freedom and self-love.
+
+Here are the four promises to make to yourself.
+
+### 1. Be Impeccable with Your Word
+
+Your word is the power you have to create. It is a seed. With it, you can create a beautiful dream or you can destroy everything around you. 
+
+This is especially true for the words you use on yourself. Your mind doesn’t question what you tell it; it simply believes. If you tell yourself you are not smart enough, not strong enough, not worthy, your mind will accept it as truth. To be impeccable is to use your words with love and truth, starting with the way you speak to yourself. It is the first and most fundamental step to reclaiming your power.
+
+### 2. Don't Take Anything Personally
+
+What others say and do is a projection of their own reality, their own dream. When someone is angry or unkind to you, they are revealing their own inner struggles. It is never about you.
+
+When you understand this, you gain a kind of immunity. The opinions and actions of others no longer have the power to wound you. This single agreement can save you from countless grudges, conflicts, and needless emotional pain. It allows you to interact with others from a place of compassion rather than reaction.
+
+### 3. Don't Make Assumptions
+
+We have a tendency to invent entire stories in our minds when we don’t have all the facts. We see a friend who doesn’t say hello and assume they are angry with us. We see someone driving fast and assume they are a reckless person. We rarely consider that our friend might be lost in thought, or that the driver might be in an emergency.
+
+Assumptions create misunderstanding and drama. The solution is simple: have the courage to ask questions. Seek clarity instead of creating confusion. Give people the benefit of the doubt. Clear communication can dissolve a problem before it even begins.
+
+### 4. Always Do Your Best
+
+This agreement is not about perfection. It’s about understanding that your “best” will change from moment to moment. Your best when you are healthy is different from your best when you are sick. Your best when you are rested is different from your best when you are tired. 
+
+It simply means that in any given situation, you give it all you have—no more, no less. As the story goes, Michelangelo carved the hidden, unseen parts of his sculptures with the same care as the parts everyone would see. When asked why, he replied, "Because God can see it." He was doing his best not for others, but for himself. 
+
+When you always do your best, you have no room for self-judgment or regret. You act with integrity, and in that, you find peace."""
+    },
+    {
+        "title": "On Forgiveness",
+        "date": "2022-04-02",
+        "tags": ["Wisdom", "Forgiveness", "Mindset", "Personal Growth"],
+        "excerpt": "We misunderstand forgiveness. We think it's a gift we give to others. The truth is, it's a power we give to ourselves. And it starts in the one place we often forget to look.",
+        "content": """We are told to forgive. But what does that really mean? The popular view treats forgiveness as a weakness, an act of letting someone get away with a wrongdoing. This is a profound misunderstanding. Forgiveness is not weakness. It is power.
+
+But before you can offer it to the world, you must first give it to yourself.
+
+### The First Person to Forgive is You
+
+This is the most crucial step, and the one most people skip. We forgive others, we forget what they did, but we carry the weight of our own mistakes forever. We become our own harshest judges. But you cannot forgive the world if you live in a state of self-resentment. How can you offer compassion to others that you deny yourself?
+
+If you want to be free, the work starts here. You must forgive yourself for not knowing then what you know now. Forgive your past self. They were doing the best they could with the understanding they had.
+
+### Don’t Take Anything Personally
+
+When someone hurts you, it is almost never about you. Their actions are a reflection of their own stories, their own pain, and their own limitations. We label their actions as ‘wrong,’ but ‘right’ and ‘wrong’ are often just taglines, stories we tell ourselves. In reality, people are just people, doing the best they can.
+
+So, do not fall into their trap. Do not let their inner world become your inner prison. Forgive them. You can be sad or angry when you confirm the truth; you don't need to be that way from the beginning based on a story in your head. Simply decide not to carry their burden for them. This decision is an act of liberation.
+
+### The Power to Choose
+
+When you haven't forgiven yourself, you cannot truly forgive others. You will see their faults through the lens of your own self-judgment. Every mistake they make will echo a mistake of your own that you haven’t made peace with.
+
+But when you practice self-forgiveness, everything changes. You understand that we are all flawed, all learning, all trying.
+
+From this place, forgiveness is no longer a chore. It becomes a simple, powerful choice. It is the choice to release the past. It is the choice to take your power back. Forgiveness is a power, and you have to do it."""
+    },
 ]
 
 # =============================================================================
@@ -330,13 +539,11 @@ def generate_page(filepath, content):
         f.write(content)
     print(f"✓ Updated {filepath}")
 
-
-
 def generate_collection_files(data, folder, collection_name, permalink_prefix, type_key=None, default_type=None):
     for item in data:
-        date_match = re.search(r'(\d{4}-\d{2}-\d{2})', item['date'])
+        date_match = re.search(r'(\d{4}-\d{2}-\d{2})', str(item['date']))
         if not date_match:
-            date_match = re.search(r'(\d{4})', item['date'])
+            date_match = re.search(r'(\d{4})', str(item['date']))
             if not date_match:
                 print(f"  ✗ Warning: Could not parse date for '{item['title']}'. Skipping file generation.")
                 continue
@@ -349,7 +556,7 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         filepath = os.path.join(folder, filename)
         
         content = "---\n"
-        content += f"title: \"{item['title'].replace(':', '')}\"\n"
+        content += f"title: \"{item['title'].replace(':', '').replace('\"', '&quot;')}\"\n"
         
         if collection_name == "posts":
             content += f"date: {item['date']}\n"
@@ -365,16 +572,6 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             item_type = item.get(type_key, default_type)
             if item_type:
                 content += f"type: \"{item_type}\"\n"
-            
-            # --- NEW LOGIC ADDED HERE ---
-            # Add a status flag for publications to distinguish them in the template
-            if collection_name == "publications":
-                if "Under Review" in item.get('citation', ''):
-                    content += "publication_status: 'Under Review'\n"
-                else:
-                    content += "publication_status: 'Published'\n"
-            # --- END OF NEW LOGIC ---
-
             for key, value in item.items():
                 if key not in ['title', 'type', 'content', 'tags', 'excerpt'] and value:
                     clean_value = str(value).replace("'", "’").replace('"', '&quot;')
@@ -394,30 +591,31 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             f.write(content)
         print(f"  ✓ Created {filepath}")
 
-
 if __name__ == "__main__":
     for folder in ["_publications", "_talks", "_teaching", "_posts"]:
         clear_folder(folder)
 
     print("\n--- Generating Core Pages & Navigation ---")
-    
-        # Find this variable and update it
-    # nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
-    # generate_page("_data/navigation.yml", nav_content)
-    nav_content = """main:\n  - title: "Publications"\n    url: /publications/\n  - title: "Talks"\n    url: /talks/\n  - title: "Teaching"\n    url: /teaching/\n  - title: "Group"\n    url: /group/\n  - title: "Media"\n    url: /media/\n  - title: "Blog"\n    url: /blog/\n  - title: "Resources"\n    url: /resources/\n  - title: "CV"\n    url: /cv/"""
+    nav_content = """main:
+  - title: "Publications"
+    url: /publications/
+  - title: "Talks"
+    url: /talks/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Group"
+    url: /group/
+  - title: "Media"
+    url: /media/
+  - title: "Blog"
+    url: /blog/
+  - title: "Resources"
+    url: /resources/
+  - title: "CV"
+    url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
 
-
-
-
-
-# Find the block that generates the main page and REPLACE it with this one.
-
-    # --- Generate Main Page (About + News) ---
-    print("\n--- Generating Main Page ---")
-    
-    # Start with the "About Me" content
-    main_page_content = f"""---
+    about_content = f"""---
 permalink: /
 title: "About Me"
 author_profile: true
@@ -448,52 +646,63 @@ My work involves engineering a suite of intelligent software and models. These t
 
 To summarize, I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
 
-I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu.
+I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 
+---
+
+## News & Updates
+
+### 2025
+* **September 12**: Web map story for Arizona water systems is published at (https://geokshitij.github.io/azwaters/)
+* **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
+
+### 2024
+* **October 21**: Presented a conference poster, **'A Framework to Improve Hydrological Forecasting with Deep Learning'**, at ASU Flow 2024.
+* **October 21**: Received the Outstanding Poster Award for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium.
+* **October 02**: Presented a conference talk, **'Operational Streamflow Forecasting Tool for Arizona Streams'**, at CMWR 2024.
+* **May 15**: Selected as a Community Science Fellow by the American Geophysical Union's Thriving Earth Exchange.
+* **March 13**: Presented a invited webinar, **'Explainable Machine Learning in Groundwater Potential Mapping'**, at UNESCO GWYN.
+* **February 13**: Presented a conference talk, **'Mapping wetland potential in arid environments: A machine learning approach with geospatial interpretability'**, at AGU Chapman Conference on Remote Sensing of the Water Cycle.
+
+### 2023
+* **December 11**: Presented a conference poster, **'Advances in Hyperspectral Remote Sensing for Water Resources'**, at AGU Fall Meeting 2023.
+* **September 19**: Presented a invited talk, **'Discussion Facilitator at Session 1 --Development of core use cases in environmental sciences'**, at 5th NOAA Workshop on Leveraging AI in Environmental Sciences.
+* **June 12**: Won 1st place in the SpaceHack for Sustainability Hackathon at Arizona State University.
+* **May 22**: Presented a workshop, **'Remote Sensing, Big Data Analytics, and Cloud Computing: Application to Water Quality Modeling'**, at Environmental & Water Resources Institute (EWRI) Congress 2023, ASCE.
+* **May 21**: Presented a conference talk, **'Explainable Artificial Intelligence to visualize the unseen'**, at EWRI Congress 2023.
+
+### 2022
+* **December 01**: Started my PhD journey at Arizona State University.
+* **October 12**: Presented a conference talk, **'Spatial decision making with landslide susceptibility and critical infrastructure'**, at DRI Technical Conference 2022.
+* **June 21**: Presented a invited lecture, **'Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective'**, at Khwopa College of Engineering, Tribhuvan University.
+* **April 07**: Presented a invited discussion, **'Introduction to Google Earth Engine for cloud computing'**, at S4W Nepal.
+* **April 06**: Presented a invited lecture, **'Google Earth Engine and cloud computing'**, at Central Department of Geography, Tribhuvan University.
+
+### 2021
+* **December 13**: Presented a conference poster, **'National landslides database and susceptibility assessment of Nepal'**, at AGU Fall Meeting 2021.
+* **December 13**: Presented a conference poster, **'Framework for multi-hazards susceptibility assessment in Google Earth Engine'**, at AGU Fall Meeting 2021.
+* **September 17**: Won 1st place in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
+* **September 13**: Presented a conference talk, **'Spatial downscaling of coarse resolution satellite-based precipitation estimates (SPEs) to 1 km using Machine Learning'**, at 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
+* **September 13**: Presented a conference talk, **'Machine Learning to Estimate Precipitation with Satellite-based and Gauged Observations'**, at 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
+* **August 28**: Moderated the session, **'Chocolate Talk on DRR #3: Artificial intelligence (AI) for disaster risk reduction'**, at U-INSPIRE Alliance.
+* **July 30**: Presented a invited talk, **'DRR talk #1: The future of disaster risk governance in 2045'**, at Disaster Risk Reduction and Tsunami Information, UNESCO Office, Jakarta.
+
+### 2020
+* **October 20**: Presented a conference talk, **'Landslide Susceptibility Mapping in Nepal using Google Earth Engine'**, at Geo for Good 2020.
 """
+    generate_page("_pages/about.md", about_content)
 
-    # --- Now, build the News timeline ---
-    news_items = []
+    cv_content = """---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+---
+{% include base_path %}
+<a href="https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/edit?usp=sharing" class="btn btn--primary" target="_blank">View Full CV (Google Doc)</a>
+"""
+    generate_page("_pages/cv.md", cv_content)
 
-    # Process talks with smarter grammar
-    for talk in talks_data:
-        date_obj = datetime.strptime(talk['date'], '%Y-%m-%d')
-        
-        # Smarter description based on talk type
-        if talk['type'].lower() == 'moderator':
-            description = f"Moderated the session, **'{talk['title']}'**, at {talk['venue']}."
-        else:
-            description = f"Presented a {talk['type'].lower()}, **'{talk['title']}'**, at {talk['venue']}."
-        
-        news_items.append({"date": date_obj, "description": description})
-        
-    # Process other custom news from the new list
-    for item in other_news_data:
-        date_obj = datetime.strptime(item['date'], '%Y-%m-%d')
-        # The description is already formatted, so we just add it
-        news_items.append({"date": date_obj, "description": item['description']})
-
-    # Sort all news items in reverse chronological order
-    news_items.sort(key=lambda x: x['date'], reverse=True)
-
-    # Append the formatted news timeline to the main page content
-    main_page_content += "\n\n---\n\n## News & Updates\n"
-    current_year = None
-    for item in news_items:
-        year = item['date'].year
-        if year != current_year:
-            main_page_content += f"\n### {year}\n"
-            current_year = year
-        
-        date_str = item['date'].strftime('%B %d')
-        main_page_content += f"* **{date_str}**: {item['description']}\n"
-
-    # Generate the final combined page
-    generate_page("_pages/about.md", main_page_content)
-
-
-    
-    # --- Generate Teaching Page ---
     teaching_page_content = """---
 layout: archive
 title: "Teaching"
@@ -511,18 +720,31 @@ I plan to teach a variety of courses at the intersection of water resources, dat
 
 ---
 
-### Past Experience (Teaching Assistant)
+### Past Experience
 {% include base_path %}
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+---
+
+### Teaching Evaluations and Testimonials
+The following testimonials are from former students in courses taught at Tribhuvan University, Khwopa College of Engineering. All are shared with permission.
+
+#### Course: Engineering Hydrology (CE 606)
+> "Mr. Dahal's Engineering Hydrology class was one of the most practical and engaging courses I took. In many of our classes, it was common for only the male students to ask questions, but he created an environment where everyone felt comfortable participating. He would call on people in a supportive way and used different methods to get feedback. In our final project, I analyzed real flood data for a local river to propose a small-scale mitigation plan. It was the first time I felt like a real engineer, using my skills to solve a problem that affected my own community. His class gave me the confidence to pursue a career in water resources." – Unisha Ghimire (Now MS student at University of Denver)
+
+#### Course: GIS and Remote Sensing (CE 78501)
+> "Taking GIS class with Kshitij was the turning point in my undergraduate career. Before his course, GIS was just a tool we were told we had to learn. He brought it to life. Instead of just showing us the buttons to click, he filled every lecture with real-world examples. He showed us why it mattered. His passion was infectious, and he was always willing to stay after class to help with our projects or just talk about the possibilities of geospatial science. He was so inspiring that I started my own side projects, and it's because of his class that I decided to pursue a PhD focused on this field. He didn't just teach a subject; he opened a door to a new way of seeing the world." – Yogesh Bhattarai (Now PhD student, Howard University)
+
+#### Course: GIS and Remote Sensing (CE 78501)
+> "I was so excited to finally take Kshitij’s GIS class. He had a reputation on campus for being one of the best instructors, and everyone was always waiting to get into his course. His class was everything I hoped for. He made GIS so interesting and powerful that it directly inspired me to pursue my Master's in Agriculture Engineering, where I use these skills every day. His lectures were excellent, full of energy, and it was so much fun." – Mamata Pandey, MS (Now PhD student at Oklahoma State University)
+
+#### Course: Engineering Surveying (CE 504)
+> "The survey camp for Engineering Surveying was the best part of the course, Kshitij was a big reason why. He didn't just show us how to use the total station or the DGPS; he connected every measurement back to the bigger picture of a real construction project. I remember being stressed about getting a perfect measurement, and he told us, 'Don't worry so much about the grade. Focus on understanding the process and solving the problem in front of you.' Today, I realized how right he was. He made learning fun and motivating, especially when we got to fly the drones." – Aakash Basu (Now MS student at Clemson University)
 """
     generate_page("_pages/teaching.md", teaching_page_content)
-    
 
-
-
-    # --- Generate Group Page ---
     group_page_content = """---
 layout: archive
 title: "Research Group"
@@ -533,16 +755,12 @@ We are in the process of building a research group.
 
 Our group will focus on addressing critical challenges at the intersection of water, climate, and society. We will leverage cutting-edge tools in **hydrological forecasting, natural hazards assessment, sustainable development, and artificial intelligence** to create actionable solutions for a resilient future.
 
+I am open to collaborations. Please contact me or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76) if you would like to discuss.
+
 Stay tuned for updates.
 """
     generate_page("_pages/group.md", group_page_content)
-
-
-
-
-
-
-    # --- Generate Media Page ---
+    
     media_content = """---
 layout: archive
 title: "Media"
@@ -550,15 +768,14 @@ permalink: /media/
 author_profile: true
 ---
 This page features news articles, op-eds, and media mentions related to my work.
+
+If you would like to request an interview, please email me or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 """
-    # Group the data by type
     grouped_media = {}
     for item in media_data:
         grouped_media.setdefault(item.get("type", "General"), []).append(item)
     
-    # Build the content line by line to avoid indentation issues
     content_lines = []
-    
     if "Op-Ed" in grouped_media:
         content_lines.append("\n## News Columns (Op-Ed)")
         for item in grouped_media["Op-Ed"]:
@@ -571,11 +788,8 @@ This page features news articles, op-eds, and media mentions related to my work.
             line = f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}."
             content_lines.append(line)
     
-    # Join the lines and generate the page
     media_content += "\n" + "\n".join(content_lines)
     generate_page("_pages/media.md", media_content)
-
-    
     
     resources_content = """---\nlayout: archive\ntitle: "Resources"\npermalink: /resources/\nauthor_profile: true\n---\n"""
     resources_content += "\n## Courses Developed\n"
@@ -597,7 +811,7 @@ author_profile: true
 ---
 {% include base_path %}
 {% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts reversed %}
+{% for post in site.posts %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% if year != written_year %}
 <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>

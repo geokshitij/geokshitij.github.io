@@ -29,9 +29,7 @@ My work involves engineering a suite of intelligent software and models. These t
 
 To summarize, I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
 
-I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu.
-
-
+I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 
 ---
 

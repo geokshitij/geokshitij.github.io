@@ -2,7 +2,6 @@
 title: "Land use and land cover change implications on agriculture and natural resource management of Koah Nheaek, Mondulkiri province, Cambodia"
 collection: publications
 permalink: /publication/2023-01-01-land-use-and-land-cover-change-implications-on-agr
-publication_status: 'Published'
 venue: 'Remote Sensing Applications: Society and Environment'
 date: '2023-01-01'
 paperurl: 'https://doi.org/10.1016/j.rsase.2022.100895'

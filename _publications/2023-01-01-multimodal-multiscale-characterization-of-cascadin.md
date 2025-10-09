@@ -2,7 +2,6 @@
 title: "Multimodal multiscale characterization of cascading hazard on mountain terrain"
 collection: publications
 permalink: /publication/2023-01-01-multimodal-multiscale-characterization-of-cascadin
-publication_status: 'Published'
 venue: 'Geomatics, Natural Hazards and Risk'
 date: '2023-01-01'
 paperurl: 'https://doi.org/10.1080/19475705.2022.2162443'
