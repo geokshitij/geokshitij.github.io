@@ -626,15 +626,15 @@ My work is deeply rooted in my experiences growing up in Nepal. During my underg
 
 This realization became my driving force. I knew I didn't want to just build tools that watch our planet struggle. I wanted to engineer solutions that could actively help us build a more sustainable and resilient future. My research is my attempt to do just that. I focus on bridging the gap between complex scientific knowledge and the actionable, accessible tools that people need. To do this, I've built my work on three core pillars.
 
-### 1. Hydrometeorology and Hazard Science
+### 1. Earth System Science
 <!-- Suggested Image: A compelling photograph of a landslide path on a green mountainside or an aerial view of a flooded river valley. -->
-My first focus is on understanding the fundamental science. This means digging into hydrometeorology. It's the intricate dance between water and the atmosphere that creates everything from life-giving rain to destructive floods. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
+My first focus is on understanding the fundamental science. It's mostly about the intricate dance between water and the atmosphere that creates everything from life-giving rain to destructive floods. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
 
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
 
 ### 2. Harnessing Earth Observation
 <!-- Suggested Image: A striking satellite image, perhaps a false-color composite showing vegetation health, water bodies, or the extent of a wildfire. -->
-We live in an era of an unbelievable amount of data. Space agencies like NASA and ECMWF hold hundreds of petabytes of information about our planet. This is a treasure trove. Satellites are constantly watching our forests, rivers, and cities. But raw data is not the same as knowledge. What are we actually doing with all of it?
+We live in an era of an unbelievable amount of data. Space agencies like NASA and ECMWF hold hundreds of petabytes of information about our planet. Satellites are constantly watching our forests, rivers, and cities. But raw data is not the same as knowledge. What are we actually doing with all of it?
 
 My second pillar is about transforming this flood of data into actionable intelligence. The goal is to develop scalable and generalizable methods that make sense of it all. We can use this information to create immense value. For example, we can use it to map things like [groundwater potential in data-scarce regions](https://doi.org/10.1016/j.jhydrol.2023.130417). We can also monitor and understand the long-term impacts of [land use and land cover change](https://doi.org/10.1016/j.rsase.2022.100895) on agriculture and natural resources. This is not just about making maps. It is about providing decision-makers with a clear, current picture of our changing world so they can act on it.
 
@@ -653,7 +653,7 @@ I am currently seeking a faculty position where I can start my own research grou
 ## News & Updates
 
 ### 2025
-* **September 12**: Web map story for Arizona water systems is published at (https://geokshitij.github.io/azwaters/)
+* **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/)
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
 ### 2024
