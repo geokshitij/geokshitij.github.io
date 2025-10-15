@@ -653,7 +653,7 @@ I am currently seeking a faculty position where I can start my own research grou
 ## News & Updates
 
 ### 2025
-* **September 12**: Web map story for Arizona water systems is published at [link].(https://geokshitij.github.io/azwaters/)
+* **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/).
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
 ### 2024
