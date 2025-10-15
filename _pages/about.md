@@ -11,7 +11,7 @@ This realization became my driving force. I knew I didn't want to just build too
 
 ### 1. Earth System Science
 <!-- Suggested Image: A compelling photograph of a landslide path on a green mountainside or an aerial view of a flooded river valley. -->
-My first focus is on understanding the fundamental science. It's mostly about the intricate dance between water and the atmosphere that creates everything from life-giving rain to destructive floods. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
+My first focus is on understanding the fundamental science. It's mostly about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
 
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
 
@@ -36,7 +36,7 @@ I am currently seeking a faculty position where I can start my own research grou
 ## News & Updates
 
 ### 2025
-* **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/)
+* **September 12**: Web map story for Arizona water systems is published at [link].(https://geokshitij.github.io/azwaters/)
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
 ### 2024
