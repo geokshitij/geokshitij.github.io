@@ -5,10 +5,9 @@ author_profile: true
 ---
 Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
 
-My work is deeply rooted in my experiences growing up in Nepal. During my undergraduate studies in Civil Engineering, I came face-to-face with the real-world impact of natural hazards. I saw how floods, droughts, and landslides could disrupt lives and entire communities. These events are not just statistics. They are powerful reminders that our ability to anticipate and adapt to our changing planet is still very limited.
+My journey began in Nepal, where I grew up witnessing firsthand the devastating effects of floods, droughts, and landslides. During my undergraduate studies in Civil Engineering, I saw how these natural hazards can upend lives and reshape entire communities. Those experiences shaped my purpose to help prevent the losses of lives and livelihoods. I wanted to turn science into something that could make a tangible difference.
 
-This realization became my driving force. I knew I didn't want to just build tools that watch our planet struggle. I wanted to engineer solutions that could actively help us build a more sustainable and resilient future. My research is my attempt to do just that. I focus on bridging the gap between complex scientific knowledge and the actionable, accessible tools that people need. To do this, I've built my work on three core pillars.
-
+That idea has guided my research ever since. My work focuses on bridging the gap between complex environmental science and the practical tools that people and communities can use. To do this, I build on three core pillars:
 ### 1. Earth System Science
 <!-- Suggested Image: A compelling photograph of a landslide path on a green mountainside or an aerial view of a flooded river valley. -->
 My first focus is on understanding the fundamental science. It's mostly about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
@@ -29,7 +28,7 @@ My work involves engineering a suite of intelligent software and models. These t
 
 To summarize, I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
 
-I am currently seeking a faculty position where I can start my own research group and continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
+I am currently seeking a researcher or faculty position to continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 
 ---
 
