@@ -653,6 +653,7 @@ I am currently seeking a faculty position where I can start my own research grou
 ## News & Updates
 
 ### 2025
+* **October 17**: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
 * **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/).
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
@@ -689,6 +690,8 @@ I am currently seeking a faculty position where I can start my own research grou
 
 ### 2020
 * **October 20**: Presented a conference talk, **'Landslide Susceptibility Mapping in Nepal using Google Earth Engine'**, at Geo for Good 2020.
+* **January 10**: Graduated from Tribhuvan University with a Bachelor of Science in Civil Engineering.
+
 """
     generate_page("_pages/about.md", about_content)
 
