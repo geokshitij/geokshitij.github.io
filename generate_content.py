@@ -655,6 +655,7 @@ I am currently seeking a faculty position where I can start my own research grou
 ### 2025
 * **October 17**: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
 * **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/).
+* **August 12**: Graduated from Arizona State University with a Master of Science in Civil, Environmental and Sustainable Engineering.
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
 ### 2024
