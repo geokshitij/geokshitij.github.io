@@ -113,9 +113,10 @@ media_data = [
 ]
 
 courses_data = [
-    {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
-    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "GitHub Repository", "url": "https://github.com/geokshitij/py4all"},
-    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Story: The Lifelines of the Sonoran Desert", "venue": "Data Story", "url": "https://geokshitij.github.io/azwaters/"}
+    {"authors": "Dahal, K.", "year": "2025", "title": "Environmental Data Analysis", "venue": "Online course materials and interactive notebooks", "url": "https://geokshitij.github.io/Stats/"},
+    {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH (for senior undergraduate and/or graduate students)", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
+    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "Open-source introductory Python guide for engineering students", "url": "https://github.com/geokshitij/py4all"},
+    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Systems", "venue": "Interactive educational story and teaching resource", "url": "https://geokshitij.github.io/azwaters/"}
 ]
 
 reports_data = [
@@ -650,6 +651,9 @@ I am currently seeking a researcher or faculty position to continue advancing th
 ---
 
 ## News & Updates
+
+### 2026
+* **January 23**: 📚 **Environmental Data Analysis** course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
 
 ### 2025
 * **October 17**: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
