@@ -35,7 +35,7 @@ I am currently seeking a researcher or faculty position to continue advancing th
 ## News & Updates
 
 ### 2026
-* **January 23**: 📚 **Environmental Data Analysis** course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
+* **January 23**: **Environmental Data Analysis** course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
 
 ### 2025
 * **October 17**: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
