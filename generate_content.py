@@ -41,8 +41,8 @@ personal_info = {
 }
 
 publications_data = [
-    {"title": "Developing a framework for assessment of the school’s exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2025-12-31", "paperurl": "", "citation": "Bishui, C., … & <strong>Dahal. K.</strong> (In Press). &quot;Developing a framework for assessment of the school’s exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
     {"title": "Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions", "venue": "Applied Soft Computing", "date": "2025-12-30", "paperurl": "", "citation": "<strong>Dahal, K.</strong>, Gupta, A., Bokati, L. & Kumar, S.* (Under Review). &quot;Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions.&quot; <i>Applied Soft Computing</i>."},
+    {"title": "Developing a framework for assessment of the school's exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2025-01-23", "paperurl": "https://link.springer.com/article/10.1007/s11069-025-07852-6", "citation": "Bishui, C., … & <strong>Dahal. K.</strong> (2025). &quot;Developing a framework for assessment of the school's exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
     {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). &quot;Nepal’s carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
     {"title": "Policy Relevance of IPCC Reports for the SDGs and Beyond", "venue": "Resources, Environment and Sustainability", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.resenv.2025.100192", "citation": "Pradhan, P., Joshi, S., <strong>Dahal, K.</strong>, Hu, Y., Subedi, D. R., Putra, M. P. I. F., Vaidya, S., Pant, L. P., Dhakal, S., Hubacek, K., Rupakheti, M., Roberts, D., & van den Hurk, B. (2025). &quot;Policy Relevance of IPCC Reports for the SDGs and Beyond.&quot; <i>Resources, Environment and Sustainability (Invited Editorial)</i>."},
     {"title": "Urban agriculture matters for sustainable development", "venue": "Cell Reports Sustainability", "date": "2024-01-01", "paperurl": "https://doi.org/10.1016/j.crsus.2024.100217", "citation": "Pradhan, P., Subedi, D. R., <strong>Dahal, K.</strong>, Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). &quot;Urban agriculture matters for sustainable development.&quot; <i>Cell Reports Sustainability</i>."},
@@ -113,9 +113,10 @@ media_data = [
 ]
 
 courses_data = [
-    {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
-    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "GitHub Repository", "url": "https://github.com/geokshitij/py4all"},
-    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Story: The Lifelines of the Sonoran Desert", "venue": "Data Story", "url": "https://geokshitij.github.io/azwaters/"}
+    {"authors": "Dahal, K.", "year": "2025", "title": "Environmental Data Analysis", "venue": "Online course materials and interactive notebooks", "url": "https://geokshitij.github.io/Stats/"},
+    {"authors": "Cho, H., Ashraf, F., Dahal, K.", "year": "2024", "title": "Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design", "venue": "CIROH (for senior undergraduate and/or graduate students)", "url": "https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"},
+    {"authors": "Dahal, K.", "year": "2024", "title": "py4all: The Bare Minimum Python Guide", "venue": "Open-source introductory Python guide for engineering students", "url": "https://github.com/geokshitij/py4all"},
+    {"authors": "Dahal, K.", "year": "2024", "title": "Arizona's Water Systems", "venue": "Interactive educational story and teaching resource", "url": "https://geokshitij.github.io/azwaters/"}
 ]
 
 reports_data = [
@@ -620,15 +621,45 @@ permalink: /
 title: "About Me"
 author_profile: true
 ---
-I am a PhD Candidate at Arizona State University working on hydrology, satellite data, and machine learning. My research and teaching focus on understanding water systems in a changing climate and developing practical, data-driven tools for prediction and decision-making.
+Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
 
-My current work focuses on extracting hydrological features from satellite data using self-supervised learning and developing streamflow forecasting models for arid regions, with a focus on Arizona.
+My journey began in Nepal, where I grew up witnessing firsthand the devastating effects of floods, droughts, and landslides. During my undergraduate studies in Civil Engineering, I saw how these natural hazards can upend lives and reshape entire communities. Those experiences shaped my purpose to help prevent the losses of lives and livelihoods. I wanted to turn science into something that could make a tangible difference.
+
+That idea has guided my research ever since. My work focuses on bridging the gap between complex environmental science and the practical tools that people and communities can use. To do this, I build on three core pillars:
+### 1. Earth System Science
+<!-- Suggested Image: A compelling photograph of a landslide path on a green mountainside or an aerial view of a flooded river valley. -->
+My first focus is on understanding the fundamental science. It's mostly about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I am especially focused on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
+
+We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
+
+### 2. Harnessing Earth Observation
+<!-- Suggested Image: A striking satellite image, perhaps a false-color composite showing vegetation health, water bodies, or the extent of a wildfire. -->
+We live in an era of an unbelievable amount of data. Space agencies like NASA and ECMWF hold hundreds of petabytes of information about our planet. Satellites are constantly watching our forests, rivers, and cities. But raw data is not the same as knowledge. What are we actually doing with all of it?
+
+My second pillar is about transforming this flood of data into actionable intelligence. The goal is to develop scalable and generalizable methods that make sense of it all. We can use this information to create immense value. For example, we can use it to map things like [groundwater potential in data-scarce regions](https://doi.org/10.1016/j.jhydrol.2023.130417). We can also monitor and understand the long-term impacts of [land use and land cover change](https://doi.org/10.1016/j.rsase.2022.100895) on agriculture and natural resources. This is not just about making maps. It is about providing decision-makers with a clear, current picture of our changing world so they can act on it.
+
+### 3. Bridging the Gap with Artificial Intelligence
+<!-- Suggested Image: An abstract graphic illustrating a neural network, a data flowchart, or a dashboard displaying predictive analytics. -->
+If Earth Observation data is the fuel, then Artificial Intelligence is the engine that puts it to work. AI and Machine Learning are the critical bridge. They connect the vast datasets we have to the complex, real-world problems we need to solve. These tools can see patterns and relationships that are simply too complex for traditional models to capture.
+
+My work involves engineering a suite of intelligent software and models. These tools are designed for scalability and transferability. A major part of my PhD is dedicated to this. I am building next-generation streamflow forecasting systems, particularly for arid regions like Arizona. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. My approach is different. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
+
+To summarize, I want to contribute to a future where scientific innovation directly supports sustainable development and community resilience. I believe in creating tools that are not just scientifically novel, but genuinely useful. I am committed to this journey of turning data into decisions and research into real-world impact.
+
+I am currently seeking a researcher or faculty position to continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
+
 ---
 
 ## News & Updates
 
+### 2026
+* **January 23**: **Environmental Data Analysis** course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
+* **January 23**: Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
+
 ### 2025
-* **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/)
+* **October 17**: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
+* **September 12**: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/).
+* **August 12**: Graduated from Arizona State University with a Master of Science in Civil, Environmental and Sustainable Engineering.
 * **July 29**: Officially became a PhD Candidate after successfully passing my comprehensive exam.
 
 ### 2024
@@ -664,6 +695,8 @@ My current work focuses on extracting hydrological features from satellite data 
 
 ### 2020
 * **October 20**: Presented a conference talk, **'Landslide Susceptibility Mapping in Nepal using Google Earth Engine'**, at Geo for Good 2020.
+* **January 10**: Graduated from Tribhuvan University with a Bachelor of Science in Civil Engineering.
+
 """
     generate_page("_pages/about.md", about_content)
 
