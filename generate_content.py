@@ -708,7 +708,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
-I plan to teach a variety of courses at the intersection of water resources, data science, and environmental engineering. My goal is to equip the next generation of engineers and scientists with the skills to tackle complex environmental challenges.
+I teach courses at the intersection of water resources, data science, and environmental engineering. My goal is to equip the next generation of engineers and scientists with the skills to tackle complex environmental challenges.
 
 ### Future Courses
 - **AI in Water Resources:** Exploring the application of machine learning and artificial intelligence for hydrological modeling, forecasting, and water management.
