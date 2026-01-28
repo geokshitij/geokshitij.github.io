@@ -21,7 +21,6 @@ Earth Observation data is the fuel, but Artificial Intelligence is the engine th
 
 I am building forecasting systems for arid regions like Arizona with AI/ML. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
 
-
 ---
 ## News & Updates
 
