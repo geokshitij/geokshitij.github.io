@@ -5,7 +5,7 @@ author_profile: true
 ---
 I am a PhD Candidate at Arizona State University working on hydrology, satellite data, and machine learning. My research and teaching focus on understanding water systems in a changing climate and developing practical, data-driven tools for prediction and decision-making.
 
-My current work centers on extracting hydrological features from satellite data using self-supervised learning and developing streamflow forecasting models for arid regions, with a focus on Arizona.
+My current work focuses on extracting hydrological features from satellite data using self-supervised learning and developing streamflow forecasting models for arid regions, with a focus on Arizona.
 ---
 
 ## News & Updates
