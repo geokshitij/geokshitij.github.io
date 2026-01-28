@@ -4,9 +4,10 @@ title: "About Me"
 author_profile: true
 ---
 Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
+
 My work focuses on bridging the gap between complex environmental science and the practical tools that people and communities can use.
 ### 1. Earth System Science
-My first focus is on understanding the fundamental science. It's about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I focus on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
+My first focus is on understanding the fundamental earth science. It's about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I focus on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
 
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
 
@@ -19,9 +20,6 @@ My second focus is about transforming this flood of data into actionable solutio
 Earth Observation data is the fuel, but Artificial Intelligence is the engine that puts it to work. AI/ML are the critical bridges. They connect the vast datasets we have to the complex, real-world problems we need to solve. These tools can see patterns and relationships that are simply too complex for traditional models to capture.
 
 I am building forecasting systems for arid regions like Arizona with AI/ML. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
-
-I am currently seeking a researcher or faculty position to continue advancing this vision. If you wish to connect or collaborate, please reach out at kdahal3@asu.edu or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
-
 ---
 
 ## News & Updates
