@@ -182,11 +182,11 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
-      position: relative;
     text-decoration: none;
+    position: relative;
 
     &:hover {
-      color: var(--global-masthead-link-color-hover);
+      color: var(--global-masthead-link-color);
     }
   }
 
@@ -238,27 +238,8 @@
     a {
       position: relative;
 
-      &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        background: #2c3e50;
-        width: 0%;
-        -webkit-transition: width 0.3s ease-in-out;
-        transition: width 0.3s ease-in-out;
-        opacity: 1;
-      }
-
-      &:hover:before {
-        width: 100%;
-     
-           filter: opacity(0.65);
-     
-           &:hover {
-             filter: opacity(1);
-           }
+      &:hover {
+        box-shadow: inset 0 -2px 0 0 #2c3e50;
       }
     }
   }
