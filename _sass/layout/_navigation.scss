@@ -245,10 +245,11 @@
         left: 0;
         bottom: 0;
         height: 2px;
-        background: var(--global-masthead-link-color);
+        background: #5a6268;
         width: 0%;
         -webkit-transition: width 0.3s ease-in-out;
         transition: width 0.3s ease-in-out;
+        opacity: 1;
       }
 
       &:hover:before {
