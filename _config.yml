@@ -64,7 +64,7 @@ comments:
 # You shouldn't need to change it unless you're doing advanced customization.
 #
 atom_feed:
-  hide                   : false
+  hide                   : true
   path                   : 
 # SEO Related
 google_site_verification :
