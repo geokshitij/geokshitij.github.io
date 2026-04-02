@@ -626,7 +626,7 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-My research operates at the intersection of Earth System Science, Earth Observation, and Machine Learning. I develop theory-guided, data-driven frameworks that advance our understanding of hydroclimatic extremes and translate that understanding into tools for societal resilience.
+My research is at the intersection of Earth System Science, Earth Observation, and Machine Learning. I develop theory-guided, data-driven frameworks that advance our understanding of hydroclimatic extremes and translate that understanding into tools for societal resilience.
 ### 1. Earth System Science
 <img src="/images/icon_nathazards.jpg" alt="Natural hazards icon" style="float:right; width:390px; max-width:60%; margin:0 0 16px 24px;">
 
@@ -635,6 +635,8 @@ My first focus is on understanding the fundamental earth science. It's about the
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
 
 ### 2. Harnessing Earth Observation
+<img src="/images/eo_image.jpg" alt="Earth observation" style="float:left; width:390px; max-width:60%; margin:0 24px 16px 0;">
+
 We live in an era of an unbelievable amount of data. Space agencies like NASA and ECMWF hold hundreds of petabytes of information about our planet. Satellites are constantly watching our forests, rivers, and cities. But raw data is not the same as knowledge. What are we actually doing with all of it?
 
 My second focus is about transforming this flood of data into actionable solutions. I develop scalable and generalizable methods that make sense of it all. For example, we can use it to map things like [groundwater potential in data-scarce regions](https://doi.org/10.1016/j.jhydrol.2023.130417). We can also monitor and understand the long-term impacts of [land use and land cover change](https://doi.org/10.1016/j.rsase.2022.100895) on agriculture and natural resources. This is not just about making maps. It is about providing decision-makers with a clear, current picture of our changing world so they can act on it.
