@@ -630,7 +630,6 @@ My research is at the intersection of Earth System Science, Earth Observation, a
 ### 1. Earth System Science
 
 My first focus is on understanding the fundamental earth science. It's about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I focus on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
-<img src="/images/icon_nathazards.jpg" alt="Natural hazards icon" style="float:right; width:390px; max-width:60%; margin:0 0 16px 24px;">
 
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
 
