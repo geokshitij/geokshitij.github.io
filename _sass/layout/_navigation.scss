@@ -182,12 +182,11 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
-    opacity: 0.65;
+      position: relative;
     text-decoration: none;
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
-      opacity: 1;
     }
   }
 
@@ -254,6 +253,12 @@
 
       &:hover:before {
         width: 100%;
+     
+           filter: opacity(0.65);
+     
+           &:hover {
+             filter: opacity(1);
+           }
       }
     }
   }
