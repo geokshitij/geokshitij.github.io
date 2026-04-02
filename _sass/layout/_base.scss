@@ -208,6 +208,7 @@ figure {
 
   img {
     width: 100%;
+    border: 3px solid #FFD700;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
