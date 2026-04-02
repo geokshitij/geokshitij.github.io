@@ -3,7 +3,7 @@
    ========================================================================== */
 
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
+// "system". Default is "dark".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
   return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
@@ -28,7 +28,7 @@ let setTheme = (theme) => {
     theme ||
     localStorage.getItem("theme") ||
     $("html").attr("data-theme") ||
-    browserPref;
+    "dark";
 
   if (use_theme === "dark") {
     $("html").attr("data-theme", "dark");
