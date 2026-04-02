@@ -182,10 +182,12 @@
     margin: 0 1rem;
     padding: 0.5rem 0;
     color: var(--global-masthead-link-color);
+    opacity: 0.65;
     text-decoration: none;
 
     &:hover {
       color: var(--global-masthead-link-color-hover);
+      opacity: 1;
     }
   }
 
