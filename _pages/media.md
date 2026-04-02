@@ -15,6 +15,7 @@ If you would like to request an interview, please email me or [book an appointme
 * Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P. (2021). **[मेलम्चीको बाढीबाट के सिक्ने ?](https://www.onlinekhabar.com/2021/06/974746)**. *Onlinekhabar*.
 
 ## Professional Media Citations
+* **[GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms)**. *The Times of India*, 2026.
 * **[Tourism and biodiversity at risk as raging wildfires devastate forests in Nepal](https://www.chinadaily.com.cn/a/202503/27/WS67e4bd4da3101d4e4dc2b29b.html)**. *China Daily*, 2025.
 * **[Open burning main cause of air pollution](https://risingnepaldaily.com/news/58977)**. *The Rising Nepal*, 2025.
 * **[Wildfire Ravage Hundreds Of Acres Of Forest Land In Nepal - World News](https://www.youtube.com/watch?v=UFb_3MyJpew)**. *WION TV*, 2025.

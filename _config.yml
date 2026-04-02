@@ -24,9 +24,9 @@ author:
   name             : "Kshitij Dahal"
   bio              : "PhD Candidate @ ASU"
   location         : "Tempe, AZ, USA"
-  employer         : "Arizona State University"
+  # employer         : "Arizona State University"
   # uri              : "https://search.asu.edu/profile/4585448"
-  email            : "geokshitij@gmail.com" 
+  # email            : "geokshitij@gmail.com" 
 
   # Academic websites - I've left these blank. Please find your profile URLs and paste them here.
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works"

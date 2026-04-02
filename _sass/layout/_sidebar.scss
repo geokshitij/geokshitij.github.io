@@ -91,9 +91,13 @@
     display: block;
     width: auto;
     height: auto;
+    text-align: left;
   }
 
   img {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
     max-width: 175px;
     border-radius: 50%;
 

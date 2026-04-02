@@ -41,8 +41,10 @@ personal_info = {
 }
 
 publications_data = [
+    {"title": "Extreme event-induced landslides and flooding in Darjeeling, 4-5 October 2025", "venue": "Landslides", "date": "2026-01-01", "paperurl": "https://doi.org/10.1007/s10346-026-02743-8", "citation": "Ghosh, P., Bera, S., <strong>Dahal, K.</strong>, Melo, R., Tamang, S., Priyadarshi, S., & Talukdar, S. (2026). &quot;Extreme event-induced landslides and flooding in Darjeeling, 4-5 October 2025.&quot; <i>Landslides</i>."},
+    {"title": "A Comprehensive Review of Machine Learning and Deep Learning Methods for Flood Inundation Mapping", "venue": "Earth", "date": "2026-01-01", "paperurl": "https://doi.org/10.3390/earth7020044", "citation": "Silwal, A., Subedi, A., Tamrakar, R., <strong>Dahal, K.</strong>, Dahal, D., Ekpetere, K. O., & Zhran, M. (2026). &quot;A Comprehensive Review of Machine Learning and Deep Learning Methods for Flood Inundation Mapping.&quot; <i>Earth</i>, 7(2), 44."},
     {"title": "Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions", "venue": "Applied Soft Computing", "date": "2025-12-30", "paperurl": "", "citation": "<strong>Dahal, K.</strong>, Gupta, A., Bokati, L. & Kumar, S.* (Under Review). &quot;Improving Hydrological Forecasting with Bayesian Model Averaging Over Multiple Loss Functions.&quot; <i>Applied Soft Computing</i>."},
-    {"title": "Developing a framework for assessment of the school's exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2025-01-23", "paperurl": "https://link.springer.com/article/10.1007/s11069-025-07852-6", "citation": "Bishui, C., … & <strong>Dahal. K.</strong> (2025). &quot;Developing a framework for assessment of the school's exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
+    {"title": "Developing a framework for assessment of the school's exposure to flood-depth scenarios", "venue": "Natural Hazards", "date": "2026-01-01", "paperurl": "https://link.springer.com/article/10.1007/s11069-025-07852-6", "citation": "Bishui, C., Bera, S., Priyadarshi, S., Ghosh, P., & <strong>Dahal, K.</strong> (2026). &quot;Developing a framework for assessment of the school's exposure to flood-depth scenarios.&quot; <i>Natural Hazards</i>."},
     {"title": "Nepal's carbon stock and biodiversity are under threat from climate exacerbated forest fires", "venue": "Information Geography", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.infgeo.2025.100003", "citation": "<strong>Dahal, K.</strong>*, Talchabhadel, R., Pradhan, P., Parajuli, S., Shrestha, D., Chhetri, R., Gautam, A. P., Tamrakar, R., Gurung, S., & Kumar, S. (2025). &quot;Nepal’s carbon stock and biodiversity are under threat from climate exacerbated forest fires.&quot; <i>Information Geography</i>."},
     {"title": "Policy Relevance of IPCC Reports for the SDGs and Beyond", "venue": "Resources, Environment and Sustainability", "date": "2025-01-01", "paperurl": "https://doi.org/10.1016/j.resenv.2025.100192", "citation": "Pradhan, P., Joshi, S., <strong>Dahal, K.</strong>, Hu, Y., Subedi, D. R., Putra, M. P. I. F., Vaidya, S., Pant, L. P., Dhakal, S., Hubacek, K., Rupakheti, M., Roberts, D., & van den Hurk, B. (2025). &quot;Policy Relevance of IPCC Reports for the SDGs and Beyond.&quot; <i>Resources, Environment and Sustainability (Invited Editorial)</i>."},
     {"title": "Urban agriculture matters for sustainable development", "venue": "Cell Reports Sustainability", "date": "2024-01-01", "paperurl": "https://doi.org/10.1016/j.crsus.2024.100217", "citation": "Pradhan, P., Subedi, D. R., <strong>Dahal, K.</strong>, Hu, Y., Gurung, P., Pokharel, S., Kafle, S., Khatri, B., Basyal, S., Gurung, M., & Joshi, A. (2024). &quot;Urban agriculture matters for sustainable development.&quot; <i>Cell Reports Sustainability</i>."},
@@ -89,6 +91,7 @@ teaching_data = [
 ]
 
 media_data = [
+    {"type": "Media Citation", "year": "2026", "title": "GeoAI-based study charts flood exposure of schools in state", "venue": "The Times of India", "url": "https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms"},
     {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},
     {"type": "Op-Ed", "authors": "Dahal, K., Talchabhadel, R., & Thapa, B. R.", "year": "2021", "title": "Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective", "venue": "Onlinekhabar", "url": "https://english.onlinekhabar.com/landslide-susceptibility-nepal.html"},
     {"type": "Op-Ed", "authors": "Thapa, B. R., Talchabhadel, R., Dahal, K., & Pandey, V.P.", "year": "2021", "title": "मेलम्चीको बाढीबाट के सिक्ने ?", "venue": "Onlinekhabar", "url": "https://www.onlinekhabar.com/2021/06/974746"},
@@ -557,7 +560,8 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         filepath = os.path.join(folder, filename)
         
         content = "---\n"
-        content += f"title: \"{item['title'].replace(':', '').replace('\"', '&quot;')}\"\n"
+        safe_title = item['title'].replace(':', '').replace('"', '&quot;')
+        content += f"title: \"{safe_title}\"\n"
         
         if collection_name == "posts":
             content += f"date: {item['date']}\n"
@@ -566,7 +570,8 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
             for tag in item.get('tags', []):
                 content += f"  - {tag}\n"
             if item.get('excerpt'):
-                content += f"excerpt: \"{item['excerpt'].replace('\"', '&quot;')}\"\n"
+                safe_excerpt = item['excerpt'].replace('"', '&quot;')
+                content += f"excerpt: \"{safe_excerpt}\"\n"
         else:
             content += f"collection: {collection_name}\n"
             content += f"permalink: /{permalink_prefix}/{item_date}-{slug}\n"
@@ -618,13 +623,13 @@ if __name__ == "__main__":
 
     about_content = f"""---
 permalink: /
-title: "About Me"
+title: "About"
 author_profile: true
 ---
-Welcome! I am a PhD Candidate at Arizona State University, working at the intersection of data-driven hydrology, earth observation, and machine learning.
-
-My work focuses on bridging the gap between complex environmental science and the practical tools that people and communities can use.
+My research operates at the intersection of Earth System Science, Earth Observation, and Machine Learning. I develop theory-guided, data-driven frameworks that advance our understanding of hydroclimatic extremes and translate that understanding into tools for societal resilience.
 ### 1. Earth System Science
+<img src="/images/icon_nathazards.jpg" alt="Natural hazards icon" style="float:right; width:390px; max-width:60%; margin:0 0 16px 24px;">
+
 My first focus is on understanding the fundamental earth science. It's about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I focus on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
 
 We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
@@ -640,9 +645,18 @@ Earth Observation data is the fuel, but Artificial Intelligence is the engine th
 I am building forecasting systems for arid regions like Arizona with AI/ML. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
 
 ---
+## Recognition
+
+* Community Science fellow, Thriving Earth Exchange, American Geophysical Union (2024)
+* HydroLearn faculty fellow (2024)
+* CDRI fellow (2021)
+
+---
 ## News & Updates
 
 ### 2026
+* **February 22**: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
+* **January 24**: Lumberton Flood Dashboard launched as part of the American Geophysical Union (AGU) Thriving Earth Exchange program: [Dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton).
 * **January 23**: **Environmental Data Analysis** course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
 * **January 23**: Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
 
