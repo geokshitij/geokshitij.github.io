@@ -100,10 +100,18 @@
     margin-right: 0;
     max-width: 175px;
     border-radius: 50%;
+    border: 1px solid var(--global-dark-border-color);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.28);
+    transform: translateY(-1px);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid var(--global-border-color);
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(255, 255, 255, 0.32);
     }
   }
 }
