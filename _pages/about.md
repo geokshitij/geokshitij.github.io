@@ -33,8 +33,8 @@ I am building forecasting systems for arid regions like Arizona with AI/ML. Many
 ## News & Updates
 
 ### 2026
-* February 22: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
 * April 10: Successfully defended my PhD.
+* February 22: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
 * January 24: Lumberton Flood Dashboard launched as part of the American Geophysical Union (AGU) Thriving Earth Exchange program: [Dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton).
 * January 23: Environmental Data Analysis course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
 * January 23: Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
