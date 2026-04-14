@@ -541,7 +541,7 @@ def clear_folder(folder_path):
 def generate_page(filepath, content):
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(content)
-    print(f"✓ Updated {filepath}")
+    print(f"Updated {filepath}")
 
 def generate_collection_files(data, folder, collection_name, permalink_prefix, type_key=None, default_type=None):
     for item in data:
@@ -549,7 +549,7 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         if not date_match:
             date_match = re.search(r'(\d{4})', str(item['date']))
             if not date_match:
-                print(f"  ✗ Warning: Could not parse date for '{item['title']}'. Skipping file generation.")
+                print(f"  Warning: Could not parse date for '{item['title']}'. Skipping file generation.")
                 continue
             item_date = f"{date_match.group(1)}-01-01"
         else:
@@ -595,7 +595,7 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
 
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)
-        print(f"  ✓ Created {filepath}")
+        print(f"  Created {filepath}")
 
 if __name__ == "__main__":
     for folder in ["_publications", "_talks", "_teaching", "_posts"]:
@@ -657,6 +657,7 @@ I am building forecasting systems for arid regions like Arizona with AI/ML. Many
 
 ### 2026
 * February 22: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
+* April 10: Successfully defended my PhD.
 * January 24: Lumberton Flood Dashboard launched as part of the American Geophysical Union (AGU) Thriving Earth Exchange program: [Dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton).
 * January 23: Environmental Data Analysis course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
 * January 23: Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
