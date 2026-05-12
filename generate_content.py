@@ -646,6 +646,8 @@ Open to collaborations on:
 * arid streamflow forecasting with transformer-based and physics-informed models.
 * earth observation for water, food, and infrastructure work in developing economies.
 
+[Book a 30-minute call →](https://calendar.app.google/6FXuzivEFvFhLHx76)
+
 ## News
 
 * May 12, 2026: Started as a Postdoctoral Researcher at the University of Kansas.

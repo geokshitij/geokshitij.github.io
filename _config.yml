@@ -73,13 +73,13 @@ alexa_site_verification  :
 yandex_site_verification :
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter geokshitij
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :
-og_description           :
+og_image                 : profile.jpg
+og_description           : "Postdoctoral researcher at the University of Kansas building AI + physics-based hydrology tools for hazard risk and sustainable development."
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   :
