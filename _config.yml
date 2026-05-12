@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Kshitij Dahal"
 title_separator          : "|"
 name                     : &name "Kshitij Dahal"
-description              : "PhD Candidate in data-driven hydrology, earth observation, and machine learning for sustainable development."
+description              : "Postdoctoral researcher at the University of Kansas building AI + physics-based hydrology tools for hazard risk and sustainable development."
 url                      : https://geokshitij.github.io # IMPORTANT: This is correct for your site.
 baseurl                  : ""
 repository               : "geokshitij/geokshitij.github.io" # IMPORTANT: This is correct for your site.
@@ -22,8 +22,8 @@ author:
   # Biographic information
   avatar           : "profile.jpg" # You will need to upload a photo named profile.jpg to the /images/ folder.
   name             : "Kshitij Dahal"
-  bio              : "PhD Candidate @ ASU"
-  location         : "Tempe, AZ, USA"
+  bio              : "Postdoc @ KU"
+  location         : "Lawrence, KS, USA"
   # employer         : "Arizona State University"
   # uri              : "https://search.asu.edu/profile/4585448"
   # email            : "geokshitij@gmail.com" 

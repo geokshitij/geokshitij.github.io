@@ -7,6 +7,14 @@ author_profile: true
 
 A timeline of recent achievements, publications, and presentations.
 
+## 2026
+* **May 12**: 🎓 Started as a Postdoctoral Researcher at The University of Kansas, Lawrence, KS.
+* **April 10**: 🎓 Successfully defended my PhD at Arizona State University.
+* **February 22**: 📰 News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
+* **January 24**: 🚀 Lumberton Flood Dashboard launched as part of the AGU Thriving Earth Exchange program: [Dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton).
+* **January 23**: 📚 Environmental Data Analysis course module is live: [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
+* **January 23**: 📰 Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
+
 ## 2025
 * **June 01**: 🏆 Received **Travel grant, CIROH Developers Conference, The University of Vermont, USA**.
 * **June 01**: 🏆 Received **Outstanding Reviewer Award, Earth’s Future, American Geophysical Union**.

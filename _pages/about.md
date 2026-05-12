@@ -3,80 +3,42 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-My research is at the intersection of Earth System Science, Earth Observation, and Machine Learning. I develop theory-guided, data-driven frameworks that advance our understanding of hydroclimatic extremes and translate that understanding into tools for societal resilience.
-### 1. Earth System Science
+Water-driven extremes (floods, droughts, landslides) concentrate their damage in the places with the weakest forecasting and risk-mapping capacity. I combine machine learning with physics-based models to close that gap. Three running threads: mountain hazards, arid streamflow, and earth observation for sustainable development. Below is a short tour of each, with the relevant publications and a way to get in touch.
 
-My first focus is on understanding the fundamental earth science. It's about the intricate dance between earth, water and the atmosphere that creates everything from life-giving rain to destructive floods/landslides. I focus on what we call compound and cascading disasters. This is where a chain of simple events can combine to create a catastrophe. A single heavy rainfall might not be a disaster on its own. But when it triggers a landslide that blocks a river, which then causes a flood upstream, the impact multiplies.
+### 1. Mountain hydrology and hazards
+Mountains concentrate water-driven disaster deaths and starve forecasters of the data needed to prevent them. I combine machine learning with physics-based models to map and forecast cascading hazards: rainfall that triggers landslides that block rivers that flood downstream towns. Selected work: cascading-hazard characterization on mountain terrain ([Talchabhadel et al., 2023](https://doi.org/10.1080/19475705.2022.2162443)); rainfall-triggered landslide zonation for critical infrastructure ([Gnyawali et al., 2023](https://doi.org/10.1016/j.scitotenv.2023.162242)); explainable ML for groundwater potential in data-scarce mountainous regions ([Dahal et al., 2023](https://doi.org/10.1016/j.jhydrol.2023.130417)); flood-exposure assessment for schools ([Bishui et al., 2026](https://link.springer.com/article/10.1007/s11069-025-07852-6)).
 
-We need to understand these complex interactions to get ahead of them. A lot of my work involves building frameworks to model and predict these events. We can build better models to understand these [cascading hazards](https://doi.org/10.1080/19475705.2022.2162443) on mountain terrain. We can also map out which areas are most susceptible to [rainfall-triggered landslides](https://doi.org/10.1016/j.scitotenv.2023.162242) and identify the critical infrastructure at risk. This allows for smarter spatial decision-making before a disaster happens. This kind of proactive work is essential. It is part of a larger vision for a more [Integrated, Coordinated, Open, and Networked (ICON) approach to science](https://doi.org/10.1029/2021EA002114) that can truly serve society.
+### 2. Arid hydrology and AI streamflow forecasting
+Arid streamflow is hard to forecast: the systems are bursty, the between-event signals are weak, and the calibration records are short. I develop transformer-based and ensemble forecasting approaches that learn from satellite observations directly; the thread started during my PhD on Arizona basins and continues at KU. Selected work: ensemble streamflow forecasting with diverse loss functions ([Dahal et al., 2026](https://www.sciencedirect.com/science/article/abs/pii/S1568494626007246)).
 
-### 2. Harnessing Earth Observation
-<img src="/images/eo_image.jpg" alt="Earth observation" style="float:left; width:390px; max-width:60%; margin:0 24px 16px 0;">
-
-We live in an era of an unbelievable amount of data. Space agencies like NASA and ECMWF hold hundreds of petabytes of information about our planet. Satellites are constantly watching our forests, rivers, and cities. But raw data is not the same as knowledge. What are we actually doing with all of it?
-
-My second focus is about transforming this flood of data into actionable solutions. I develop scalable and generalizable methods that make sense of it all. For example, we can use it to map things like [groundwater potential in data-scarce regions](https://doi.org/10.1016/j.jhydrol.2023.130417). We can also monitor and understand the long-term impacts of [land use and land cover change](https://doi.org/10.1016/j.rsase.2022.100895) on agriculture and natural resources. This is not just about making maps. It is about providing decision-makers with a clear, current picture of our changing world so they can act on it.
-
-### 3. Bridging the Gap with Artificial Intelligence
-Earth Observation data is the fuel, but Artificial Intelligence is the engine that puts it to work. AI/ML are the critical bridges. They connect the vast datasets we have to the complex, real-world problems we need to solve. These tools can see patterns and relationships that are simply too complex for traditional models to capture.
-
-I am building forecasting systems for arid regions like Arizona with AI/ML. Many current systems are based on older, empirical knowledge. They struggle to adapt when the environment changes, like when a city expands and creates more concrete surfaces. I am developing methods that can assimilate satellite information directly into hydrological models, aiming for more robust and accurate forecasts. This includes exploring techniques like [Bayesian model averaging](https://geokshitij.github.io/publication/2025-12-30-improving-hydrological-forecasting-with-bayesian-model-averaging-over-multiple-loss-functions) to improve reliability. The key is to create systems that learn and adapt, because our world is constantly changing.
+### 3. Earth observation for sustainable development
+Climate-change *mitigation* gets the headlines; for most of the world, *development* is the live question: clean water, food, infrastructure, livelihoods. I use earth observation and machine learning to inform that agenda directly. Selected work: carbon and biodiversity stakes of climate-driven wildfires in Nepal ([Dahal et al., 2025](https://doi.org/10.1016/j.infgeo.2025.100003)); urban agriculture as a sustainability lever ([Pradhan et al., 2024](https://doi.org/10.1016/j.crsus.2024.100217)); IPCC science applied to the SDG agenda ([Pradhan et al., 2025](https://doi.org/10.1016/j.resenv.2025.100192)).
 
 ---
-## Recognition
+## Currently
+Building data-driven streamflow forecasting and hazard tools at the University of Kansas (May 2026 – present). Active fellowship: AGU Thriving Earth Exchange Community Science Fellow on the [Lumberton, NC flood project](https://thrivingearthexchange.org/project/lumberton-nc/).
 
-* Community Science fellow, Thriving Earth Exchange, American Geophysical Union (2024)
-* HydroLearn faculty fellow (2024)
-* CDRI fellow (2021)
+Open to collaborations on:
 
----
-## News & Updates
+* mountain hazards and cascading-disaster modelling.
+* arid streamflow forecasting with transformer-based and physics-informed models.
+* earth observation for water, food, and infrastructure work in developing economies.
 
-### 2026
-* April 10: Successfully defended my PhD.
-* February 22: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).
-* January 24: Lumberton Flood Dashboard launched as part of the American Geophysical Union (AGU) Thriving Earth Exchange program: [Dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton).
-* January 23: Environmental Data Analysis course module is now live! Access interactive notebooks and course materials at [geokshitij.github.io/Stats](https://geokshitij.github.io/Stats/).
-* January 23: Grokipedia published my profile: [grokipedia.com/page/Kshitij_Dahal](https://grokipedia.com/page/Kshitij_Dahal).
+## News
 
-### 2025
-* October 17: Invited presentation on Modeling and Data Integration Strategies for Data-driven Streamflow Forecasting at Arizona State University. Many thanks to Prof. Tianfang Xu.
-* September 12: Web map story for Arizona water systems is published at [link](https://geokshitij.github.io/azwaters/).
-* August 12: Graduated from Arizona State University with a Master of Science in Civil, Environmental and Sustainable Engineering.
-* July 29: Officially became a PhD Candidate after successfully passing my comprehensive exam.
+* May 12, 2026: Started as a Postdoctoral Researcher at the University of Kansas.
+* April 10, 2026: Defended my PhD at Arizona State University.
+* February 22, 2026: Coverage in *The Times of India* on school flood-exposure research ([article](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms)).
+* January 24, 2026: Lumberton Flood Dashboard launched ([dashboard](https://ee-knowrisk.projects.earthengine.app/view/lumberton)).
 
-### 2024
-* October 21: Presented a conference poster, 'A Framework to Improve Hydrological Forecasting with Deep Learning', at ASU Flow 2024.
-* October 21: Received the Outstanding Poster Award for my work on 'A Framework to Improve Hydrological Forecasting with Deep Learning' at the ASU Flow 2024 symposium.
-* October 02: Presented a conference talk, 'Operational Streamflow Forecasting Tool for Arizona Streams', at CMWR 2024.
-* May 15: Selected as a Community Science Fellow by the American Geophysical Union's Thriving Earth Exchange.
-* March 13: Presented a invited webinar, 'Explainable Machine Learning in Groundwater Potential Mapping', at UNESCO GWYN.
-* February 13: Presented a conference talk, 'Mapping wetland potential in arid environments: A machine learning approach with geospatial interpretability', at AGU Chapman Conference on Remote Sensing of the Water Cycle.
+[More news →](/news/)
 
-### 2023
-* December 11: Presented a conference poster, 'Advances in Hyperspectral Remote Sensing for Water Resources', at AGU Fall Meeting 2023.
-* September 19: Presented a invited talk, 'Discussion Facilitator at Session 1 --Development of core use cases in environmental sciences', at 5th NOAA Workshop on Leveraging AI in Environmental Sciences.
-* June 12: Won 1st place in the SpaceHack for Sustainability Hackathon at Arizona State University.
-* May 22: Presented a workshop, 'Remote Sensing, Big Data Analytics, and Cloud Computing: Application to Water Quality Modeling', at Environmental & Water Resources Institute (EWRI) Congress 2023, ASCE.
-* May 21: Presented a conference talk, 'Explainable Artificial Intelligence to visualize the unseen', at EWRI Congress 2023.
+## Find your way
 
-### 2022
-* December 01: Started my PhD journey at Arizona State University.
-* October 12: Presented a conference talk, 'Spatial decision making with landslide susceptibility and critical infrastructure', at DRI Technical Conference 2022.
-* June 21: Presented a invited lecture, 'Landslide susceptibility and monsoon preparedness in Nepal: An engineering perspective', at Khwopa College of Engineering, Tribhuvan University.
-* April 07: Presented a invited discussion, 'Introduction to Google Earth Engine for cloud computing', at S4W Nepal.
-* April 06: Presented a invited lecture, 'Google Earth Engine and cloud computing', at Central Department of Geography, Tribhuvan University.
+* [Publications](/publications/): full list with links and citations.
+* [CV](/cv/): appointments, awards, talks, teaching.
+* [Resources](/resources/): open course materials and code (Stats, py4all, azwaters).
+* [News](/news/): updates and selected media coverage.
 
-### 2021
-* December 13: Presented a conference poster, 'National landslides database and susceptibility assessment of Nepal', at AGU Fall Meeting 2021.
-* December 13: Presented a conference poster, 'Framework for multi-hazards susceptibility assessment in Google Earth Engine', at AGU Fall Meeting 2021.
-* September 17: Won 1st place in the Hackathon Competition at the 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
-* September 13: Presented a conference talk, 'Spatial downscaling of coarse resolution satellite-based precipitation estimates (SPEs) to 1 km using Machine Learning', at 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
-* September 13: Presented a conference talk, 'Machine Learning to Estimate Precipitation with Satellite-based and Gauged Observations', at 3rd NOAA Workshop on Leveraging AI in Environmental Sciences.
-* August 28: Moderated the session, 'Chocolate Talk on DRR #3: Artificial intelligence (AI) for disaster risk reduction', at U-INSPIRE Alliance.
-* July 30: Presented a invited talk, 'DRR talk #1: The future of disaster risk governance in 2045', at Disaster Risk Reduction and Tsunami Information, UNESCO Office, Jakarta.
-
-### 2020
-* October 20: Presented a conference talk, 'Landslide Susceptibility Mapping in Nepal using Google Earth Engine', at Geo for Good 2020.
-* January 10: Graduated from Tribhuvan University with a Bachelor of Science in Civil Engineering.
+Reach me at **geokshitij [at] gmail [dot] com** or via [Google Scholar](https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works).
 
