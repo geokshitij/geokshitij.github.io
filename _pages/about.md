@@ -16,7 +16,7 @@ Beyond mitigation, the pressing question is development: clean water, food, infr
 
 ---
 ## Currently
-Building data-driven streamflow forecasting and hazard tools at the University of Kansas (May 2026 – present). Active fellowship: AGU Thriving Earth Exchange Community Science Fellow on the [Lumberton, NC flood project](https://thrivingearthexchange.org/project/lumberton-nc/).
+At the University of Kansas (May 2026 – present), I conduct AI, satellite earth observation, and geospatial research on water resources and water-distribution infrastructure under natural hazards, on an NSF-funded project. Recent fellowship: AGU Thriving Earth Exchange Community Science Fellow on the [Lumberton, NC flood project](https://thrivingearthexchange.org/project/lumberton-nc/) (2024 – 2026).
 
 Open to collaborations on:
 
