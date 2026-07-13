@@ -38,7 +38,7 @@ Open to collaborations on:
 ## Find your way
 
 * [Publications](/publications/): full list with links and citations.
-* [CV](/cv/): appointments, awards, talks, teaching.
+* [CV](/cv/): appointments, awards, and talks.
 * [Resources](/resources/): open course materials and code (Stats, py4all, azwaters).
 * [News](/news/): updates and selected media coverage.
 

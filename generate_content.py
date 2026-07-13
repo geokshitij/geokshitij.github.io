@@ -83,14 +83,6 @@ talks_data = [
     {"title": "Landslide Susceptibility Mapping in Nepal using Google Earth Engine", "type": "Conference Talk", "venue": "Geo for Good 2020", "date": "2020-10-20", "location": "USA"},
 ]
 
-teaching_data = [
-    {"title": "Num. Methods for Engrs (CEE 384)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2024-01-15", "description": "Served during the Spring 2024 semester."},
-    {"title": "Fluid Mechanics for Civil Engrs (CEE 341)", "type": "Teaching Assistant", "venue": "Arizona State University", "date": "2023-08-15", "description": "Served during the Fall 2023 semester."},
-    {"title": "Engineering Hydrology (CE 606)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2021-01-15", "description": "Served during the Spring 2021 semester."},
-    {"title": "GIS and Remote Sensing (CE 78501)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2020-08-15", "description": "Served during the Fall 2020 semester."},
-    {"title": "Engineering Surveying (CE 504)", "type": "Instructor of Record", "venue": "Tribhuvan University, Nepal", "date": "2019-01-15", "description": "Served during the Spring 2019 semester."},
-]
-
 media_data = [
     {"type": "Media Citation", "year": "2026", "title": "GeoAI-based study charts flood exposure of schools in state", "venue": "The Times of India", "url": "https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms"},
     {"type": "Op-Ed", "authors": "Dahal, K. & Thapa, B. R.", "year": "2025", "title": "World Water Day 2025 on Glacier Preservation: What It Means for Nepal?", "venue": "Republica", "url": "https://myrepublica.nagariknetwork.com/news/world-water-day-2025-on-glacier-preservation-what-it-means-for-nepal/"},
@@ -599,7 +591,7 @@ def generate_collection_files(data, folder, collection_name, permalink_prefix, t
         print(f"  Created {filepath}")
 
 if __name__ == "__main__":
-    for folder in ["_publications", "_talks", "_teaching", "_posts"]:
+    for folder in ["_publications", "_talks", "_posts"]:
         clear_folder(folder)
 
     print("\n--- Generating Core Pages & Navigation ---")
@@ -608,8 +600,6 @@ if __name__ == "__main__":
     url: /publications/
   - title: "Talks"
     url: /talks/
-  - title: "Teaching"
-    url: /teaching/
   - title: "Media"
     url: /media/
   - title: "Blog"
@@ -660,7 +650,7 @@ Open to collaborations on:
 ## Find your way
 
 * [Publications](/publications/): full list with links and citations.
-* [CV](/cv/): appointments, awards, talks, teaching.
+* [CV](/cv/): appointments, awards, and talks.
 * [Resources](/resources/): open course materials and code (Stats, py4all, azwaters).
 * [News](/news/): updates and selected media coverage.
 
@@ -684,58 +674,6 @@ author_profile: true
 <iframe src="https://docs.google.com/document/d/1Mndv6ZTSUXTpm0GEMDLeL1c7mdpGmSMvqs4Vk6foDeA/preview" width="100%" height="1000px" frameborder="0"></iframe>
 """
     generate_page("_pages/cv.md", cv_content)
-
-    teaching_page_content = """---
-layout: archive
-title: "Teaching"
-permalink: /teaching/
-author_profile: true
----
-
-I teach courses at the intersection of water resources, data science, and environmental engineering. My goal is to equip the next generation of engineers and scientists with the skills to tackle complex environmental challenges.
-
-### Future Courses
-- **AI in Water Resources:** Exploring the application of machine learning and artificial intelligence for hydrological modeling, forecasting, and water management.
-- **Remote Sensing for Earth Observation:** Focusing on the use of satellite data and geospatial analysis for monitoring environmental systems.
-- **Engineering Hydrology:** Covering the fundamentals of the hydrologic cycle, water balance, and hydrological processes.
-- **Fluid Mechanics:** Introducing the principles of fluid statics and dynamics with applications in civil and environmental engineering.
-
----
-
-### Instructor of Record
-{% include base_path %}
-{% for post in site.teaching reversed %}
-  {% if post.type == "Instructor of Record" %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
-
-### Teaching Assistant
-{% include base_path %}
-{% for post in site.teaching reversed %}
-  {% if post.type == "Teaching Assistant" %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
-
----
-
-### Teaching Evaluations and Testimonials
-The following testimonials are from former students in courses taught at Tribhuvan University, Khwopa College of Engineering. All are shared with permission.
-
-#### Course: Engineering Hydrology (CE 606)
-> "Mr. Dahal's Engineering Hydrology class was one of the most practical and engaging courses I took. In many of our classes, it was common for only the male students to ask questions, but he created an environment where everyone felt comfortable participating. He would call on people in a supportive way and used different methods to get feedback. In our final project, I analyzed real flood data for a local river to propose a small-scale mitigation plan. It was the first time I felt like a real engineer, using my skills to solve a problem that affected my own community. His class gave me the confidence to pursue a career in water resources." – Unisha Ghimire (Now MS student at University of Denver)
-
-#### Course: GIS and Remote Sensing (CE 78501)
-> "Taking GIS class with Kshitij was the turning point in my undergraduate career. Before his course, GIS was just a tool we were told we had to learn. He brought it to life. Instead of just showing us the buttons to click, he filled every lecture with real-world examples. He showed us why it mattered. His passion was infectious, and he was always willing to stay after class to help with our projects or just talk about the possibilities of geospatial science. He was so inspiring that I started my own side projects, and it's because of his class that I decided to pursue a PhD focused on this field. He didn't just teach a subject; he opened a door to a new way of seeing the world." – Yogesh Bhattarai (Now PhD student, Howard University)
-
-#### Course: GIS and Remote Sensing (CE 78501)
-> "I was so excited to finally take Kshitij’s GIS class. He had a reputation on campus for being one of the best instructors, and everyone was always waiting to get into his course. His class was everything I hoped for. He made GIS so interesting and powerful that it directly inspired me to pursue my Master's in Agriculture Engineering, where I use these skills every day. His lectures were excellent, full of energy, and it was so much fun." – Mamata Pandey, MS (Now PhD student at Oklahoma State University)
-
-#### Course: Engineering Surveying (CE 504)
-> "The survey camp for Engineering Surveying was the best part of the course, Kshitij was a big reason why. He didn't just show us how to use the total station or the DGPS; he connected every measurement back to the bigger picture of a real construction project. I remember being stressed about getting a perfect measurement, and he told us, 'Don't worry so much about the grade. Focus on understanding the process and solving the problem in front of you.' Today, I realized how right he was. He made learning fun and motivating, especially when we got to fly the drones." – Aakash Basu (Now MS student at Clemson University)
-"""
-    generate_page("_pages/teaching.md", teaching_page_content)
 
     group_page_content = """---
 layout: archive
@@ -816,8 +754,6 @@ author_profile: true
     print("\n--- Generating Collection Files ---")
     generate_collection_files(publications_data, "_publications", "publications", "publication")
     generate_collection_files(talks_data, "_talks", "talks", "talks", type_key="type", default_type="Talk")
-    # ** FIX IS HERE **
-    generate_collection_files(teaching_data, "_teaching", "teaching", "teaching", type_key="type")
     generate_collection_files(blog_data, "_posts", "posts", "posts")
     
     print("\nGeneration complete!")
