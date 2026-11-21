@@ -718,12 +718,12 @@ author_profile: true
 ---
 I study floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
 
-### 1. How sediment-laden floods form and travel
+### 1. Complex river flows
 Physics-based reconstructions of floods that carry rock, ice, mud and water, to learn what makes them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
 
 {ROW_SO1}
 
-### 2. Upstream processes in flood forecasting
+### 2. Flood forecasting
 Satellite records of slope failures, burn scars and changing catchments, brought into AI and hydrologic models that forecast river flow at scale.
 
 {ROW_SO2}
