@@ -9,5 +9,7 @@ main:
     url: /blog/
   - title: "Resources"
     url: /resources/
+  - title: "Group"
+    url: https://livingmountains.github.io
   - title: "CV"
     url: /cv/
