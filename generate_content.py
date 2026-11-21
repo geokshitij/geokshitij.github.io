@@ -716,9 +716,9 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-I study catastrophic floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
+I study floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
 
-### 1. How catastrophic floods form and travel
+### 1. How sediment-laden floods form and travel
 Physics-based reconstructions of floods that carry rock, ice, mud and water, to learn what makes them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
 
 {ROW_SO1}
@@ -741,7 +741,7 @@ I am part of the [Living Mountains Group](https://livingmountains.github.io), an
 
 Open to collaborations on:
 
-* reconstructing catastrophic floods, debris flows and dam or levee breaches.
+* reconstructing sediment-laden floods, debris flows and dam or levee breaches.
 * flood forecasting with satellite data and AI.
 * flood-risk tools with communities, utilities and agencies.
 

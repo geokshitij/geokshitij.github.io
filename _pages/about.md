@@ -3,9 +3,9 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-I study catastrophic floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
+I study floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
 
-### 1. How catastrophic floods form and travel
+### 1. How sediment-laden floods form and travel
 Physics-based reconstructions of floods that carry rock, ice, mud and water, to learn what makes them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
 
 <div class="paper-fig-row"><figure class="paper-fig"><a href="https://doi.org/10.1038/s44304-026-00292-7"><img src="/images/papers/2026-npj-cascading.jpg" alt="Seven cascading disasters across the Himalaya, 2021 to 2026" loading="lazy"></a><figcaption>Seven cascading disasters across the Himalaya, 2021 to 2026 (<a href="https://doi.org/10.1038/s44304-026-00292-7">Silwal & Dahal, 2026</a>)</figcaption></figure><figure class="paper-fig"><a href="https://doi.org/10.1007/s10346-026-02743-8"><img src="/images/papers/2026-darjeeling.jpg" alt="Landslides and flooding in Darjeeling, October 2025" loading="lazy"></a><figcaption>Landslides and flooding in Darjeeling, October 2025 (<a href="https://doi.org/10.1007/s10346-026-02743-8">Ghosh et al., 2026</a>)</figcaption></figure><figure class="paper-fig"><a href="https://doi.org/10.1080/19475705.2022.2162443"><img src="/images/papers/2023-cascading-hazard.jpg" alt="Cascading hazards on mountain terrain" loading="lazy"></a><figcaption>Cascading hazards on mountain terrain (<a href="https://doi.org/10.1080/19475705.2022.2162443">Talchabhadel et al., 2023</a>)</figcaption></figure></div>
@@ -28,7 +28,7 @@ I am part of the [Living Mountains Group](https://livingmountains.github.io), an
 
 Open to collaborations on:
 
-* reconstructing catastrophic floods, debris flows and dam or levee breaches.
+* reconstructing sediment-laden floods, debris flows and dam or levee breaches.
 * flood forecasting with satellite data and AI.
 * flood-risk tools with communities, utilities and agencies.
 
