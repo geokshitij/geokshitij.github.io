@@ -523,6 +523,77 @@ From this place, forgiveness is no longer a chore. It becomes a simple, powerful
 # SCRIPT LOGIC (No need to edit below this line unless you want to customize)
 # =============================================================================
 
+
+# =============================================================================
+# FIGURES FROM PAPERS
+# One key figure per publication, stored in images/papers/<key>.jpg.
+# Matched to publications_data by the start of the title.
+# =============================================================================
+paper_figures = {
+    "Rethinking cascading high mountain hazards": ("2026-npj-cascading", "Seven cascading disasters across the Himalaya, 2021 to 2026"),
+    "Extreme event-induced landslides and flooding in Darjeeling": ("2026-darjeeling", "Landslides and flooding in Darjeeling, October 2025"),
+    "A Comprehensive Review of Machine Learning and Deep Learning": ("2026-flood-mapping-review", "A machine-learning framework for flood inundation mapping"),
+    "Ensemble streamflow forecasting with diverse loss functions": ("2026-ensemble-streamflow", "Ensemble forecast skill and uncertainty across US basins"),
+    "Developing a framework for assessment of the school": ("2026-school-flood-exposure", "Schools exposed to flood-depth scenarios"),
+    "Nepal's carbon stock and biodiversity": ("2025-nepal-forest-fires", "Forest fires across Nepal and their seasonal timing"),
+    "Policy Relevance of IPCC Reports": ("2025-ipcc-sdgs", "How IPCC reports engage with each SDG"),
+    "Urban agriculture matters for sustainable development": ("2024-urban-agriculture", "How urban agriculture links to the 17 SDGs"),
+    "Identification of groundwater potential zones": ("2023-groundwater-potential", "Groundwater potential zones mapped with explainable machine learning"),
+    "Mapping landslide susceptibility and critical infrastructure": ("2023-landslide-infrastructure-mapping", "Landslide susceptibility and critical infrastructure"),
+    "Multimodal multiscale characterization of cascading hazard": ("2023-cascading-hazard", "Cascading hazards on mountain terrain"),
+    "Framework for rainfall-triggered landslide-prone": ("2023-landslide-infrastructure-zonation", "Natural and roadside landslides across Nepal"),
+    "Land use and land cover change implications": ("2023-cambodia-land-use", "Land use and land cover change in Koah Nheaek, Cambodia"),
+    "Assessment of shelter location-allocation": ("2023-shelter-evacuation", "Shelters for multi-hazard emergency evacuation"),
+    "Vegetation loss and recovery analysis from the 2015 Gorkha": ("2022-gorkha-vegetation", "Vegetation loss and recovery after the Gorkha earthquake landslides"),
+    "Natural Hazards Perspectives on Integrated, Coordinated": ("2022-icon-science", "Integrated, coordinated, open, networked science for natural hazards"),
+    "Insights on the Impacts of Hydroclimatic Extremes": ("2021-sediment-yield", "Hydroclimatic extremes and sediment yield in a river basin"),
+}
+
+def figure_for(title):
+    for prefix, value in paper_figures.items():
+        if title.startswith(prefix):
+            return value
+    return None
+
+def pub_by_title(prefix):
+    for pub in publications_data:
+        if pub["title"].startswith(prefix):
+            return pub
+    raise KeyError(prefix)
+
+def fig_row(items):
+    """items: list of (title prefix, short citation). Returns a row of linked figures."""
+    cells = []
+    for prefix, cite in items:
+        pub = pub_by_title(prefix)
+        key, caption = figure_for(pub["title"])
+        url = pub.get("paperurl", "#")
+        cells.append(
+            f'<figure class="paper-fig"><a href="{url}"><img src="/images/papers/{key}.jpg" alt="{caption}" loading="lazy"></a>'
+            f'<figcaption>{caption} (<a href="{url}">{cite}</a>)</figcaption></figure>'
+        )
+    return '<div class="paper-fig-row">' + "".join(cells) + "</div>"
+
+def publications_grid():
+    """Publications page: one card per paper with its key figure, grouped by year."""
+    out, year = [], None
+    for pub in publications_data:
+        y = str(pub["date"])[:4]
+        if y != year:
+            if year is not None:
+                out.append("</div>")
+            out.append(f'<h2 class="pub-year">{y}</h2>\n<div class="pub-grid">')
+            year = y
+        url = pub.get("paperurl", "#")
+        fig = figure_for(pub["title"])
+        img = (f'<a class="pub-fig" href="{url}"><img src="/images/papers/{fig[0]}.jpg" alt="{fig[1]}" loading="lazy"></a>'
+               if fig else '<div class="pub-fig pub-fig-empty"></div>')
+        cap = f'<div class="pub-figcap">{fig[1]}</div>' if fig else ""
+        out.append(f'<div class="pub-card">{img}<div class="pub-body"><a class="pub-title" href="{url}">{pub["title"]}</a>'
+                   f'<div class="pub-cite">{pub["citation"]}</div>{cap}</div></div>')
+    out.append("</div>")
+    return "\n".join(out)
+
 def slugify(text):
     text = text.lower()
     text = re.sub(r'[^a-z0-9\s-]', '', text)
@@ -618,21 +689,43 @@ if __name__ == "__main__":
     url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
 
+    ROW_HYDRO = fig_row([
+        ("Ensemble streamflow forecasting", "Dahal et al., 2026"),
+        ("Identification of groundwater potential zones", "Dahal et al., 2023"),
+        ("A Comprehensive Review of Machine Learning", "Silwal et al., 2026"),
+    ])
+    ROW_HAZARD = fig_row([
+        ("Rethinking cascading high mountain hazards", "Silwal & Dahal, 2026"),
+        ("Extreme event-induced landslides", "Ghosh et al., 2026"),
+        ("Framework for rainfall-triggered landslide-prone", "Gnyawali et al., 2023"),
+    ])
+    ROW_SDG = fig_row([
+        ("Nepal's carbon stock and biodiversity", "Dahal et al., 2025"),
+        ("Urban agriculture matters", "Pradhan et al., 2024"),
+        ("Policy Relevance of IPCC Reports", "Pradhan et al., 2025"),
+    ])
+
     about_content = f"""---
 permalink: /
 title: "About"
 author_profile: true
 ---
-I build artificial intelligence and physics-based methods that make water and hazard predictions more accurate, better quantified, and easier to trust. Floods, droughts, and landslides hit hardest where forecasting and risk mapping are weakest, so I focus on methods that work with limited data and explain their own reasoning. My work runs in three threads: mountain and arid hydrology, hazards and infrastructure risk, and sustainable development. Below is a short tour of each, with selected publications and a way to get in touch.
+I build artificial intelligence and physics-based methods that make water and hazard predictions more accurate, better quantified, and easier to trust. My work runs in three threads, shown here through figures from my papers ([all publications](/publications/)).
 
 ### 1. Mountain and arid hydrology
-Reliable water prediction underpins both supply and safety. I develop machine learning and physics-based methods that improve the accuracy of streamflow forecasts and quantify their uncertainty, and I use explainable AI to make sense of groundwater and hydrologic processes where data are scarce. Much of the streamflow work targets the arid basins of the US Southwest. Selected work: explainable AI for groundwater potential in data-scarce regions ([Dahal et al., 2023](https://doi.org/10.1016/j.jhydrol.2023.130417)); ensemble streamflow forecasting with diverse loss functions ([Dahal et al., 2026](https://www.sciencedirect.com/science/article/abs/pii/S1568494626007246)).
+AI and physics-based models that forecast streamflow with quantified uncertainty and map water where data are scarce.
+
+{ROW_HYDRO}
 
 ### 2. Hazards and infrastructure risk
-Water-driven hazards cascade: rainfall triggers landslides that block rivers that flood the towns and infrastructure downstream. I map and forecast these cascading hazards and the exposure of critical infrastructure, so communities can see the risk before it arrives. Selected work: cascading-hazard characterization on mountain terrain ([Talchabhadel et al., 2023](https://doi.org/10.1080/19475705.2022.2162443)); rainfall-triggered landslide zonation for critical infrastructure ([Gnyawali et al., 2023](https://doi.org/10.1016/j.scitotenv.2023.162242)); flood-exposure assessment for schools ([Bishui et al., 2026](https://link.springer.com/article/10.1007/s11069-025-07852-6)); cascading high mountain hazards and early warning in the Himalayas ([Silwal & Dahal, 2026](https://doi.org/10.1038/s44304-026-00292-7)). After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
+Mapping and forecasting cascading hazards, from landslides and outburst floods to the roads, bridges and schools they threaten. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
+
+{ROW_HAZARD}
 
 ### 3. Sustainable development
-Beyond mitigation, the pressing question is development: clean water, food, infrastructure, and livelihoods. I use earth observation and machine learning to inform that agenda with evidence. Selected work: carbon and biodiversity stakes of climate-driven wildfires ([Dahal et al., 2025](https://doi.org/10.1016/j.infgeo.2025.100003)); urban agriculture as a sustainability lever ([Pradhan et al., 2024](https://doi.org/10.1016/j.crsus.2024.100217)); IPCC science applied to the SDG agenda ([Pradhan et al., 2025](https://doi.org/10.1016/j.resenv.2025.100192)).
+Earth observation and machine learning to inform water, food and land decisions.
+
+{ROW_SDG}
 
 ---
 ## Currently
@@ -742,7 +835,7 @@ If you would like to request an interview, please email me or [book an appointme
         resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
     generate_page("_pages/resources.md", resources_content)
     
-    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n{% if site.author.googlescholar %}\n  <div class="wordwrap">You can also find my articles on my <a href="{{site.author.googlescholar}}">Google Scholar profile</a>.</div>\n{% endif %}\n{% include base_path %}\n{% for post in site.publications reversed %}\n  {% include archive-single.html %}\n{% endfor %}"""
+    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n<p class="pub-intro">Each paper with one of its key figures. Click a figure or title to open the paper. All articles are also on my <a href="https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works">Google Scholar profile</a>.</p>\n""" + publications_grid() + "\n"
     generate_page("_pages/publications.html", publications_page_content)
     
     blog_page_content = """---
