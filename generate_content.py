@@ -870,6 +870,28 @@ author_profile: true
 {% endfor %}
 </div>"""
     generate_page("_pages/blog.md", blog_page_content)
+
+    talks_page_content = """---
+layout: archive
+title: "Talks and presentations"
+permalink: /talks/
+author_profile: true
+---
+{% include base_path %}
+{% assign talks_sorted = site.talks | sort: "date" | reverse %}
+{% capture written_year %}'None'{% endcapture %}
+{% for post in talks_sorted %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% if year != written_year %}
+{% unless forloop.first %}</div>{% endunless %}
+<h2 id="{{ year | slugify }}" class="tile-year">{{ year }}</h2>
+<div class="tile-grid">
+{% capture written_year %}{{ year }}{% endcapture %}
+{% endif %}
+<a class="tile" href="{{ base_path }}{{ post.url }}"><span class="tile-label">{{ post.type }} · {{ post.date | date: '%b %Y' }}</span><span class="tile-title">{{ post.title }}</span></a>
+{% endfor %}
+</div>"""
+    generate_page("_pages/talks.html", talks_page_content)
     
     print("\n--- Generating Collection Files ---")
     generate_collection_files(publications_data, "_publications", "publications", "publication")
