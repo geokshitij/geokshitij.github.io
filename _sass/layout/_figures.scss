@@ -14,7 +14,9 @@
 }
 
 .paper-fig {
+  display: block;
   margin: 0;
+  width: 100%;
 
   img {
     display: block;
@@ -34,7 +36,9 @@
   }
 
   figcaption {
-    font-size: 0.78em;
+    font-family: inherit;
+    font-size: 0.8em;
+    color: inherit;
     line-height: 1.35;
     margin-top: 0.4em;
   }
