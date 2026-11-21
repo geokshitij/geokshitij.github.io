@@ -88,6 +88,8 @@ talks_data = [
 ]
 
 media_data = [
+    {"type": "Media Citation", "year": "2026", "title": "Prediction for the places we measure least (Early Career Spotlight)", "venue": "AGU Hydrology Section Newsletter", "url": "https://higherlogicdownload.s3.amazonaws.com/AGU/31ea296c-2c70-4dad-92ef-c4681bc6a288/UploadedImages/Newsletters/AGU_Hydrology_Section_Newsletter_-_July_August_2026.pdf"},
+    {"type": "Media Citation", "year": "2022", "title": "ICON Principles Underused as a Natural Hazards Research Tool", "venue": "Eos", "url": "https://doi.org/10.1029/2022EO220113"},
     {"type": "Media Citation", "year": "2026", "title": "In the wake of the flood, could Nepal avert the next disaster?", "venue": "Science News", "url": "https://www.sciencenews.org/article/flood-nepal-prepare-disaster-climate"},
     {"type": "Media Citation", "year": "2026", "title": "Flash flooding devastates Nepal (interview on the 2026 Langtang Disaster on the China–Nepal border)", "venue": "FOX Weather", "url": "https://livingmountains.github.io/blog/2026/08/26/langtang-fox-weather.html"},
     {"type": "Media Citation", "year": "2026", "title": "GeoAI-based study charts flood exposure of schools in state", "venue": "The Times of India", "url": "https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms"},
@@ -574,13 +576,39 @@ def fig_row(items):
         )
     return '<div class="paper-fig-row">' + "".join(cells) + "</div>"
 
-def tile(url, label, title, sub=None):
-    """One tile: small label line, title, optional short line (Media, Blog, Resources)."""
+def tile(url, label, title, sub=None, img=None):
+    """One tile: optional picture, small label line, title (Media, Blog, Resources, Talks)."""
     import html as _h
     e = lambda t: _h.escape(t, quote=True)
     sub_html = f'<span class="tile-sub">{e(sub)}</span>' if sub else ""
-    return (f'<a class="tile" href="{url}"><span class="tile-label">{e(label)}</span>'
+    img_html = f'<img class="tile-img" src="{img}" alt="" loading="lazy">' if img else ""
+    return (f'<a class="tile{" tile-has-img" if img else ""}" href="{url}">{img_html}<span class="tile-label">{e(label)}</span>'
             f'<span class="tile-title">{e(title)}</span>{sub_html}</a>')
+
+# Media pictures (from the group site, images/media), matched by outlet and year.
+media_images = {
+    ("Science News", "2026"): "science-news-2026",
+    ("FOX Weather", "2026"): "fox-weather-2026",
+    ("AGU Hydrology Section Newsletter", "2026"): "agu-2026",
+    ("The Times of India", "2026"): "times-of-india-2026",
+    ("China Daily", "2025"): "china-daily-2025",
+    ("The Rising Nepal", "2025"): "rising-nepal-2025",
+    ("WION TV", "2025"): "wion-2025",
+    ("The Kathmandu Post (EDITORIAL)", "2025"): "kathmandu-post-2025",
+    ("The Kathmandu Post", "2025"): "kathmandu-post-2025",
+    ("Nepali Times", "2024"): "nepali-times-2024",
+    ("Eos", "2022"): "eos-2022",
+    ("Republica", "2025"): "republica-2025",
+    ("Onlinekhabar", "2021"): "onlinekhabar-2021",
+    ("PreventionWeb, UNDRR", "2021"): "onlinekhabar-2021",
+}
+_wildfire_pics = ["china-daily-2025", "kathmandu-post-2025", "wion-2025", "rising-nepal-2025"]
+
+def media_image(item, n):
+    key = media_images.get((item["venue"], item["year"]))
+    if not key:
+        key = _wildfire_pics[n % len(_wildfire_pics)]
+    return f"/images/media/{key}.jpg"
 
 def publications_grid():
     """Publications page: one card per paper with its key figure, grouped by year."""
@@ -716,10 +744,10 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-I study floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
+I study floods and mass flows that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These flows carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
 
 ### 1. Complex flows
-Floods that carry rock, ice, mud and water reach higher peaks and strike with more force than clear-water models predict. I reconstruct these flows with physics-based models to find the mechanisms that make them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event from source to downstream valley ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
+Landslides, rock and ice avalanches, debris flows and sediment-laden floods move rock, ice, mud and water together, and they travel farther and strike harder than clear-water models predict. I reconstruct these flows with physics-based models to find the mechanisms that make them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event from source to downstream valley ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
 
 {ROW_SO1}
 
@@ -822,7 +850,7 @@ If you would like to request an interview, please email me or [book an appointme
         content_lines.append('\n## Op-eds\n')
         content_lines.append('<div class="tile-grid">')
         for item in sorted(opeds, key=lambda m: m["year"], reverse=True):
-            content_lines.append(tile(item["url"], f'{item["venue"]} · {item["year"]}', item["title"]))
+            content_lines.append(tile(item["url"], f'{item["venue"]} · {item["year"]}', item["title"], img=media_image(item, 0)))
         content_lines.append('</div>')
 
     if press:
@@ -830,8 +858,8 @@ If you would like to request an interview, please email me or [book an appointme
         for y in sorted({m["year"] for m in press}, reverse=True):
             content_lines.append(f'<h3 class="tile-year">{y}</h3>')
             content_lines.append('<div class="tile-grid">')
-            for item in [m for m in press if m["year"] == y]:
-                content_lines.append(tile(item["url"], _outlet(item["venue"]), item["title"]))
+            for n, item in enumerate([m for m in press if m["year"] == y]):
+                content_lines.append(tile(item["url"], _outlet(item["venue"]), item["title"], img=media_image(item, n)))
             content_lines.append('</div>')
 
     media_content += "\n" + "\n".join(content_lines)

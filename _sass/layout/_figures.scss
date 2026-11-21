@@ -176,3 +176,16 @@ a.tile {
   line-height: 1.35;
   color: var(--global-text-color);
 }
+
+a.tile.tile-has-img {
+  padding-top: 0;
+
+  .tile-img {
+    display: block;
+    width: calc(100% + 2.1em);
+    max-width: none;
+    margin: 0 -1.05em 0.35em;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
