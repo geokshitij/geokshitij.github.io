@@ -808,6 +808,8 @@ If you would like to request an interview, please email me or [book an appointme
     import html as _html
     def _esc(t):
         return _html.escape(t, quote=True)
+    def _outlet(v):
+        return re.sub(r"\s*\(.*?\)", "", v)
 
     content_lines = []
     opeds = [m for m in media_data if m.get("type") == "Op-Ed"]
@@ -834,7 +836,7 @@ If you would like to request an interview, please email me or [book an appointme
             for item in [m for m in press if m["year"] == y]:
                 content_lines.append(
                     f'<li><a href="{item["url"]}">'
-                    f'<span class="media-outlet">{_esc(item["venue"])}</span>'
+                    f'<span class="media-outlet">{_esc(_outlet(item["venue"]))}</span>'
                     f'<span class="media-title">{_esc(item["title"])}</span>'
                     f'</a></li>')
             content_lines.append('</ul>')

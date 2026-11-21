@@ -159,7 +159,8 @@
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--global-text-color-light, #555);
+  color: var(--global-text-color);
+  opacity: 0.75;
 }
 
 .media-year {
