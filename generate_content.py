@@ -590,7 +590,7 @@ def publications_grid():
         if y != year:
             if year is not None:
                 out.append("</div>")
-            out.append(f'<h2 class="pub-year">{y}</h2>\n<div class="pub-grid">')
+            out.append(f'<h2 class="tile-year">{y}</h2>\n<div class="pub-grid">')
             year = y
         url = pub.get("paperurl", "#")
         fig = figure_for(pub["title"])
