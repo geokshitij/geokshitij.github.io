@@ -5,11 +5,17 @@ permalink: /resources/
 author_profile: true
 ---
 
-## Courses Developed
-* Dahal, K. (2025). **[Environmental Data Analysis](https://geokshitij.github.io/Stats/)**. *Online course materials and interactive notebooks*.
-* Cho, H., Ashraf, F., Dahal, K. (2024). **[Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design](https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about)**. *CIROH (for senior undergraduate and/or graduate students)*.
-* Dahal, K. (2024). **[py4all: The Bare Minimum Python Guide](https://github.com/geokshitij/py4all)**. *Open-source introductory Python guide for engineering students*.
-* Dahal, K. (2024). **[Arizona's Water Systems](https://geokshitij.github.io/azwaters/)**. *Interactive educational story and teaching resource*.
+## Courses developed
 
-## Technical Reports
-* UNDRR (2022). **[Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific](https://www.undrr.org/quick/71248)**. *United Nations Office for Disaster Risk Reduction (UNDRR)*.
+<div class="tile-grid">
+<a class="tile" href="https://geokshitij.github.io/Stats/"><span class="tile-label">Course · 2025</span><span class="tile-title">Environmental Data Analysis</span></a>
+<a class="tile" href="https://edx.hydrolearn.org/courses/course-v1:NMSU+CE483+Fall2024/about"><span class="tile-label">Course · 2024</span><span class="tile-title">Flood Inundation Mapping Using Machine Learning for Sustainable vs. Resilient Design</span></a>
+<a class="tile" href="https://github.com/geokshitij/py4all"><span class="tile-label">Course · 2024</span><span class="tile-title">py4all: The Bare Minimum Python Guide</span></a>
+<a class="tile" href="https://geokshitij.github.io/azwaters/"><span class="tile-label">Course · 2024</span><span class="tile-title">Arizona&#x27;s Water Systems</span></a>
+</div>
+
+## Technical reports
+
+<div class="tile-grid">
+<a class="tile" href="https://www.undrr.org/quick/71248"><span class="tile-label">Report · 2022</span><span class="tile-title">Scoping Study On Compound, Cascading And Systemic Risks In The Asia Pacific</span></a>
+</div>

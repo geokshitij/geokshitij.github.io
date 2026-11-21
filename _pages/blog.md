@@ -9,8 +9,11 @@ author_profile: true
 {% for post in site.posts %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% if year != written_year %}
-<h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+{% unless forloop.first %}</div>{% endunless %}
+<h2 id="{{ year | slugify }}" class="tile-year">{{ year }}</h2>
+<div class="tile-grid">
 {% capture written_year %}{{ year }}{% endcapture %}
 {% endif %}
-{% include archive-single.html %}
+<a class="tile" href="{{ base_path }}{{ post.url }}"><span class="tile-label">{{ post.date | date: '%B %-d, %Y' }}</span><span class="tile-title">{{ post.title }}</span></a>
 {% endfor %}
+</div>

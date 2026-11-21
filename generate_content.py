@@ -574,6 +574,14 @@ def fig_row(items):
         )
     return '<div class="paper-fig-row">' + "".join(cells) + "</div>"
 
+def tile(url, label, title, sub=None):
+    """One tile: small label line, title, optional short line (Media, Blog, Resources)."""
+    import html as _h
+    e = lambda t: _h.escape(t, quote=True)
+    sub_html = f'<span class="tile-sub">{e(sub)}</span>' if sub else ""
+    return (f'<a class="tile" href="{url}"><span class="tile-label">{e(label)}</span>'
+            f'<span class="tile-title">{e(title)}</span>{sub_html}</a>')
+
 def publications_grid():
     """Publications page: one card per paper with its key figure, grouped by year."""
     out, year = [], None
@@ -803,9 +811,6 @@ This page features news articles, op-eds, and media mentions related to my work.
 
 If you would like to request an interview, please email me or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 """
-    import html as _html
-    def _esc(t):
-        return _html.escape(t, quote=True)
     def _outlet(v):
         return re.sub(r"\s*\(.*?\)", "", v)
 
@@ -815,43 +820,34 @@ If you would like to request an interview, please email me or [book an appointme
 
     if opeds:
         content_lines.append('\n## Op-eds\n')
-        content_lines.append('<div class="media-oped-grid">')
+        content_lines.append('<div class="tile-grid">')
         for item in sorted(opeds, key=lambda m: m["year"], reverse=True):
-            content_lines.append(
-                f'<a class="media-oped" href="{item["url"]}">'
-                f'<span class="media-meta">{_esc(item["venue"])} · {item["year"]}</span>'
-                f'<span class="media-title">{_esc(item["title"])}</span>'
-                f'<span class="media-authors">{_esc(item["authors"])}</span>'
-                f'</a>')
+            content_lines.append(tile(item["url"], f'{item["venue"]} · {item["year"]}', item["title"]))
         content_lines.append('</div>')
 
     if press:
         content_lines.append('\n## In the news\n')
-        years = sorted({m["year"] for m in press}, reverse=True)
-        for y in years:
-            content_lines.append(f'<h3 class="media-year">{y}</h3>')
-            content_lines.append('<ul class="media-list">')
+        for y in sorted({m["year"] for m in press}, reverse=True):
+            content_lines.append(f'<h3 class="tile-year">{y}</h3>')
+            content_lines.append('<div class="tile-grid">')
             for item in [m for m in press if m["year"] == y]:
-                content_lines.append(
-                    f'<li><a href="{item["url"]}">'
-                    f'<span class="media-outlet">{_esc(_outlet(item["venue"]))}</span>'
-                    f'<span class="media-title">{_esc(item["title"])}</span>'
-                    f'</a></li>')
-            content_lines.append('</ul>')
+                content_lines.append(tile(item["url"], _outlet(item["venue"]), item["title"]))
+            content_lines.append('</div>')
 
     media_content += "\n" + "\n".join(content_lines)
     generate_page("_pages/media.md", media_content)
     
     resources_content = """---\nlayout: archive\ntitle: "Resources"\npermalink: /resources/\nauthor_profile: true\n---\n"""
-    resources_content += "\n## Courses Developed\n"
+    resources_content += "\n## Courses developed\n\n<div class=\"tile-grid\">\n"
     for item in courses_data:
-        resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
-    resources_content += "\n## Technical Reports\n"
+        resources_content += tile(item["url"], f'Course · {item["year"]}', item["title"]) + "\n"
+    resources_content += "</div>\n\n## Technical reports\n\n<div class=\"tile-grid\">\n"
     for item in reports_data:
-        resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
+        resources_content += tile(item["url"], f'Report · {item["year"]}', item["title"]) + "\n"
+    resources_content += "</div>\n"
     generate_page("_pages/resources.md", resources_content)
     
-    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n<p class="pub-intro">Click a figure to open the paper. Full list on <a href="https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works">Google Scholar profile</a>.</p>\n""" + publications_grid() + "\n"
+    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n<p class="pub-intro">Click a figure to open the paper. Full list on my <a href="https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works">Google Scholar profile</a>.</p>\n""" + publications_grid() + "\n"
     generate_page("_pages/publications.html", publications_page_content)
     
     blog_page_content = """---
@@ -865,11 +861,14 @@ author_profile: true
 {% for post in site.posts %}
 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 {% if year != written_year %}
-<h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
+{% unless forloop.first %}</div>{% endunless %}
+<h2 id="{{ year | slugify }}" class="tile-year">{{ year }}</h2>
+<div class="tile-grid">
 {% capture written_year %}{{ year }}{% endcapture %}
 {% endif %}
-{% include archive-single.html %}
-{% endfor %}"""
+<a class="tile" href="{{ base_path }}{{ post.url }}"><span class="tile-label">{{ post.date | date: '%B %-d, %Y' }}</span><span class="tile-title">{{ post.title }}</span></a>
+{% endfor %}
+</div>"""
     generate_page("_pages/blog.md", blog_page_content)
     
     print("\n--- Generating Collection Files ---")
