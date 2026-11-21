@@ -12,8 +12,8 @@ A timeline of recent achievements, publications, and presentations.
 * **November 20**: Received the **Thriving Earth Exchange Annual Meeting Travel Award ($1,500)** to attend AGU26 in San Francisco.
 * **November 3**: Our perspective, **[Rethinking cascading high mountain hazards and early warning in the Himalayas](https://doi.org/10.1038/s44304-026-00292-7)**, was published in *npj Natural Hazards*.
 * **September 30**: Interviewed by *Science News* for [In the wake of the flood, could Nepal avert the next disaster?](https://www.sciencenews.org/article/flood-nepal-prepare-disaster-climate).
-* **August 28**: Released a [preliminary physics-based reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html) of the 26 August 2026 Langtang flood in Nepal.
-* **August 26**: Spoke to *FOX Weather* about the Langtang flood ([video](https://livingmountains.github.io/blog/2026/08/26/langtang-fox-weather.html)).
+* **August 28**: Released a [preliminary physics-based reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html) of the 2026 Langtang Disaster on the China–Nepal border (26 August 2026).
+* **August 26**: Spoke to *FOX Weather* about the 2026 Langtang Disaster on the China–Nepal border ([video](https://livingmountains.github.io/blog/2026/08/26/langtang-fox-weather.html)).
 * **May 12**: Started as a Postdoctoral Researcher at The University of Kansas, Lawrence, KS.
 * **April 10**: Successfully defended my PhD at Arizona State University.
 * **February 22**: News coverage in *The Times of India* on school flood-exposure research: [GeoAI-based study charts flood exposure of schools in state](https://timesofindia.indiatimes.com/city/patna/geoai-based-study-charts-flood-exposure-of-schools-in-state/amp_articleshow/128004523.cms).

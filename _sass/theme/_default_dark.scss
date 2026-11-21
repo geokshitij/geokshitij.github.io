@@ -11,7 +11,7 @@ $light-gray                 : mix(#fff, $gray, 50%);
 $background                 : #474747;
 $background-light           : mix(#fff, $background, 80%);
 $background-lighter         : mix(#fff, $background, 90%);
-$text                       : #dce8f0;
+$text                       : #ffffff;
 $link                       : #0ea1c5;
 $link-dark                  : mix(#000, $link, 25%);
 $link-light                 : mix(#fff, $link, 25%);
@@ -50,6 +50,6 @@ html[data-theme="dark"] {
     --global-masthead-link-color-hover  : #{$background-light};
     --global-masthead-border-color      : #{$light-gray};
     --global-text-color                 : #{$text};
-    --global-text-color-light           : #e8f4fc;
+    --global-text-color-light           : #f3f3f3;
     --global-thead-color                : #{$background-lighter};
 }
