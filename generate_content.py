@@ -695,19 +695,19 @@ if __name__ == "__main__":
     url: /cv/"""
     generate_page("_data/navigation.yml", nav_content)
 
-    ROW_HYDRO = fig_row([
-        ("Ensemble streamflow forecasting", "Dahal et al., 2026"),
-        ("Identification of groundwater potential zones", "Dahal et al., 2023"),
-        ("A Comprehensive Review of Machine Learning", "Silwal et al., 2026"),
-    ])
-    ROW_HAZARD = fig_row([
+    ROW_SO1 = fig_row([
         ("Rethinking cascading high mountain hazards", "Silwal & Dahal, 2026"),
         ("Extreme event-induced landslides", "Ghosh et al., 2026"),
-        ("Framework for rainfall-triggered landslide-prone", "Gnyawali et al., 2023"),
+        ("Multimodal multiscale characterization", "Talchabhadel et al., 2023"),
     ])
-    ROW_SDG = fig_row([
+    ROW_SO2 = fig_row([
+        ("Ensemble streamflow forecasting", "Dahal et al., 2026"),
+        ("Mapping landslide susceptibility and critical infrastructure", "Dahal & Gnyawali, 2023"),
         ("Nepal's carbon stock and biodiversity", "Dahal et al., 2025"),
-        ("Urban agriculture matters", "Pradhan et al., 2024"),
+    ])
+    ROW_SO3 = fig_row([
+        ("Developing a framework for assessment of the school", "Bishui et al., 2026"),
+        ("Assessment of shelter location-allocation", "Bera et al., 2023"),
         ("Policy Relevance of IPCC Reports", "Pradhan et al., 2025"),
     ])
 
@@ -716,22 +716,22 @@ permalink: /
 title: "About"
 author_profile: true
 ---
-I build artificial intelligence and physics-based methods that make water and hazard predictions more accurate, better quantified, and easier to trust. My work runs in three threads, shown here through figures from my papers ([all publications](/publications/)).
+I study catastrophic floods that begin with a sudden failure upstream, such as a slope failure, a glacier collapse, a lake outburst, a dam or levee breach, or runoff from a burned hillside. These floods carry rock, ice, soil and water far down the valley and exceed what our models and designs expect. My research combines physics-based models, satellite observation and AI in three directions, shown here through figures from my papers ([all publications](/publications/)).
 
-### 1. Mountain and arid hydrology
-AI and physics-based models that forecast streamflow with quantified uncertainty and map water where data are scarce.
+### 1. How catastrophic floods form and travel
+Physics-based reconstructions of floods that carry rock, ice, mud and water, to learn what makes them destructive. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
 
-{ROW_HYDRO}
+{ROW_SO1}
 
-### 2. Hazards and infrastructure risk
-Mapping and forecasting cascading hazards, from landslides and outburst floods to the roads, bridges and schools they threaten. After the 2026 Langtang Disaster on the China–Nepal border, we reproduced the event in physics-based simulations ([preliminary reconstruction](https://livingmountains.github.io/blog/2026/08/28/langtang-reconstruction.html)).
+### 2. Upstream processes in flood forecasting
+Satellite records of slope failures, burn scars and changing catchments, brought into AI and hydrologic models that forecast river flow at scale.
 
-{ROW_HAZARD}
+{ROW_SO2}
 
-### 3. Sustainable development
-Earth observation and machine learning to inform water, food and land decisions.
+### 3. Tools for communities and decision makers
+Flood-risk maps and planning tools built with the people who use them, from towns and schools to global frameworks such as the IPCC and the SDGs.
 
-{ROW_SDG}
+{ROW_SO3}
 
 ---
 ## Currently
@@ -741,9 +741,9 @@ I am part of the [Living Mountains Group](https://livingmountains.github.io), an
 
 Open to collaborations on:
 
-* mountain and arid hydrology, and AI streamflow forecasting.
-* multi-hazard and infrastructure-risk mapping.
-* earth observation for water, food, and infrastructure resilience.
+* reconstructing catastrophic floods, debris flows and dam or levee breaches.
+* flood forecasting with satellite data and AI.
+* flood-risk tools with communities, utilities and agencies.
 
 [Book a 30-minute call →](https://calendar.app.google/6FXuzivEFvFhLHx76)
 
