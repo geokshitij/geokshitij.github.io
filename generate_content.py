@@ -588,9 +588,7 @@ def publications_grid():
         fig = figure_for(pub["title"])
         img = (f'<a class="pub-fig" href="{url}"><img src="/images/papers/{fig[0]}.jpg" alt="{fig[1]}" loading="lazy"></a>'
                if fig else '<div class="pub-fig pub-fig-empty"></div>')
-        cap = f'<div class="pub-figcap">{fig[1]}</div>' if fig else ""
-        out.append(f'<div class="pub-card">{img}<div class="pub-body"><a class="pub-title" href="{url}">{pub["title"]}</a>'
-                   f'<div class="pub-cite">{pub["citation"]}</div>{cap}</div></div>')
+        out.append(f'<div class="pub-card">{img}<div class="pub-body"><a class="pub-title" href="{url}">{pub["title"]}</a></div></div>')
     out.append("</div>")
     return "\n".join(out)
 
@@ -853,7 +851,7 @@ If you would like to request an interview, please email me or [book an appointme
         resources_content += f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*.\n"
     generate_page("_pages/resources.md", resources_content)
     
-    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n<p class="pub-intro">Each paper with one of its key figures. Click a figure or title to open the paper. All articles are also on my <a href="https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works">Google Scholar profile</a>.</p>\n""" + publications_grid() + "\n"
+    publications_page_content = """---\nlayout: archive\ntitle: "Publications"\npermalink: /publications/\nauthor_profile: true\n---\n<p class="pub-intro">Click a figure to open the paper. Full list on <a href="https://scholar.google.com/citations?hl=en&user=jOtnPBIAAAAJ&view_op=list_works">Google Scholar profile</a>.</p>\n""" + publications_grid() + "\n"
     generate_page("_pages/publications.html", publications_page_content)
     
     blog_page_content = """---
