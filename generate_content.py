@@ -805,23 +805,40 @@ This page features news articles, op-eds, and media mentions related to my work.
 
 If you would like to request an interview, please email me or [book an appointment](https://calendar.app.google/6FXuzivEFvFhLHx76).
 """
-    grouped_media = {}
-    for item in media_data:
-        grouped_media.setdefault(item.get("type", "General"), []).append(item)
-    
+    import html as _html
+    def _esc(t):
+        return _html.escape(t, quote=True)
+
     content_lines = []
-    if "Op-Ed" in grouped_media:
-        content_lines.append("\n## News Columns (Op-Ed)")
-        for item in grouped_media["Op-Ed"]:
-            line = f"* {item['authors']} ({item['year']}). **[{item['title']}]({item['url']})**. *{item['venue']}*."
-            content_lines.append(line)
-            
-    if "Media Citation" in grouped_media:
-        content_lines.append("\n## Professional Media Citations")
-        for item in grouped_media["Media Citation"]:
-            line = f"* **[{item['title']}]({item['url']})**. *{item['venue']}*, {item['year']}."
-            content_lines.append(line)
-    
+    opeds = [m for m in media_data if m.get("type") == "Op-Ed"]
+    press = [m for m in media_data if m.get("type") != "Op-Ed"]
+
+    if opeds:
+        content_lines.append('\n## Op-eds\n')
+        content_lines.append('<div class="media-oped-grid">')
+        for item in sorted(opeds, key=lambda m: m["year"], reverse=True):
+            content_lines.append(
+                f'<a class="media-oped" href="{item["url"]}">'
+                f'<span class="media-meta">{_esc(item["venue"])} · {item["year"]}</span>'
+                f'<span class="media-title">{_esc(item["title"])}</span>'
+                f'<span class="media-authors">{_esc(item["authors"])}</span>'
+                f'</a>')
+        content_lines.append('</div>')
+
+    if press:
+        content_lines.append('\n## In the news\n')
+        years = sorted({m["year"] for m in press}, reverse=True)
+        for y in years:
+            content_lines.append(f'<h3 class="media-year">{y}</h3>')
+            content_lines.append('<ul class="media-list">')
+            for item in [m for m in press if m["year"] == y]:
+                content_lines.append(
+                    f'<li><a href="{item["url"]}">'
+                    f'<span class="media-outlet">{_esc(item["venue"])}</span>'
+                    f'<span class="media-title">{_esc(item["title"])}</span>'
+                    f'</a></li>')
+            content_lines.append('</ul>')
+
     media_content += "\n" + "\n".join(content_lines)
     generate_page("_pages/media.md", media_content)
     
