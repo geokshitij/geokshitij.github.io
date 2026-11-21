@@ -8,7 +8,6 @@ author_profile: true
 A timeline of recent achievements, publications, and presentations.
 
 ## 2026
-* **November 20**: Launched the [Living Mountains Group](https://livingmountains.github.io) website, home of our independent research collective on mountain water and hazards.
 * **November 20**: Received the **Thriving Earth Exchange Annual Meeting Travel Award ($1,500)** to attend AGU26 in San Francisco.
 * **November 3**: Our perspective, **[Rethinking cascading high mountain hazards and early warning in the Himalayas](https://doi.org/10.1038/s44304-026-00292-7)**, was published in *npj Natural Hazards*.
 * **September 30**: Interviewed by *Science News* for [In the wake of the flood, could Nepal avert the next disaster?](https://www.sciencenews.org/article/flood-nepal-prepare-disaster-climate).

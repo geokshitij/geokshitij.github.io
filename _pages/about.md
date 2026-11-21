@@ -36,7 +36,6 @@ Open to collaborations on:
 
 ## News
 
-* November 20, 2026: Launched the [Living Mountains Group](https://livingmountains.github.io) website.
 * November 20, 2026: Received the Thriving Earth Exchange travel award to attend AGU26 in San Francisco.
 * November 3, 2026: Our perspective on cascading mountain hazards and early warning is out in *npj Natural Hazards* ([paper](https://doi.org/10.1038/s44304-026-00292-7)).
 * September 30, 2026: Interviewed by *Science News* about the 2026 Langtang Disaster on the China–Nepal border ([article](https://www.sciencenews.org/article/flood-nepal-prepare-disaster-climate)).
