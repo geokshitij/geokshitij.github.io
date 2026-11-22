@@ -189,3 +189,22 @@ a.tile.tile-has-img {
     object-fit: cover;
   }
 }
+
+/* Blog page: all posts in full, one after another; title links to the post page */
+.blog-post-title {
+  margin: 1.5em 0 0.2em;
+  a { text-decoration: none; }
+  a:hover { text-decoration: underline; }
+}
+.blog-post-date {
+  margin: 0 0 1em;
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--global-text-color);
+  opacity: 0.75;
+}
+.blog-post-sep {
+  margin: 2.5em 0;
+}
