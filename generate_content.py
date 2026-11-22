@@ -309,7 +309,7 @@ I recommend Vipassana to anyone curious about quieting the noise inside their he
         "content": """### Wisdom I Live By
 *   Ignorance is not bliss.
 *   Plans should be measured in decades, execution should be measured in weeks.
-*   Working with great people, the greatest minds in the field, is the greatest experience of life.
+*   Working with the greatest minds in the field is the greatest experience of life.
 *   If you study the subject you like for 1 hour/day, you will become a national expert within 5 years.
 *   10x goals are easier than 2x goals.
 *   You learn more by teaching something than by studying it as a student.
