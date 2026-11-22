@@ -17,7 +17,7 @@ excerpt: "A curated list of books and wisdom that I find valuable and live by."
 *   10x goals are easier than 2x goals.
 *   You learn more by teaching something than by studying it as a student.
 *   If you can imagine it, you can already do it.
-*   Hate the crime, but love the criminal.
+*   Hate the crime, but still love the criminal. The world needs more love.
 *   The concepts of good and bad are not inherent in reality; they are human constructs shaped by perspectives, experiences, and cultural contexts.
 *   Most people are helpful if you simply ask.
 
