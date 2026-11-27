@@ -41,6 +41,19 @@
     color: inherit;
     line-height: 1.35;
     margin-top: 0.4em;
+
+    /* citation links look like every other link on the site */
+    a {
+      color: var(--global-link-color);
+      border-bottom: none;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--global-link-color-hover);
+        border-bottom: none;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
